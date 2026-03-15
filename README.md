@@ -1,0 +1,2 @@
+# BayesTransitEquity
+A Bayesian spatial analysis of urban transit accessibility. This project combines GTFS transit data, census demographics, and geospatial networks to measure access to jobs and essential services across city neighborhoods. Hierarchical Bayesian models and spatial analysis are used to detect underserved areas and quantify uncertainty in accessibility estimates. Results are presented through interactive maps and dashboards.
