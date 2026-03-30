@@ -1,0 +1,8 @@
+comparison,x,y,n,spearman_rho,p_value
+Pop estimate relative MOE,poverty_rate,rel_moe_pop,735,0.16177599250224672,1.0457570497305323e-05
+Poverty count relative MOE,poverty_rate,rel_moe_poverty_count,727,-0.5305442841427229,5.0708450988178495e-54
+Disadvantage z vs pop rel MOE,disadvantage_z,rel_moe_pop,735,0.15754771798744627,1.7802068915349508e-05
+Disadvantage z vs poverty rel MOE,disadvantage_z,rel_moe_poverty_count,727,-0.5558342816930162,3.5248029559929285e-60
+No-vehicle rate vs pop rel MOE,no_vehicle_hh_rate,rel_moe_pop,735,0.06066285925081058,0.10031297946316298
+Pct Black vs pop rel MOE,pct_black,rel_moe_pop,735,0.04201147253522525,0.25531602297249634
+Pct Hispanic vs pop rel MOE,pct_hispanic,rel_moe_pop,735,0.19892582879396536,5.378617756333825e-08

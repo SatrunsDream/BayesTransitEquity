@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-03-30T01:06:35.929394+00:00",
+  "city": "san_diego",
+  "data_freeze_date": "2026-03-30",
+  "sources": [
+    {
+      "label": "OSM Walk Network",
+      "status": "failed",
+      "error": "Found no graph nodes within the requested polygon."
+    }
+  ]
+}

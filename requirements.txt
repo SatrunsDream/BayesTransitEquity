@@ -1,0 +1,48 @@
+# Core geospatial
+geopandas
+pyproj
+shapely
+osmnx
+
+# Transit / accessibility
+r5py
+
+# Census data
+censusdatadownloader
+
+# Bayesian modeling
+pymc
+arviz                  # MCMC diagnostics + visualization
+
+# Data
+pandas
+numpy
+pyarrow                # Parquet support
+fastparquet
+
+# Metrics
+scipy                  # wasserstein_distance + stats
+
+# Visualization
+matplotlib
+seaborn
+contextily             # basemap tiles for static maps
+
+# HTTP (download_data.py)
+requests
+
+# Utilities
+pyyaml
+tqdm
+loguru
+
+# Dev / testing
+pytest
+jupyter
+ipykernel
+nbconvert              # execute notebooks (e.g. CI / batch EDA export)
+
+# Optional / Phase 2
+# numpyro              # JAX-based sampler for CA/national scale
+# jax
+# gtfs-realtime-bindings  # GTFS-RT support

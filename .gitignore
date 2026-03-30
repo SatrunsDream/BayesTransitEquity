@@ -1,0 +1,50 @@
+# Data — raw and interim always ignored
+data/raw/
+data/interim/
+data/processed/posteriors/
+
+# Original dataset archives (zip downloads)
+*.zip
+
+# Local project memory / AI context (not shipped to GitHub)
+context/
+
+# Tool caches (e.g. OSMnx / download caches)
+cache/
+
+# Large artifacts — keep run logs, ignore heavy model files
+artifacts/models/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv/
+env/
+venv/
+*.egg-info/
+dist/
+build/
+.ipynb_checkpoints/
+
+# Node / Next.js
+app/node_modules/
+app/.next/
+app/.env.local
+app/.env*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets — never commit
+*.env
+.env.*
+secrets.yaml
+api_keys.yaml
+
+# IDE
+.vscode/
+.idea/
+*.swp

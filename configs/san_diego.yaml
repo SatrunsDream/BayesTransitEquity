@@ -1,0 +1,36 @@
+# san_diego.yaml
+# San Diego-specific configuration. Overrides defaults.yaml where specified.
+
+city: san_diego
+city_label: "San Diego, CA"
+state_fips: "06"
+county_fips: "073"
+
+# Bounding box [min_lon, min_lat, max_lon, max_lat]
+bbox: [-117.28, 32.53, -116.93, 33.11]
+
+# GTFS: download URL is chosen from Mobility Database (urls.latest mirror) when mobility_db_id is set.
+# download_url remains as fallback if the catalog row is missing or the CSV cache is unavailable.
+gtfs_agencies:
+  - id: mts
+    name: San Diego Metropolitan Transit System
+    download_url: http://www.sdmts.com/google_transit_files/google_transit.zip
+    info_url: https://www.sdmts.com/business-center/app-developers
+    mobility_db_id: mdb-13
+    raw_path: data/raw/gtfs/mts/
+  - id: nctd
+    name: North County Transit District
+    download_url: http://www.gonctd.com/google_transit.zip
+    info_url: https://www.gonctd.com/about/open-data/
+    mobility_db_id: mdb-14
+    raw_path: data/raw/gtfs/nctd/
+
+census:
+  state_fips: "06"
+  county_fips: "073"
+  acs_year: 2023
+  acs_survey: acs5
+
+# Override defaults if needed
+# accessibility:
+#   travel_time_threshold_min: 45  # using default

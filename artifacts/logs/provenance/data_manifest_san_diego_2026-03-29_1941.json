@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-03-29T19:41:26.335949+00:00",
+  "city": "san_diego",
+  "data_freeze_date": "2026-03-29",
+  "sources": [
+    {
+      "label": "GTFS/mts",
+      "url": "http://www.sdmts.com/google_transit_files/google_transit.zip",
+      "dest": "data\\raw\\gtfs\\mts\\google_transit.zip",
+      "status": "skipped_existing",
+      "md5": "8c69875a2a9e0c985bec49066f07b559",
+      "size_bytes": 4773917,
+      "downloaded_at": null,
+      "agency_id": "mts",
+      "agency_name": "San Diego Metropolitan Transit System",
+      "source_type": "gtfs_schedule",
+      "extracted_files": [
+        "fare_capping.txt",
+        "feed_info.txt",
+        "agency.txt",
+        "stops.txt",
+        "networks.txt",
+        "route_networks.txt",
+        "routes.txt",
+        "calendar.txt",
+        "calendar_dates.txt",
+        "shapes.txt",
+        "trips.txt",
+        "stop_times.txt",
+        "fare_attributes.txt",
+        "fare_rules.txt",
+        "fare_media.txt",
+        "rider_categories.txt",
+        "fare_products.txt",
+        "fare_leg_rules.txt",
+        "fare_transfer_rules.txt",
+        "transfers.txt"
+      ],
+      "feed_version": "2601 unmerged v2",
+      "feed_start_date": "20260125",
+      "feed_end_date": "20260606"
+    },
+    {
+      "label": "GTFS/nctd",
+      "url": "http://www.gonctd.com/google_transit.zip",
+      "status": "failed",
+      "error": "('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))",
+      "agency_id": "nctd",
+      "agency_name": "North County Transit District",
+      "source_type": "gtfs_schedule"
+    }
+  ]
+}

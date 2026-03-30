@@ -1,0 +1,7 @@
+agency,check,count
+mts,trips referencing unknown route_id,0
+mts,routes with zero trips,0
+mts,stops never used in stop_times,106
+nctd,trips referencing unknown route_id,0
+nctd,routes with zero trips,3
+nctd,stops never used in stop_times,12

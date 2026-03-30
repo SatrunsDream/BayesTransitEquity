@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-03-30T00:22:24.141115+00:00",
+  "city": "san_diego",
+  "data_freeze_date": "2026-03-30",
+  "sources": [
+    {
+      "label": "OSM Walk Network",
+      "status": "failed",
+      "error": "('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+    }
+  ]
+}

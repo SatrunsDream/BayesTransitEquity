@@ -1,0 +1,4 @@
+artifact,path,exists
+TIGER zip,data\raw\census\tl_2023_06_tract.zip,True
+TIGER extracted dir,data\raw\census\tl_2023_06_tract,True
+ACS JSON,data\raw\census\acs5_2023_sd_county.json,True

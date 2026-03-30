@@ -1,0 +1,3 @@
+agency_id,agency_name,mobility_db_id,gtfs_download_url_source,feed_version,feed_start_date,feed_end_date,status,md5,size_bytes,n_extracted_files
+mts,San Diego Metropolitan Transit System,mdb-13,mobility_catalog.urls.latest,2601 unmerged v2,20260125,20260606,downloaded,8c69875a2a9e0c985bec49066f07b559,4773917,20
+nctd,North County Transit District,mdb-14,mobility_catalog.urls.latest,Version_20250205,,,downloaded,089bd6d961a08b7b307fe07a7ffadde6,1664872,17

@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-03-29T01:18:43.247990+00:00",
+  "city": "san_diego",
+  "data_freeze_date": "2026-03-29",
+  "sources": [
+    {
+      "label": "GTFS/mts",
+      "url": "http://www.sdmts.com/google_transit_files/google_transit.zip",
+      "status": "failed",
+      "error": "403 Client Error: Forbidden for url: http://www.sdmts.com/google_transit_files/google_transit.zip",
+      "agency_id": "mts",
+      "agency_name": "San Diego Metropolitan Transit System",
+      "source_type": "gtfs_schedule"
+    },
+    {
+      "label": "GTFS/nctd",
+      "url": "http://www.gonctd.com/google_transit.zip",
+      "status": "failed",
+      "error": "403 Client Error: Forbidden for url: http://www.gonctd.com/google_transit.zip",
+      "agency_id": "nctd",
+      "agency_name": "North County Transit District",
+      "source_type": "gtfs_schedule"
+    },
+    {
+      "label": "TIGER/Line Tracts CA 2023",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2023/TRACT/tl_2023_06_tract.zip",
+      "status": "failed",
+      "error": "HTTPSConnectionPool(host='www2.census.gov', port=443): Max retries exceeded with url: /geo/tiger/TIGER2023/TRACT/tl_2023_06_tract.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "source_type": "tiger_tract_shapefile",
+      "state_fips": "06",
+      "acs_year": 2023
+    },
+    {
+      "label": "ACS 2023 5yr SD County",
+      "url": "https://api.census.gov/data/2023/acs/acs5?get=NAME,B01003_001E,B01003_001M,B08201_002E,B08201_002M,B19013_001E,B19013_001M,B17001_002E,B17001_002M,B18101_001E,B18101_001M,B03002_001E,B03002_001M,B03002_003E,B03002_003M,B03002_012E,B03002_012M,B03002_004E,B03002_004M&for=tract:*&in=state:06%20county:073",
+      "status": "failed",
+      "error": "HTTPSConnectionPool(host='api.census.gov', port=443): Max retries exceeded with url: /data/2023/acs/acs5?get=NAME,B01003_001E,B01003_001M,B08201_002E,B08201_002M,B19013_001E,B19013_001M,B17001_002E,B17001_002M,B18101_001E,B18101_001M,B03002_001E,B03002_001M,B03002_003E,B03002_003M,B03002_012E,B03002_012M,B03002_004E,B03002_004M&for=tract:*&in=state:06%20county:073 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "source_type": "acs_5yr_api",
+      "variables": [
+        "NAME",
+        "B01003_001E",
+        "B01003_001M",
+        "B08201_002E",
+        "B08201_002M",
+        "B19013_001E",
+        "B19013_001M",
+        "B17001_002E",
+        "B17001_002M",
+        "B18101_001E",
+        "B18101_001M",
+        "B03002_001E",
+        "B03002_001M",
+        "B03002_003E",
+        "B03002_003M",
+        "B03002_012E",
+        "B03002_012M",
+        "B03002_004E",
+        "B03002_004M"
+      ],
+      "acs_year": 2023,
+      "state_fips": "06",
+      "county_fips": "073"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+# defaults.yaml
+# Shared defaults across all city configs. Values here are overridden by city-specific configs.
+
+accessibility:
+  travel_time_threshold_min: 45
+  walk_speed_kph: 4.8
+  departure_window_start: "07:00"
+  departure_window_end: "09:00"
+  opportunities:
+    - jobs
+    - hospitals
+    - groceries
+    - schools
+
+model:
+  sampler: mcmc
+  draws: 2000
+  tune: 1000
+  chains: 4
+  target_accept: 0.9
+  random_seed: 42
+
+export:
+  geojson_precision: 5       # decimal places for coordinates
+  parquet_compression: snappy
+
+# Mobility Database feeds_v2.csv — used to resolve urls.latest mirrors (see mobility_db_id on gtfs_agencies)
+mobility_catalog:
+  feeds_csv_url: https://files.mobilitydatabase.org/feeds_v2.csv
+  cache_relative_path: data/interim/mobility_database/feeds_v2.csv
+  max_age_days: 7
+
+# OSM walk-network download (scripts/download_data.py --sources osm via osmnx → Overpass API).
+# Large bboxes often sit in Overpass queue many minutes with little output; osmnx may poll /status
+# in a loop ("Currently running a query") before POSTing. Increase timeout if queries die at 180s.
+osm:
+  requests_timeout_seconds: 900
+  # Optional: if overpass-api.de feels stuck, try a public mirror (uncomment one):
+  # overpass_url: https://overpass.kumi.systems/api
+  # overpass_url: https://overpass.openstreetmap.fr/api

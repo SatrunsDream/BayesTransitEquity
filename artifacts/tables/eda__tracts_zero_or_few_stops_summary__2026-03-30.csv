@@ -1,0 +1,6 @@
+metric,value
+n_tracts_total,737.0
+n_tracts_bbox_intersect,571.0
+n_few_stops_within_x_km,274.0
+n_zero_stops_within_x_km,246.0
+x_km_threshold,0.5
