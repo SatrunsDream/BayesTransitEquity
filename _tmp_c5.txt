@@ -1,0 +1,25 @@
+# Quick map: clipped stops vs bbox (dpi=200 → artifacts/figures)
+st = clipped.get("stops")
+if st is not None and not st.empty:
+    fig, ax = plt.subplots(figsize=(7, 7))
+    ax.scatter(
+        st["stop_lon"].astype(float),
+        st["stop_lat"].astype(float),
+        s=2,
+        alpha=0.35,
+        c="steelblue",
+    )
+    ax.plot([min_lon, max_lon, max_lon, min_lon, min_lon], [min_lat, min_lat, max_lat, max_lat, min_lat], "r--", lw=1.5, label="bbox")
+    ax.set_aspect("equal", adjustable="box")
+    ax.set_xlabel("lon")
+    ax.set_ylabel("lat")
+    ax.set_title("Clipped GTFS stops (merged MTS+NCTD)")
+    ax.legend(loc="upper right")
+    plt.tight_layout()
+    fig_path = REPO_ROOT / "artifacts" / "figures" / f"pipeline__02_gtfs_stops_clip__{TODAY}.png"
+    fig_path.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(fig_path, dpi=200, bbox_inches="tight")
+    plt.close(fig)
+    display(Markdown(f"Saved `{fig_path.relative_to(REPO_ROOT)}`"))
+else:
+    display(Markdown("_No stops to plot._"))

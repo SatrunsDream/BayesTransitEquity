@@ -1,0 +1,2 @@
+label,source_type,tool,bbox,network_type,n_nodes,n_edges,dest,status,md5,size_bytes,downloaded_at,note
+OSM Walk Network,osm_pedestrian_network,osmnx,"[-117.4, 32.53, -116.8, 33.35]",walk,337824,906988,data\raw\osm\sd_walk_network.graphml,downloaded,733d726d74882f3068ceb6ecb2200a99,383452356,2026-03-30T18:44:26.550777+00:00,OSM has no versioning. Timestamp is the only provenance for reproducibility.

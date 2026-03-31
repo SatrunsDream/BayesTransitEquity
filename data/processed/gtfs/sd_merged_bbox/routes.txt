@@ -1,0 +1,153 @@
+route_id,agency_id,route_short_name,route_long_name,route_type,route_url,route_color,route_text_color,route_group,route_pattern1,route_pattern2,route_desc,network_id
+mts:1,mts:MTS,1,Fashion Valley - La Mesa,3,https://www.sdmts.com/schedules-real-time?fragment=1,000099,FFFFFF,SBMF,1-W,1-E,,
+mts:2,mts:MTS,2,Downtown San Diego - 30th & Adams,3,https://www.sdmts.com/schedules-real-time?fragment=2,000099,FFFFFF,SDTC,2-S1,2-N1,,
+mts:3,mts:MTS,3,UCSD Hospital - Euclid Transit Center,3,https://www.sdmts.com/schedules-real-time?fragment=3,000099,FFFFFF,SBMF,3-N,3-S,,
+mts:4,mts:MTS,4,12th & Imperial Trolley - Lomita Village,3,https://www.sdmts.com/schedules-real-time?fragment=4,000099,FFFFFF,SDTC,4-E,4-W,,
+mts:5,mts:MTS,5,Downtown San Diego - Euclid Transit Center,3,https://www.sdmts.com/schedules-real-time?fragment=5,000099,FFFFFF,SBMF,5-E,5-W,,
+mts:6,mts:MTS,6,North Park - Fashion Valley,3,https://www.sdmts.com/schedules-real-time?fragment=6,000099,FFFFFF,SDTC,6-W,6-E,,
+mts:7,mts:MTS,7,Downtown San Diego - University/College,3,https://www.sdmts.com/schedules-real-time?fragment=7,000099,FFFFFF,SDTC,7-NF,7-SF,,
+mts:8,mts:MTS,8,Old Town - Balboa Av TC,3,https://www.sdmts.com/schedules-real-time?fragment=8,000099,FFFFFF,SDTC,8-N2,8-S2,,
+mts:9,mts:MTS,9,Old Town - Jewell & Garnet,3,https://www.sdmts.com/schedules-real-time?fragment=9,000099,FFFFFF,SDTC,9-N,9-S,,
+mts:10,mts:MTS,10,Old Town - University/College,3,https://www.sdmts.com/schedules-real-time?fragment=10,000099,FFFFFF,SDTC,10-E,10-W,,
+mts:11,mts:MTS,11,SDSU - Downtown San Diego,3,https://www.sdmts.com/schedules-real-time?fragment=11,000099,FFFFFF,SDTC,11-S,11-N,,
+mts:12,mts:MTS,12,12th & Imperial - Skyline Hills,3,https://www.sdmts.com/schedules-real-time?fragment=12,000099,FFFFFF,SDTC,12-E,12-W,,
+mts:13,mts:MTS,13,Kaiser Hospital  - 24th St Transit Center,3,https://www.sdmts.com/schedules-real-time?fragment=13,000099,FFFFFF,SDTC,13-N,13-S,,
+mts:14,mts:MTS,14,Grantville Trolley  -  Baltimore & Lake Murray,3,https://www.sdmts.com/schedules-real-time?fragment=14,000099,FFFFFF,COPGAR,14-W,14-E,,
+mts:18,mts:MTS,18,Grantville Trlly via Camino del Rio,3,https://www.sdmts.com/schedules-real-time?fragment=18,000099,FFFFFF,COPGAR,18-CW,,,
+mts:20,mts:MTS,20,Downtown - Rancho Bernardo Transit Station,3,https://www.sdmts.com/schedules-real-time?fragment=20,000099,FFFFFF,SDTC,20-N,20-S,,
+mts:25,mts:MTS,25,Fashion Valley - Kearny Mesa TC,3,https://www.sdmts.com/schedules-real-time?fragment=25,000099,FFFFFF,COPGAR,25-N,25-S,,
+mts:27,mts:MTS,27,Pacific Beach - Kearny Mesa Transit Center,3,https://www.sdmts.com/schedules-real-time?fragment=27,000099,FFFFFF,"COPGAR,ECBMF",27-W,27-E,,
+mts:28,mts:MTS,28,Old Town T.C. - Shelter Island,3,https://www.sdmts.com/schedules-real-time?fragment=28,000099,FFFFFF,SBMF,28-W,28-E,,
+mts:30,mts:MTS,30,Old Town  - UTC via Pacific Beach,3,https://www.sdmts.com/schedules-real-time?fragment=30,000099,FFFFFF,SDTC,30-N,30-S,,
+mts:31,mts:MTS,31,UTC - Mira Mesa,3,https://www.sdmts.com/schedules-real-time?fragment=31,000099,FFFFFF,SDTC,31-E,31-W,,
+mts:35,mts:MTS,35,Ocean Beach - Old Town,3,https://www.sdmts.com/schedules-real-time?fragment=35,000099,FFFFFF,SBMF,35-E,35-W,,
+mts:41,mts:MTS,41,Fashion Valley -  UCSD,3,https://www.sdmts.com/schedules-real-time?fragment=41,000099,FFFFFF,SDTC,41-N1,41-S1,,
+mts:43,mts:MTS,43,Balboa Av TC - Kearny Mesa,3,https://www.sdmts.com/schedules-real-time?fragment=43,000099,FFFFFF,SDTC,43-E,43-W,,
+mts:44,mts:MTS,44,Old Town - Kearny Mesa,3,https://www.sdmts.com/schedules-real-time?fragment=44,000099,FFFFFF,SDTC,44-S,44-N,,
+mts:60,mts:MTS,60,Euclid Av Transit Center - UTC  via Convoy,3,https://www.sdmts.com/schedules-real-time?fragment=60,000099,FFFFFF,SDTC,60-N,60-S,,
+mts:83,mts:MTS,83,Downtown San Diego - Old Town,3,https://www.sdmts.com/schedules-real-time?fragment=83,000099,FFFFFF,COPGAR,83-S,83-N,,
+mts:84,mts:MTS,84,Point Loma Shuttle,3,https://www.sdmts.com/schedules-real-time?fragment=84,000099,FFFFFF,COPGAR,84-1,84-2,,
+mts:88,mts:MTS,88,Old Town - Hotel Circle,3,https://www.sdmts.com/schedules-real-time?fragment=88,000099,FFFFFF,COPGAR,88,,,
+mts:105,mts:MTS,105,Old Town - University City,3,https://www.sdmts.com/schedules-real-time?fragment=105,000099,FFFFFF,SDTC,105-S,105-N,,
+mts:110,mts:MTS,110,Mira Mesa - Downtown via Hwy 163,3,https://www.sdmts.com/schedules-real-time?fragment=110,000099,FFFFFF,SDTC,110-S1,110-N1,,
+mts:115,mts:MTS,115,El Cajon T.C. - SDSU T.C.,3,https://www.sdmts.com/schedules-real-time?fragment=115,000099,FFFFFF,"COPGAR,ECBMF",115-W,115-E,,
+mts:120,mts:MTS,120,Downtown San Diego - Kearny Mesa Transit Center,3,https://www.sdmts.com/schedules-real-time?fragment=120,000099,FFFFFF,SDTC,120-N,120-S,,
+mts:201,mts:MTS,201,Super Loop - Counterclockwise,3,https://www.sdmts.com/schedules-real-time?fragment=201,CC0000,FFFFFF,SDTC,201,,,
+mts:202,mts:MTS,202,Super Loop - Clockwise,3,https://www.sdmts.com/schedules-real-time?fragment=202,CC0000,FFFFFF,SDTC,202,,,
+mts:204,mts:MTS,204,Super Loop - Judicial Dr.,3,https://www.sdmts.com/schedules-real-time?fragment=204,CC0000,FFFFFF,SDTC,204,,,
+mts:215,mts:MTS,215,Mid-City Rapid,3,https://www.sdmts.com/schedules-real-time?fragment=215,CC0000,FFFFFF,SDTC,215-E,215-W,,
+mts:225,mts:MTS,225,Downtown - Otay Mesa TC,3,https://www.sdmts.com/schedules-real-time?fragment=225,CC0000,FFFFFF,SBMF,225-N,225-S,,
+mts:227,mts:MTS,227,Imperial Beach - Otay Mesa TC,3,https://www.sdmts.com/schedules-real-time?fragment=227,CC0000,FFFFFF,,227-E,227-W,,
+mts:235,mts:MTS,235,Downtown - Escondido Transit Center,3,https://www.sdmts.com/schedules-real-time?fragment=235,CC0000,FFFFFF,SDTC,235-S,235-N,,
+mts:237,mts:MTS,237,Miramar College Transit Station - UCSD,3,https://www.sdmts.com/schedules-real-time?fragment=237,CC0000,FFFFFF,SDTC,237-S,237-N,,
+mts:280,mts:MTS,280,Escondido Transit Center - Downtown,3,https://www.sdmts.com/schedules-real-time?fragment=280,CC0000,FFFFFF,ECBMF,280-S,280-N,,
+mts:290,mts:MTS,290,Rancho Bernardo Station - Downtown,3,https://www.sdmts.com/schedules-real-time?fragment=290,CC0000,FFFFFF,ECBMF,290-S,290-N,,
+mts:701,mts:MTS,701,H St Transit Center - Palomar St TC via Hilltop Dr,3,https://www.sdmts.com/schedules-real-time?fragment=701,000099,FFFFFF,SBMF,701-N,701-S,,
+mts:704,mts:MTS,704,E St Transit Center - Palomar Transit Center,3,https://www.sdmts.com/schedules-real-time?fragment=704,000099,FFFFFF,SBMF,704-N,704-S,,
+mts:705,mts:MTS,705,E St Transit Center - Plaza Bonita,3,https://www.sdmts.com/schedules-real-time?fragment=705,000099,FFFFFF,SBMF,705-E,705-W,,
+mts:707,mts:MTS,707,Otay Ranch Town Center - Southwestern College,3,https://www.sdmts.com/schedules-real-time?fragment=707,000099,FFFFFF,SBMF,707-N,707-S,,
+mts:709,mts:MTS,709,H St Transit Center - Otay Ranch Town Center,3,https://www.sdmts.com/schedules-real-time?fragment=709,000099,FFFFFF,SBMF,709-E,709-W,,
+mts:712,mts:MTS,712,Palomar Transit Center - Southwestern College,3,https://www.sdmts.com/schedules-real-time?fragment=712,000099,FFFFFF,SBMF,712-E,712-W,,
+mts:815,mts:MTS,815,El Cajon Transit Center - East Main St,3,https://www.sdmts.com/schedules-real-time?fragment=815,000099,FFFFFF,"ECBMF,SBMF",815-E,815-W,,
+mts:816,mts:MTS,816,El Cajon TC - Cuyamaca College,3,https://www.sdmts.com/schedules-real-time?fragment=816,000099,FFFFFF,ECBMF,816-E,816-W,,
+mts:832,mts:MTS,832,Santee Center - NE Santee Loop Clockwise,3,https://www.sdmts.com/schedules-real-time?fragment=832,000099,FFFFFF,"COPGAR,ECBMF",832-CW,,,
+mts:833,mts:MTS,833,Santee Center - Parkway Plaza,3,https://www.sdmts.com/schedules-real-time?fragment=833,000099,FFFFFF,COPGAR,833-S,833-N,,
+mts:834,mts:MTS,834,West Santee Loop,3,https://www.sdmts.com/schedules-real-time?fragment=834,000099,FFFFFF,ECBMF,834-L,,,
+mts:838,mts:MTS,838,East County Square - Viejas,3,https://www.sdmts.com/schedules-real-time?fragment=838,000099,FFFFFF,COPGAR,838-E,838-W,,
+mts:848,mts:MTS,848,El Cajon - Lakeside,3,https://www.sdmts.com/schedules-real-time?fragment=848,000099,FFFFFF,"ECBMF,SBMF",848-N,848-S,,
+mts:851,mts:MTS,851,Spring Valley - La Mesa,3,https://www.sdmts.com/schedules-real-time?fragment=851,000099,FFFFFF,COPGAR,851-N,851-S,,
+mts:852,mts:MTS,852,University & 54th - Grossmont Transit Ctr,3,https://www.sdmts.com/schedules-real-time?fragment=852,000099,FFFFFF,"ECBMF,SBMF",852-E,852-W,,
+mts:854,mts:MTS,854,Grossmont Transit Ctr -- Grossmont College,3,https://www.sdmts.com/schedules-real-time?fragment=854,000099,FFFFFF,ECBMF,854-N,854-S,,
+mts:855,mts:MTS,855,Rancho San Diego - La Mesa,3,https://www.sdmts.com/schedules-real-time?fragment=855,000099,FFFFFF,"COPGAR,ECBMF",855-N,855-S,,
+mts:856,mts:MTS,856,SDSU - Cuyamaca College,3,https://www.sdmts.com/schedules-real-time?fragment=856,000099,FFFFFF,"COPGAR,ECBMF",856-S,856-N,,
+mts:864,mts:MTS,864,El Cajon - East County Sq,3,https://www.sdmts.com/schedules-real-time?fragment=864,000099,FFFFFF,"ECBMF,SBMF",864-E,864-W,,
+mts:872,mts:MTS,872,El Cajon Shuttle Loop Counterclockwise,3,https://www.sdmts.com/schedules-real-time?fragment=872,000099,FFFFFF,ECBMF,872-L,,,
+mts:874,mts:MTS,874,El Cajon Eastside Shuttle Clockwise,3,https://www.sdmts.com/schedules-real-time?fragment=874,000099,FFFFFF,"ECBMF,SBMF",874-L,,,
+mts:875,mts:MTS,875,El Cajon Eastside Shuttle Counterclockwise,3,https://www.sdmts.com/schedules-real-time?fragment=875,000099,FFFFFF,"ECBMF,SBMF",875-L,,,
+mts:888,mts:MTS,888,Jacumba - El Cajon,3,https://www.sdmts.com/schedules-real-time?fragment=888,663300,FFFFFF,ECBMF,888-E,888-W,,
+mts:891,mts:MTS,891,Borrego - El Cajon via Shelter Valley,3,https://www.sdmts.com/schedules-real-time?fragment=891,663300,FFFFFF,ECBMF,891-E,891-W,,
+mts:892,mts:MTS,892,Borrego - El Cajon via Ranchita/Lake Henshaw,3,https://www.sdmts.com/schedules-real-time?fragment=892,663300,FFFFFF,ECBMF,892-E,892-W,,
+mts:894,mts:MTS,894,Morena/Campo - El Cajon,3,https://www.sdmts.com/schedules-real-time?fragment=894,663300,FFFFFF,ECBMF,894-E,894-W,,
+mts:901,mts:MTS,901,Iris Transit Center - Downtown,3,https://www.sdmts.com/schedules-real-time?fragment=901,000099,FFFFFF,SBMF,901-1F,901-2F,,
+mts:904,mts:MTS,904,Coronado Shuttle,3,https://www.sdmts.com/schedules-real-time?fragment=904,000099,FFFFFF,SBMF,904-N,904-S,,
+mts:905,mts:MTS,905,Iris Transit Center - Otay Mesa Transit Center,3,https://www.sdmts.com/schedules-real-time?fragment=905,000099,FFFFFF,SBMF,905-E,905-W,,
+mts:906,mts:MTS,906,Iris Transit Center - San Ysidro Clockwise,3,https://www.sdmts.com/schedules-real-time?fragment=906,000099,FFFFFF,SBMF,906-CW,,,
+mts:907,mts:MTS,907,Iris Transit Center - San Ysidro Counterclockwise,3,https://www.sdmts.com/schedules-real-time?fragment=907,000099,FFFFFF,SBMF,907-CCW,,,
+mts:909,mts:MTS,909,Otay Mesa Transit Center - SWC at Otay Mesa,3,https://www.sdmts.com/schedules-real-time?fragment=909,000099,FFFFFF,SBMF,909-E,909-W,,
+mts:910,mts:MTS,910,Downtown - San Ysidro (OWL Service),3,https://www.sdmts.com/schedules-real-time?fragment=910,000099,FFFFFF,,910-N,910-S,,
+mts:916,mts:MTS,916,Oak Park-Emerald Hills Loop CW,3,https://www.sdmts.com/schedules-real-time?fragment=916,000099,FFFFFF,"COPGAR,SBMF",916-L,,,
+mts:917,mts:MTS,917,Oak Park-Emerald Hills Loop CCW,3,https://www.sdmts.com/schedules-real-time?fragment=917,000099,FFFFFF,"COPGAR,SBMF",917-L,,,
+mts:921,mts:MTS,921,UTC - Miramar College Transit Station,3,https://www.sdmts.com/schedules-real-time?fragment=921,000099,FFFFFF,"COPGAR,ECBMF",921-E,921-W,,
+mts:923,mts:MTS,923,Downtown to Point Loma,3,https://www.sdmts.com/schedules-real-time?fragment=923,000099,FFFFFF,SBMF,923-W,923-E,,
+mts:928,mts:MTS,928,Fashion Valley - Kearny Mesa,3,https://www.sdmts.com/schedules-real-time?fragment=928,000099,FFFFFF,"ECBMF,SBMF",928-S,928-N,,
+mts:929,mts:MTS,929,12th & Imperial - Iris Transit Center,3,https://www.sdmts.com/schedules-real-time?fragment=929,000099,FFFFFF,SBMF,929-n,929-S,,
+mts:932,mts:MTS,932,Iris Transit Center - 8th St. Transit Center,3,https://www.sdmts.com/schedules-real-time?fragment=932,000099,FFFFFF,SBMF,932-N,932-S,,
+mts:933,mts:MTS,933,Iris TC Loop - Imperial Beach Counterclock,3,https://www.sdmts.com/schedules-real-time?fragment=933,000099,FFFFFF,SBMF,933-L,,,
+mts:934,mts:MTS,934,Iris TC Loop - Imperial Beach Clockwise,3,https://www.sdmts.com/schedules-real-time?fragment=934,000099,FFFFFF,SBMF,934-L,,,
+mts:936,mts:MTS,936,Spring Valley - SDSU,3,https://www.sdmts.com/schedules-real-time?fragment=936,000099,FFFFFF,"ECBMF,SBMF",936-N,936-S,,
+mts:944,mts:MTS,944,Sabre Springs Station - Poway,3,https://www.sdmts.com/schedules-real-time?fragment=944,000099,FFFFFF,COPGAR,944-E,944-W,,
+mts:945,mts:MTS,945,Rancho Bernardo Station - Poway,3,https://www.sdmts.com/schedules-real-time?fragment=945,000099,FFFFFF,COPGAR,945-N,945-S,,
+mts:955,mts:MTS,955,National City - San Diego State University,3,https://www.sdmts.com/schedules-real-time?fragment=955,000099,FFFFFF,SBMF,955-N,955-S,,
+mts:961,mts:MTS,961,24th St Transit Center - Encanto Trolley,3,https://www.sdmts.com/schedules-real-time?fragment=961,000099,FFFFFF,SBMF,961-S,961-N,,
+mts:962,mts:MTS,962,8th St Transit Center - Spring Valley,3,https://www.sdmts.com/schedules-real-time?fragment=962,000099,FFFFFF,SBMF,962 E,962 W,,
+mts:963,mts:MTS,963,8th St Transit Center - Paradise Hills,3,https://www.sdmts.com/schedules-real-time?fragment=963,000099,FFFFFF,SBMF,963-W,963-E,,
+mts:964,mts:MTS,964,Mira Mesa - Alliant University via MCTS,3,https://www.sdmts.com/schedules-real-time?fragment=964,000099,FFFFFF,COPGAR,964-E,964-W,,
+mts:965,mts:MTS,965,City Heights Shuttle,3,https://www.sdmts.com/schedules-real-time?fragment=965,000099,FFFFFF,COPGAR,965-CC,965-C,,
+mts:967,mts:MTS,967,24th St Transit Center - Division & Ava,3,https://www.sdmts.com/schedules-real-time?fragment=967,000099,FFFFFF,COPGAR,967,,,
+mts:968,mts:MTS,968,8th St Transit Center - Plaza Bonita,3,https://www.sdmts.com/schedules-real-time?fragment=968,000099,FFFFFF,SBMF,968-E,968-W,,
+mts:985,mts:MTS,985,UCSD Central Campus Station - Torrey Pines,3,https://www.sdmts.com/schedules-real-time?fragment=985,000099,FFFFFF,,985,,,
+mts:992,mts:MTS,992,Airport/Downtown Shuttle,3,https://www.sdmts.com/schedules-real-time?fragment=992,000099,FFFFFF,SBMF,992-L,,,
+mts:510,mts:MTS,Blue,San Ysidro - UTC,0,https://www.sdmts.com/schedules-real-time?fragment=blue_line,0000FF,FFFFFF,,510SX,510NX,,
+mts:535,mts:MTS,Copper,Santee - El Cajon,0,https://www.sdmts.com/schedules-real-time?fragment=copper_line,B87333,000000,,535-E,535-W,,
+mts:530,mts:MTS,Green,El Cajon - 12th & Imperial,0,https://www.sdmts.com/schedules-real-time?fragment=green_line,009900,FFFFFF,,530EX,530WX,,
+mts:520,mts:MTS,Orange,El Cajon - Courthouse,0,https://www.sdmts.com/schedules-real-time?fragment=orange_line,FF6600,FFFFFF,,520EX,520WX,,
+mts:550,mts:MTS,Silver,Downtown Loop,0,https://www.sdmts.com/schedules-real-time?fragment=silver_line,B4BCC2,000000,,,,,
+mts:COR,mts:MTS,,Coronado Ferry,4,http://www.sdhe.com/coronado-ferry,000099,FFFFFF,,COR-W,COR-E,,
+mts:AIR,mts:SAN,,Old Town to Airport Shuttle,3,https://www.san.org/Parking-Transportation/Public-Transportation#117819-trolley-service,000099,FFFFFF,,,,,
+nctd:301,,101,Oceanside - UTC/VA/UCSD,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:302,,302,Oceanside - Vista via Vista Way,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:303,,303,Oceanside - Vista via Mission Av,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:304,,304,Encinitas - Palomar College,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:305,,305,Vista - Escondido,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:306,,306,Vista - Fallbrook,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:308,,308,Escondido - Solana Beach,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:309,,309,Town Center North - Encinitas via ECR,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:311,,311,East Oceanside,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:313,,313,Oceanside TC - Town Center North,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:315,,315,College Bl Sprinter Sta - 22 Area via Vandegrift,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:318,,318,Oceanside TC - Vista TC via Oceanside Blvd,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:323,,323,College Sprinter - Quarry Creek,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:325,,325,Carlsbad Village - College Sprinter,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:332,,332,Vista TC - Buena Creek Station,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:334,,334,Vista Circulator,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:347,,347,CSUSM to PCTC,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:350,,350,BREEZE Rapid:  ETC - Del Lago TC,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:351,,351,Escondido Circulator (CCW),3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:352,,352,Midway & Washington (Clock),3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:353,,353,Escondido to Nordahl Market Pl via Citracado,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:354,,354,Escondido TC - Orange Glen High School,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:355,,355,N. Broadway to El Norte Parkway,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:356,,356,Morningview & Escondido Blvd (Clock),3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:357,,357,Valley Parkway to El Norte Parkway,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:358,,358,Escondido Country Club (Clock),3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:359,,359,Escondido Country Club (Counter),3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:371,,371,Escondido - Ramona,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,FLEX
+nctd:388,,388,Escondido - Pala,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:392,,392,Oceanside TC - 14 Area,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,FLEX
+nctd:395,,395,Oceanside TC - Camp San Onofre,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,FLEX
+nctd:398,,,COASTER,2,http://www.gonctd.com/coaster,00459D,FFFFFF,,,,,COASTER
+nctd:399,,,SPRINTER,0,http://www.gonctd.com/sprinter,00AB9B,FFFFFF,,,,,SPRINTER
+nctd:444,,444,Poinsettia Station Coaster Conx - Faraday,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:445,,445,Poinsettia - Palomar College via PAR,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:471,,471,Sorrento Valley East Coaster Connection,3,http://www.gonctd.com/breeze,8080FF, FFFFFF,,,,,FLEX
+nctd:472,,472,Sorrento Mesa Coaster Connection,3,http://www.gonctd.com/breeze,8080FF, FFFFFF,,,,,FLEX
+nctd:473,,473,Carroll Canyon Coaster Connection,3,http://www.gonctd.com/breeze,8080FF, FFFFFF,,,,,FLEX
+nctd:478,,478,Torrey Pines Coaster Connection,3,http://www.gonctd.com/breeze,8080FF, FFFFFF,,,,,FLEX
+nctd:479,,479,University City and UCSD Coaster Connection,3,http://www.gonctd.com/breeze,8080FF, FFFFFF,,,,,FLEX
+nctd:604,,604,Encinitas - San Marcos,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:608,,608,Escondido TC - Del Lago Academy,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:609,,609,Encinitas Station - Sage Creek HS,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:623,,623,College Sprinter - Sage Creek HS,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:632,,632,Vista TC - Rancho Buena Vista HS,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:651,,651,Escondido Circulator - Orange Glen HS,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:652,,652,Midway & Washington - Orange Glen HS,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE

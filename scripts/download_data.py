@@ -15,9 +15,10 @@ Usage:
 Sources:
     gtfs     GTFS schedule feeds for all configured agencies
     census   Census tract shapefiles (TIGER/Line) + ACS demographic variables
-    osm      OpenStreetMap pedestrian walk network (via osmnx)
+    osm      OpenStreetMap pedestrian walk network (via osmnx) -> GraphML for EDA
+    osm_pbf  Clip regional OSM .pbf to bbox for r5py (requires `osmium`; not in `all`)
     lodes    LEHD LODES job data (WAC file for California)
-    all      All of the above (default)
+    all      gtfs + census + osm + lodes (excludes osm_pbf — large + external tool)
 """
 
 import argparse
@@ -25,6 +26,8 @@ import csv
 import hashlib
 import json
 import os
+import shutil
+import subprocess
 import sys
 import time
 import zipfile
@@ -179,7 +182,15 @@ def md5(path: Path, chunk_size: int = 1 << 20) -> str:
     return h.hexdigest()
 
 
-def download_file(url: str, dest: Path, label: str, dry_run: bool = False, force: bool = False) -> dict:
+def download_file(
+    url: str,
+    dest: Path,
+    label: str,
+    dry_run: bool = False,
+    force: bool = False,
+    *,
+    timeout: float | tuple[float, float | None] = 120,
+) -> dict:
     """
     Download a file from url to dest.
     Skips if dest exists and force=False (freeze logic).
@@ -215,7 +226,7 @@ def download_file(url: str, dest: Path, label: str, dry_run: bool = False, force
             except OSError:
                 pass
         try:
-            resp = requests.get(url, stream=True, timeout=120, headers=headers)
+            resp = requests.get(url, stream=True, timeout=timeout, headers=headers)
             resp.raise_for_status()
             total = int(resp.headers.get("content-length", 0))
             downloaded = 0
@@ -539,6 +550,176 @@ def download_lodes(config: dict, dry_run: bool, force: bool) -> list:
     return entries
 
 
+GEOFABRIK_CALIFORNIA_PBF_URL = (
+    "https://download.geofabrik.de/north-america/us/california-latest.osm.pbf"
+)
+
+
+def download_osm_pbf_for_r5(
+    config: dict,
+    dry_run: bool,
+    force: bool,
+    *,
+    download_geofabrik_ca: bool,
+) -> list:
+    """
+    Build `r5.osm_pbf` by clipping a regional extract (default: Geofabrik California) to `bbox`.
+    Requires the `osmium` CLI (https://osmcode.org/osmium-tool/).
+    Not included in `--sources all` (large download + external tool).
+    """
+    print("\n--- R5 OSM PBF (clip for r5py) ---")
+    entries: list = []
+    r5 = config.get("r5") or {}
+    out_rel = str(r5.get("osm_pbf", "data/raw/osm/san_diego_study.osm.pbf")).replace("\\", "/")
+    out = REPO_ROOT / out_rel
+    src_rel = str(r5.get("geofabrik_source_pbf", "data/interim/osm/california-latest.osm.pbf")).replace(
+        "\\", "/"
+    )
+    src = REPO_ROOT / src_rel
+
+    bbox = config.get("bbox")
+    if not bbox or len(bbox) != 4:
+        print("  [FAIL] Missing bbox in config (need [min_lon, min_lat, max_lon, max_lat]).")
+        entries.append(
+            {
+                "label": "R5 OSM PBF",
+                "status": "failed",
+                "error": "bbox missing",
+            }
+        )
+        return entries
+
+    if out.exists() and not force:
+        print(f"  [SKIP] R5 PBF already exists at {out.relative_to(REPO_ROOT)}")
+        entries.append(
+            {
+                "label": "R5 OSM PBF",
+                "source_type": "osm_pbf_r5",
+                "dest": str(out.relative_to(REPO_ROOT)),
+                "status": "skipped_existing",
+                "md5": md5(out),
+                "size_bytes": out.stat().st_size,
+            }
+        )
+        return entries
+
+    if dry_run:
+        print(f"  [DRY-RUN] Would clip regional PBF -> {out.relative_to(REPO_ROOT)}")
+        entries.append({"label": "R5 OSM PBF", "status": "dry_run"})
+        return entries
+
+    if not src.is_file():
+        if download_geofabrik_ca:
+            print(f"  [DOWNLOAD] Geofabrik California PBF (~1.1 GB) -> {src.relative_to(REPO_ROOT)} ...")
+            ent = download_file(
+                GEOFABRIK_CALIFORNIA_PBF_URL,
+                src,
+                "Geofabrik California OSM PBF",
+                dry_run=False,
+                force=force,
+                timeout=(60.0, None),
+            )
+            entries.append(ent)
+            if ent.get("status") == "failed":
+                return entries
+        else:
+            print(f"  [FAIL] Regional PBF not found: {src}")
+            print("  Options:")
+            print(f"    1) Download manually: {GEOFABRIK_CALIFORNIA_PBF_URL}")
+            print(f"       Save as {src.relative_to(REPO_ROOT)} (or set r5.geofabrik_source_pbf)")
+            print("    2) Re-run with --download-geofabrik-ca (streams ~1.1 GB)")
+            print("    3) Run: python scripts/extract_osm_pbf.py --input <path-to-regional.osm.pbf>")
+            entries.append(
+                {
+                    "label": "R5 OSM PBF",
+                    "status": "failed",
+                    "error": "regional PBF missing",
+                }
+            )
+            return entries
+
+    min_lon, min_lat, max_lon, max_lat = bbox
+    bbox_arg = f"{min_lon},{min_lat},{max_lon},{max_lat}"
+    out.parent.mkdir(parents=True, exist_ok=True)
+
+    osmium = shutil.which("osmium")
+    if osmium:
+        cmd = [osmium, "extract", "-b", bbox_arg, str(src), "-o", str(out)]
+        print(f"  [CLIP] {' '.join(cmd)}")
+        try:
+            subprocess.run(cmd, check=True)
+        except subprocess.CalledProcessError as e:
+            print(f"  [FAIL] osmium extract failed: {e}")
+            entries.append(
+                {
+                    "label": "R5 OSM PBF",
+                    "status": "failed",
+                    "error": str(e),
+                }
+            )
+            return entries
+        tool_used = "osmium"
+    else:
+        # Windows doesn't have `osmium` installed; try WSL (common on Windows dev setups).
+        if shutil.which("wsl") is None:
+            print("  [FAIL] `osmium` not on PATH, and `wsl` not available.")
+            print("         Install osmium-tool on Windows, or install it inside WSL and re-run.")
+            entries.append(
+                {
+                    "label": "R5 OSM PBF",
+                    "status": "failed",
+                    "error": "osmium not found (no WSL fallback)",
+                }
+            )
+            return entries
+
+        def _win_to_wsl_path(p: Path) -> str:
+            # Example: C:\Users\me\path -> /mnt/c/Users/me/path
+            pp = p.resolve()
+            drive = pp.drive.rstrip(":").lower()
+            rest = pp.as_posix().split(":", 1)[1].lstrip("/")
+            return f"/mnt/{drive}/{rest}"
+
+        wsl_src = _win_to_wsl_path(src)
+        wsl_out = _win_to_wsl_path(out)
+        wsl_cmd = ["wsl", "--", "osmium", "extract", "-b", bbox_arg, wsl_src, "-o", wsl_out]
+        print(f"  [CLIP via WSL] {' '.join(wsl_cmd)}")
+        try:
+            subprocess.run(wsl_cmd, check=True)
+        except subprocess.CalledProcessError as e:
+            print(f"  [FAIL] WSL `osmium extract` failed: {e}")
+            print("         In WSL, install osmium-tool and re-run:")
+            print("           sudo apt-get update && sudo apt-get install -y osmium-tool")
+            entries.append(
+                {
+                    "label": "R5 OSM PBF",
+                    "status": "failed",
+                    "error": str(e),
+                    "tool_used": "osmium-wsl",
+                }
+            )
+            return entries
+        tool_used = "osmium-wsl"
+
+    ts = datetime.now(timezone.utc).isoformat()
+    print(f"    [ok] {out.stat().st_size:,} bytes -> {out.relative_to(REPO_ROOT)}")
+    entries.append(
+        {
+            "label": "R5 OSM PBF",
+            "source_type": "osm_pbf_r5",
+            "tool": tool_used,
+            "bbox": bbox_arg,
+            "source_pbf": str(src.relative_to(REPO_ROOT)),
+            "dest": str(out.relative_to(REPO_ROOT)),
+            "status": "downloaded",
+            "md5": md5(out),
+            "size_bytes": out.stat().st_size,
+            "downloaded_at": ts,
+        }
+    )
+    return entries
+
+
 # ── Manifest writer ────────────────────────────────────────────────────────────
 
 def write_manifest(all_entries: list, config: dict) -> Path:
@@ -573,9 +754,14 @@ def main():
     )
     parser.add_argument(
         "--sources", nargs="+",
-        choices=["gtfs", "census", "osm", "lodes", "all"],
+        choices=["gtfs", "census", "osm", "osm_pbf", "lodes", "all"],
         default=["all"],
-        help="Which data sources to download. Default: all"
+        help="Which data sources to download. Default: all (excludes osm_pbf)"
+    )
+    parser.add_argument(
+        "--download-geofabrik-ca",
+        action="store_true",
+        help="With --sources osm_pbf: download Geofabrik California (~1.1 GB) if missing",
     )
     parser.add_argument(
         "--force", action="store_true",
@@ -627,6 +813,14 @@ def main():
 
     if "lodes" in sources:
         all_entries += download_lodes(config, dry_run=args.dry_run, force=args.force)
+
+    if "osm_pbf" in sources:
+        all_entries += download_osm_pbf_for_r5(
+            config,
+            dry_run=args.dry_run,
+            force=args.force,
+            download_geofabrik_ca=args.download_geofabrik_ca,
+        )
 
     if not args.dry_run:
         manifest_path = write_manifest(all_entries, config)

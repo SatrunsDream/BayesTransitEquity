@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-03-30T18:44:29.630202+00:00",
+  "city": "san_diego",
+  "data_freeze_date": "2026-03-30",
+  "sources": [
+    {
+      "label": "OSM Walk Network",
+      "source_type": "osm_pedestrian_network",
+      "tool": "osmnx",
+      "bbox": [
+        -117.4,
+        32.53,
+        -116.8,
+        33.35
+      ],
+      "network_type": "walk",
+      "n_nodes": 337824,
+      "n_edges": 906988,
+      "dest": "data\\raw\\osm\\sd_walk_network.graphml",
+      "status": "downloaded",
+      "md5": "733d726d74882f3068ceb6ecb2200a99",
+      "size_bytes": 383452356,
+      "downloaded_at": "2026-03-30T18:44:26.550777+00:00",
+      "note": "OSM has no versioning. Timestamp is the only provenance for reproducibility."
+    }
+  ]
+}

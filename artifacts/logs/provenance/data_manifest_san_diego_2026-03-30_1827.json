@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-03-30T18:27:09.935229+00:00",
+  "city": "san_diego",
+  "data_freeze_date": "2026-03-30",
+  "sources": [
+    {
+      "label": "LODES WAC CA 2021",
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES8/ca/wac/ca_wac_S000_JT00_2021.csv.gz",
+      "dest": "data\\raw\\external\\lodes\\ca_wac_2021.csv.gz",
+      "status": "downloaded",
+      "md5": "7b99f960246f980e9bba58a68a89b9f3",
+      "size_bytes": 6000959,
+      "downloaded_at": "2026-03-30T18:27:09.933834+00:00",
+      "source_type": "lodes_wac",
+      "lodes_version": "LODES8",
+      "year": 2021,
+      "note": "State-wide CA file. Filter to SD county (county_fips=073) during EDA."
+    }
+  ]
+}

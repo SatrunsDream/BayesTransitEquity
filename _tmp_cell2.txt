@@ -1,0 +1,190 @@
+import zipfile
+from datetime import date
+
+import matplotlib.pyplot as plt
+import pandas as pd
+from IPython.display import Markdown, display
+
+GTFS_TABLES = (
+    "agency",
+    "routes",
+    "trips",
+    "stops",
+    "stop_times",
+    "calendar",
+    "calendar_dates",
+    "shapes",
+    "transfers",
+    "feed_info",
+)
+
+
+def load_gtfs_feed(extracted_dir: Path) -> dict[str, pd.DataFrame | None]:
+    out: dict[str, pd.DataFrame | None] = {}
+    for name in GTFS_TABLES:
+        p = extracted_dir / f"{name}.txt"
+        if not p.exists():
+            out[name] = None
+            continue
+        out[name] = pd.read_csv(p, dtype=str, encoding="utf-8", low_memory=False)
+    return out
+
+
+def _pfx(s: pd.Series, prefix: str) -> pd.Series:
+    return prefix + s.astype(str)
+
+
+def prefix_feed(feed: dict[str, pd.DataFrame | None], aid: str) -> dict[str, pd.DataFrame | None]:
+    """Make stop/trip/route/service/shape IDs unique across agencies."""
+    prefix = f"{aid}:"
+    out = {}
+    for k, df in feed.items():
+        if df is None or df.empty:
+            out[k] = df
+            continue
+        d = df.copy()
+        if k == "agency" and "agency_id" in d.columns:
+            d["agency_id"] = _pfx(d["agency_id"], prefix)
+        if k == "routes" and "route_id" in d.columns:
+            d["route_id"] = _pfx(d["route_id"], prefix)
+            if "agency_id" in d.columns:
+                d["agency_id"] = _pfx(d["agency_id"], prefix)
+        if k == "trips":
+            for col in ("route_id", "trip_id", "service_id"):
+                if col in d.columns:
+                    d[col] = _pfx(d[col], prefix)
+            if "shape_id" in d.columns:
+                m = d["shape_id"].notna() & (d["shape_id"].astype(str).str.strip() != "")
+                d.loc[m, "shape_id"] = prefix + d.loc[m, "shape_id"].astype(str)
+        if k == "stops" and "stop_id" in d.columns:
+            d["stop_id"] = _pfx(d["stop_id"], prefix)
+        if k == "stop_times":
+            d["trip_id"] = _pfx(d["trip_id"], prefix)
+            d["stop_id"] = _pfx(d["stop_id"], prefix)
+        if k == "shapes" and "shape_id" in d.columns:
+            d["shape_id"] = _pfx(d["shape_id"], prefix)
+        if k == "calendar" and "service_id" in d.columns:
+            d["service_id"] = _pfx(d["service_id"], prefix)
+        if k == "calendar_dates" and "service_id" in d.columns:
+            d["service_id"] = _pfx(d["service_id"], prefix)
+        if k == "transfers":
+            for col in ("from_stop_id", "to_stop_id"):
+                if col in d.columns:
+                    d[col] = _pfx(d[col], prefix)
+        out[k] = d
+    return out
+
+
+def concat_feeds(feeds: list[dict[str, pd.DataFrame | None]]) -> dict[str, pd.DataFrame | None]:
+    keys = set()
+    for f in feeds:
+        keys |= set(f.keys())
+    merged: dict[str, pd.DataFrame | None] = {}
+    for name in sorted(keys):
+        parts = [f[name] for f in feeds if f.get(name) is not None and not f[name].empty]
+        merged[name] = pd.concat(parts, ignore_index=True) if parts else None
+    return merged
+
+
+def stops_in_bbox(stops: pd.DataFrame) -> pd.Series:
+    lat = stops["stop_lat"].astype(float)
+    lon = stops["stop_lon"].astype(float)
+    return (lon >= min_lon) & (lon <= max_lon) & (lat >= min_lat) & (lat <= max_lat)
+
+
+def clip_merged_to_bbox(F: dict[str, pd.DataFrame | None]) -> dict[str, pd.DataFrame | None]:
+    """Keep trips that have at least one stop in bbox; retain all stop_times rows for those trips."""
+    stops = F.get("stops")
+    stop_times = F.get("stop_times")
+    trips = F.get("trips")
+    if stops is None or stops.empty or stop_times is None or stop_times.empty or trips is None or trips.empty:
+        raise ValueError("Merged feed missing stops, stop_times, or trips.")
+
+    inside = stops_in_bbox(stops)
+    seed = set(stops.loc[inside, "stop_id"].astype(str))
+    st = stop_times.copy()
+    st["trip_id"] = st["trip_id"].astype(str)
+    st["stop_id"] = st["stop_id"].astype(str)
+    trip_keep = set(st.loc[st["stop_id"].isin(seed), "trip_id"].unique())
+    st_kept = st[st["trip_id"].isin(trip_keep)].copy()
+    stop_keep = set(st_kept["stop_id"].unique())
+    stops_kept = stops[stops["stop_id"].astype(str).isin(stop_keep)].copy()
+    trips_kept = trips[trips["trip_id"].astype(str).isin(trip_keep)].copy()
+
+    route_keep = set(trips_kept["route_id"].astype(str).unique()) if "route_id" in trips_kept.columns else set()
+    svc_keep = set(trips_kept["service_id"].astype(str).unique()) if "service_id" in trips_kept.columns else set()
+    shape_keep = (
+        set(trips_kept["shape_id"].dropna().astype(str).unique())
+        if "shape_id" in trips_kept.columns
+        else set()
+    )
+
+    out: dict[str, pd.DataFrame | None] = {}
+    out["stops"] = stops_kept
+    out["stop_times"] = st_kept
+    out["trips"] = trips_kept
+
+    r = F.get("routes")
+    out["routes"] = r[r["route_id"].astype(str).isin(route_keep)].copy() if r is not None and not r.empty else None
+
+    a = F.get("agency")
+    if a is not None and not a.empty and "agency_id" in a.columns and out["routes"] is not None and not out["routes"].empty:
+        used_agency = set(out["routes"]["agency_id"].astype(str).unique())
+        out["agency"] = a[a["agency_id"].astype(str).isin(used_agency)].copy()
+    else:
+        out["agency"] = a
+
+    cal = F.get("calendar")
+    out["calendar"] = cal[cal["service_id"].astype(str).isin(svc_keep)].copy() if cal is not None and not cal.empty else None
+
+    cd = F.get("calendar_dates")
+    out["calendar_dates"] = (
+        cd[cd["service_id"].astype(str).isin(svc_keep)].copy() if cd is not None and not cd.empty else None
+    )
+
+    sh = F.get("shapes")
+    if sh is not None and not sh.empty and shape_keep:
+        out["shapes"] = sh[sh["shape_id"].astype(str).isin(shape_keep)].copy()
+    else:
+        out["shapes"] = sh
+
+    tr = F.get("transfers")
+    if tr is not None and not tr.empty:
+        valid = stop_keep
+        tr2 = tr[tr["from_stop_id"].astype(str).isin(valid) & tr["to_stop_id"].astype(str).isin(valid)].copy()
+        out["transfers"] = tr2 if not tr2.empty else None
+    else:
+        out["transfers"] = None
+
+    fi = F.get("feed_info")
+    out["feed_info"] = fi
+
+    return out
+
+
+def validate_feed(F: dict[str, pd.DataFrame | None]) -> dict[str, int | float]:
+    """Lightweight integrity checks (orphan rows)."""
+    trips = F.get("trips")
+    st = F.get("stop_times")
+    rpt: dict[str, int | float] = {}
+    if trips is None or st is None:
+        return rpt
+    tid_t = set(trips["trip_id"].astype(str))
+    tid_s = set(st["trip_id"].astype(str))
+    rpt["orphan_stop_time_trips"] = int(len(tid_s - tid_t))
+    rpt["trips_without_stop_times"] = int(len(tid_t - tid_s))
+    return rpt
+
+
+# ── Load + merge ───────────────────────────────────────────────────────────────
+feeds_raw: list[dict[str, pd.DataFrame | None]] = []
+for ag in agencies_cfg:
+    aid = ag["id"]
+    ex = REPO_ROOT / ag["raw_path"].strip().rstrip("/\\").replace("\\", "/") / "extracted"
+    if not ex.is_dir():
+        raise FileNotFoundError(f"Missing extracted GTFS for {aid}: {ex}")
+    feeds_raw.append(prefix_feed(load_gtfs_feed(ex), aid))
+
+merged = concat_feeds(feeds_raw)
+display(Markdown("### Merged (pre-clip) row counts"))
+display(pd.DataFrame([{k: len(v) if v is not None else 0 for k, v in merged.items()}]).T.rename(columns={0: "rows"}))

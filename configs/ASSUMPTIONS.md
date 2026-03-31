@@ -69,17 +69,14 @@ treated as provisional until the feed is refreshed.
 **Action required**: `python scripts/download_data.py --config configs/san_diego.yaml --sources gtfs --force --refresh-mobility-catalog`
 **Status**: **PARTIALLY ADDRESSED (2026-03-29)** — command was run; Mobility `urls.latest` zip re-downloaded but **feed content is unchanged** (`feed_version` still `Version_20250205`; `calendar.txt` service windows still end **20250516**). Schedule is still **expired relative to analysis date** until NCTD / Mobility publishes a newer bundle. Treat NCTD schedule-based metrics as **provisional** until a newer feed appears.
 
-### A009 — NCTD service is partially outside the study bbox; this is a known scope limitation
-**Assumption**: The study bbox `[-117.28, 32.53, -116.93, 33.11]` captures enough NCTD service
-to include it as a meaningful second agency in the analysis.
-**Rationale**: Only 342 of 1,823 NCTD stops (18.76%) fall inside the bbox. The bbox was designed
-around central/south San Diego where MTS operates; North County (NCTD's primary territory)
-extends further north and east.
-**How it could fail**: With <20% of NCTD stops in scope, NCTD coverage metrics will look
-artificially poor. This could bias the equity analysis if North County tracts are included
-in the model but NCTD routes are effectively invisible.
-**Options**:
-  1. Expand bbox northward to ~33.3 to capture more NCTD territory (changes study area definition)
-  2. Keep bbox, document NCTD partial coverage as a study limitation, exclude NCTD-only tracts
-  3. Run analysis MTS-only and treat NCTD as supplementary / future work
-**Status**: OPEN DECISION — document choice in `context/DECISIONS.md` (**D009**) when resolved.
+### A009 — Study bbox includes NCTD core (expanded window)
+**Assumption**: The study bbox `[-117.40, 32.53, -116.80, 33.35]` is wide enough to treat MTS and
+NCTD as co-primary operators for a **county-wide** framing (D009 resolved 2026-03-30).
+**Rationale**: The prior bbox under-covered NCTD (~18.76% of stops); expanding north/west/east
+aligns the spatial window with North County service and strengthens a “San Diego County” paper claim.
+**How it could fail**: Eastern/northern fringe of the county or cross-border travel may still sit
+outside the box; NCTD GTFS can remain schedule-stale (A008) independent of geometry.
+**Sensitivity**: Document exact bbox in Methods; if results are sensitive to edge effects, test a
+slightly wider/narrower north bound.
+**Status**: **ACTIVE** — superseded prior “partial NCTD in bbox” assumption; re-run spatial EDA
+(04–07) when refreshed numbers are needed.

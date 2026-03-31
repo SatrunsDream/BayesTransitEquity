@@ -1,0 +1,3 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone,agency_email
+mts:MTS,MTS,http://www.sdmts.com,America/Los_Angeles,en,619-233-3004,customerfeedback@sdmts.com
+mts:SAN,San Diego International Airport,http://www.san.org,America/Los_Angeles,en,619-694-7427,

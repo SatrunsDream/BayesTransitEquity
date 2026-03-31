@@ -29,3 +29,7 @@ This folder holds **EDA only**. The main analysis pipeline stays in `notebooks/`
 ## Artifacts
 
 EDA exports go to `artifacts/figures/` and `artifacts/tables/` with run IDs per `context/development_rules.md`. Document each reportable table/figure in `context/structure.md` (artifact index).
+
+## Bbox changes (D009 / county-wide window)
+
+Spatial EDA notebooks (`02`, `04`–`07`) must use the **same** bounding box as `configs/san_diego.yaml` (load from YAML rather than hardcoding). After expanding the bbox, **re-run 04–07** so tract overlap counts, stop coverage, OSM stats, destinations, and cross-source tables match the pipeline. Notebook `01` will reflect the new bbox in config dumps. Pipeline notebooks at `notebooks/01`–`07` read the config directly.

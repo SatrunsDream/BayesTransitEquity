@@ -1,0 +1,4 @@
+source,category,n_units,notes
+OSM,hospitals,181,features in bbox (points/polygons; see per-category CSV)
+OSM,groceries,1170,features in bbox (points/polygons; see per-category CSV)
+OSM,schools,1273,features in bbox (points/polygons; see per-category CSV)

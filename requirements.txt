@@ -5,7 +5,7 @@ shapely
 osmnx
 
 # Transit / accessibility
-r5py
+r5py>=1.1.0,<2
 
 # Census data
 censusdatadownloader

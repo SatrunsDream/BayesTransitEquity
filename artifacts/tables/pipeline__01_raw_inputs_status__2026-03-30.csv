@@ -1,0 +1,11 @@
+component,path,exists,size_bytes,note
+gtfs:mts:feed_info,data/raw/gtfs/mts/extracted/feed_info.txt,True,222.0,feed 20260125–20260606; departure 2025-04-15 OUTSIDE window
+gtfs:mts:stops,data/raw/gtfs/mts/extracted/stops.txt,True,426107.0,
+gtfs:nctd:feed_info,data/raw/gtfs/nctd/extracted/feed_info.txt,True,111.0,
+gtfs:nctd:stops,data/raw/gtfs/nctd/extracted/stops.txt,True,179449.0,
+census:tiger_zip,data/raw/census/tl_2023_06_tract.zip,True,32523329.0,
+census:tiger_shp,data/raw/census/tl_2023_06_tract/tl_2023_06_tract.shp,True,51594156.0,
+census:acs,data/raw/census/acs5_2023_sd_county.json,True,139135.0,
+osm:walk_graph_eda,data/raw/osm/sd_walk_network.graphml,True,383452356.0,osmnx/EDA walk network (GraphML)
+osm:r5_pbf,data/raw/osm/san_diego_study.osm.pbf,False,,required for r5py (notebook 03)
+lodes:wac,data/raw/external/lodes/ca_wac_2021.csv.gz,True,6000959.0,aligned glob with notebook 03

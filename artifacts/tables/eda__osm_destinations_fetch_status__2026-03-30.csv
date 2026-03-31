@@ -1,0 +1,4 @@
+category,status,n_features,error
+hospitals,ok,181,
+groceries,ok,1170,
+schools,ok,1273,

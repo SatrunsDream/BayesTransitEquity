@@ -1,0 +1,9 @@
+metric,value
+n_nodes,337824
+n_edges_directed,906988
+n_edge_rows_gdf,906988
+total_edge_length_km,65749.995
+mean_edge_length_m,72.49
+n_weakly_connected_components,1
+largest_component_n_nodes,337824
+second_largest_component_n_nodes,

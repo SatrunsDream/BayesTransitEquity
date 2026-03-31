@@ -7,7 +7,10 @@ state_fips: "06"
 county_fips: "073"
 
 # Bounding box [min_lon, min_lat, max_lon, max_lat]
-bbox: [-117.28, 32.53, -116.93, 33.11]
+# Expanded north/east/west (D009, 2026-03-30): county-wide scope so NCTD (Sprinter/coastal)
+# is fairly represented vs the prior central-SD window. Re-fetch OSM with --sources osm --force
+# after any bbox change. EDA notebooks 04–07 should be re-run when basing claims on the new extent.
+bbox: [-117.40, 32.53, -116.80, 33.35]
 
 # GTFS: download URL is chosen from Mobility Database (urls.latest mirror) when mobility_db_id is set.
 # download_url remains as fallback if the catalog row is missing or the CSV cache is unavailable.
@@ -30,6 +33,19 @@ census:
   county_fips: "073"
   acs_year: 2023
   acs_survey: acs5
+
+# R5 / r5py (notebooks/03): needs a street network in OSM PBF format (not GraphML).
+# Build with: python scripts/download_data.py --config configs/san_diego.yaml --sources osm_pbf --download-geofabrik-ca
+# (needs `osmium` on PATH), or: python scripts/extract_osm_pbf.py --input <regional.osm.pbf>
+r5:
+  osm_pbf: data/raw/osm/san_diego_study.osm.pbf
+  # One-time regional file used only for clipping (default path for download_data / extract script).
+  geofabrik_source_pbf: data/interim/osm/california-latest.osm.pbf
+  # Weekday within both agencies' GTFS calendars (adjust if feeds change). NCTD sample feed ends ~2025-05.
+  departure_date: "2025-04-15"
+  departure_hhmm: "07:30"
+  # Smaller chunks if the JVM runs out of memory during TravelTimeMatrix.
+  origin_chunk_size: 35
 
 # Override defaults if needed
 # accessibility:
