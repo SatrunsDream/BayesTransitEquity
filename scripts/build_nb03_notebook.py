@@ -43,6 +43,8 @@ MD0 = """# 03 — Accessibility computation (pipeline)
 1. **OSM `.osm.pbf`** — `r5.osm_pbf` in `configs/san_diego.yaml`
 2. **`data/processed/gtfs/sd_merged_bbox.zip`** from notebook **02**
 
+**GTFS / r5py:** Conveyal R5 reads schedules from Java, not pandas — but we use pandas to fix `feed_info` inside the zip when needed. **r5py** also copies that zip into `%LOCALAPPDATA%/r5py/` **only the first time** (`WorkingCopy`); the setup cell re-copies from the repo every run so you never route on a stale feed.
+
 **Config:** `defaults.yaml` + `san_diego.yaml` are **deep-merged** (nested `accessibility:` preserved).
 
 **Routing:** For each OD chunk, **transit+walk** and **walk-only** matrices are combined with **elementwise minimum** travel time (so purely walkable trips count when transit is unavailable).
@@ -87,6 +89,9 @@ def find_repo_root() -> Path:
 
 
 REPO_ROOT = find_repo_root()
+import sys
+
+sys.path.insert(0, str(REPO_ROOT))
 with open(REPO_ROOT / "configs" / "defaults.yaml", encoding="utf-8") as f:
     _defaults = yaml.safe_load(f)
 with open(REPO_ROOT / "configs" / "san_diego.yaml", encoding="utf-8") as f:
@@ -133,6 +138,16 @@ if not OSM_PBF.is_file():
     )
 if not GTFS_ZIP.is_file():
     raise FileNotFoundError(f"Run notebook 02 first — expected {GTFS_ZIP}")
+
+from src.utils.gtfs_r5 import ensure_single_feed_info_in_gtfs_zip, refresh_r5py_gtfs_cache_copy
+
+if ensure_single_feed_info_in_gtfs_zip(GTFS_ZIP):
+    display(
+        Markdown(
+            "**GTFS:** merged multi-row `feed_info.txt` inside the repo zip (R5 allows at most one row)."
+        )
+    )
+refresh_r5py_gtfs_cache_copy(GTFS_ZIP)
 
 dep_date = datetime.strptime(str(r5cfg.get("departure_date", "2025-04-15")), "%Y-%m-%d").date()
 hh, mm = str(r5cfg.get("departure_hhmm", "07:30")).split(":")
@@ -254,9 +269,78 @@ display(Markdown(f"**LODES** `{lodes_path.name}` → **{len(jobs_by_tract)}** tr
 jobs_by_tract.head()
 '''
 
-C4 = r'''import numpy as np
+C4 = r'''import hashlib
+import os
+
+import numpy as np
 from r5py import TransportNetwork, TravelTimeMatrix
+from r5py.util import Config, FileDigest, WorkingCopy
 from tqdm.auto import tqdm
+
+
+def _r5_network_digest(
+    osm_pbf: Path, gtfs_paths: list[Path], *, allow_errors: bool = False
+) -> str:
+    """Same SHA-256 digest r5py uses for `{digest}.mapdb` and `{digest}.transport_network`."""
+    osm = WorkingCopy(osm_pbf)
+    gtfs = [WorkingCopy(p) for p in gtfs_paths]
+    return hashlib.sha256(
+        "".join([FileDigest(osm)] + [FileDigest(p) for p in gtfs] + [f"{allow_errors}"]).encode("utf-8")
+    ).hexdigest()
+
+
+def _release_r5_java_file_handles() -> None:
+    """Best-effort: let the JVM finalize and close MapDB files (Windows lock after a failed OSM open)."""
+    import gc
+    import time
+
+    gc.collect()
+    try:
+        import jpype
+
+        jpype.java.lang.System.gc()
+    except Exception:
+        pass
+    time.sleep(1.0)
+
+
+def _clear_r5_network_cache_for_digest(digest: str) -> tuple[list[Path], list[Path]]:
+    """Remove MapDB / pickled network for this digest. Returns (removed, still_present)."""
+    import gc
+    import shutil
+    import time
+
+    cache = Config().CACHE_DIR
+    candidates = sorted(cache.glob(f"{digest}*"))
+    removed_unique: dict[str, Path] = {}
+
+    for rnd in range(14):
+        if rnd:
+            gc.collect()
+            try:
+                import jpype
+
+                jpype.java.lang.System.gc()
+            except Exception:
+                pass
+            time.sleep(0.3 * min(rnd, 10))
+        left = [p for p in candidates if p.exists()]
+        if not left:
+            break
+        for p in left:
+            try:
+                if p.is_file():
+                    p.unlink()
+                elif p.is_dir():
+                    shutil.rmtree(p, ignore_errors=True)
+                removed_unique[str(p)] = p
+            except PermissionError:
+                pass
+            except OSError:
+                pass
+
+    still = [p for p in candidates if p.exists()]
+    return list(removed_unique.values()), still
 
 
 def _tt_col(df: pd.DataFrame) -> str:
@@ -334,7 +418,50 @@ def run_od_chunked(
     return pd.concat(parts, ignore_index=True)
 
 
-transport_network = TransportNetwork(OSM_PBF, [GTFS_ZIP])
+_r5_digest = _r5_network_digest(OSM_PBF, [GTFS_ZIP])
+
+if os.environ.get("R5PY_FORCE_REBUILD", "").strip().lower() in ("1", "true", "yes"):
+    _release_r5_java_file_handles()
+    _pre_rm, _pre_left = _clear_r5_network_cache_for_digest(_r5_digest)
+    if _pre_rm:
+        display(
+            Markdown(
+                f"**r5py:** cleared **{len(_pre_rm)}** cache file(s) (`R5PY_FORCE_REBUILD`). "
+                f"Dir: `{Config().CACHE_DIR}`"
+            )
+        )
+
+try:
+    transport_network = TransportNetwork(OSM_PBF, [GTFS_ZIP])
+except Exception as exc:
+    _msg = str(exc).lower()
+    if not any(
+        s in _msg for s in ("checksum", "corrupt", "not closed properly", "wrong index")
+    ):
+        raise
+    _release_r5_java_file_handles()
+    _rm, _left = _clear_r5_network_cache_for_digest(_r5_digest)
+    if _left:
+        _cache = Config().CACHE_DIR
+        _names = ", ".join(f"`{p.name}`" for p in _left[:6])
+        display(
+            Markdown(
+                f"**r5py:** could not delete locked cache: {_names}. After a failed MapDB open the JVM "
+                "often keeps the file open on Windows (**WinError 32**). **Fix:** *Kernel → Restart*, then "
+                "set **`R5PY_FORCE_REBUILD=1`** before starting Jupyter and re-run, or quit Python and delete "
+                f"all files matching `{_r5_digest}*` under `{_cache}` in Explorer."
+            )
+        )
+        raise RuntimeError(
+            "r5py OSM MapDB cache is corrupt and could not be deleted while the JVM holds the file."
+        ) from exc
+    display(
+        Markdown(
+            f"**r5py:** removed **{len(_rm)}** cache file(s) under `{Config().CACHE_DIR}` "
+            "(corrupt OSM MapDB / network cache). Rebuilding…"
+        )
+    )
+    transport_network = TransportNetwork(OSM_PBF, [GTFS_ZIP])
 ORIGIN_CHUNK = int(r5cfg.get("origin_chunk_size", 35))
 origins = tract_pts.reset_index(drop=True)
 destinations = tract_pts.copy()
@@ -390,6 +517,8 @@ C6 = r'''# POI matrices (groceries, hospitals, schools) — stable poi_id; useco
 
 
 def load_poi_gdf(glob_pat: str, prefix: str) -> gpd.GeoDataFrame:
+    import warnings
+
     files = sorted(ART_TAB.glob(glob_pat))
     if not files:
         raise FileNotFoundError(f"No artifact matching {glob_pat} under {ART_TAB}")
@@ -398,6 +527,14 @@ def load_poi_gdf(glob_pat: str, prefix: str) -> gpd.GeoDataFrame:
     gdf = gdf.assign(poi_id=prefix + gdf["element"].astype(str) + "_" + osm_id)
     poi = gpd.GeoDataFrame(gdf, geometry=gpd.points_from_xy(gdf["lon"], gdf["lat"]), crs="EPSG:4326")
     poi["id"] = poi["poi_id"]
+    n0 = len(poi)
+    poi = poi.drop_duplicates(subset=["id"], keep="first").reset_index(drop=True)
+    if len(poi) < n0:
+        warnings.warn(
+            f"POI {glob_pat}: dropped {n0 - len(poi)} duplicate `id` row(s); r5py requires unique ids.",
+            UserWarning,
+            stacklevel=2,
+        )
     return poi[["id", "geometry"]]
 
 

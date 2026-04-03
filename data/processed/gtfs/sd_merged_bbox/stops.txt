@@ -8,19 +8,19 @@ mts:11657,11657,10th Av & Market St,32.71176685,-117.15564024,,,0,,2,N-S/B,,10th
 mts:99005,99005,10th Av & Park Bl (Petco Park),32.70750534,-117.15506981,,,0,,1,N-E/B,,10th&Park (Petco Park),
 mts:98548,98548,11099 Callan Rd,32.90480501,-117.24065516,,,0,,1,M-Street-W/B,,11099 Callan,
 mts:99367,99367,11th Av & B St,32.71769488,-117.15458595,,,0,,1,N-N/B,,11th&B,11thb
-mts:12782,12782,11th Av & Broadway,32.71635101,-117.15456566,,,0,11tbro,1,F-N/B,,11th&Brdwy,11tbro
-mts:99343,99343,11th Av & C St,32.71652951,-117.15458700,,,0,11tbro,1,N-N/B,,11th&C,11tbro
+mts:12782,12782,11th Av & Broadway,32.71635101,-117.15456566,,,0,mts:11tbro,1,F-N/B,,11th&Brdwy,11tbro
+mts:99343,99343,11th Av & C St,32.71652951,-117.15458700,,,0,mts:11tbro,1,N-N/B,,11th&C,11tbro
 mts:12781,12781,11th Av & F St,32.71399810,-117.15459028,,,0,,1,F-N/B,,11th&F,
 mts:99010,99010,11th Av & K St,32.70833408,-117.15449964,,,0,,1,N-N/B,,11th&K,
 mts:12441,12441,11th Av & Market St,32.71139567,-117.15453431,,,0,,1,N-N/B,,11th&Mrkt,
-mts:75102,75102,12th & Imperial Station,32.70587009,-117.15321790,,,0,12tS,0,,,12th & Imprl,12tS
-mts:75103,75103,12th & Imperial Station,32.70578492,-117.15332593,,,0,12tS,0,,,12th & Imprl,12tS
-mts:75100,75100,12th & Imperial Station (Bayside),32.70523403,-117.15389991,,,0,imtS,0,,,12th & Imprl  (Bayside),imtS
-mts:70009,70009,12th & Imperial Transit Center,32.70609480,-117.15289674,,,0,imp12,0,M-TC-Bus,,12th & Imperial TC,imp12
-mts:88899,88899,12th & Imperial Transit Center,32.70555096,-117.15228294,,,0,imp12,0,N-S/B,,12th & Imperial TC,imp12
-mts:89044,89044,12th & Imperial Transit Center,32.70586270,-117.15317654,,,0,imp12,0,,,12th & Imperial TC,imp12
-mts:91101,91101,12th & Imperial Transit Center,32.70605117,-117.15322463,,,0,imp12,1,M-TC-Bus,,12th & Imperial TC,imp12
-mts:91102,91102,12th & Imperial Transit Center,32.70560245,-117.15294696,,,0,imp12,1,M-TC-Bus,,12th & Imperial TC,imp12
+mts:75102,75102,12th & Imperial Station,32.70587009,-117.15321790,,,0,mts:12tS,0,,,12th & Imprl,12tS
+mts:75103,75103,12th & Imperial Station,32.70578492,-117.15332593,,,0,mts:12tS,0,,,12th & Imprl,12tS
+mts:75100,75100,12th & Imperial Station (Bayside),32.70523403,-117.15389991,,,0,mts:imtS,0,,,12th & Imprl  (Bayside),imtS
+mts:70009,70009,12th & Imperial Transit Center,32.70609480,-117.15289674,,,0,mts:imp12,0,M-TC-Bus,,12th & Imperial TC,imp12
+mts:88899,88899,12th & Imperial Transit Center,32.70555096,-117.15228294,,,0,mts:imp12,0,N-S/B,,12th & Imperial TC,imp12
+mts:89044,89044,12th & Imperial Transit Center,32.70586270,-117.15317654,,,0,mts:imp12,0,,,12th & Imperial TC,imp12
+mts:91101,91101,12th & Imperial Transit Center,32.70605117,-117.15322463,,,0,mts:imp12,1,M-TC-Bus,,12th & Imperial TC,imp12
+mts:91102,91102,12th & Imperial Transit Center,32.70560245,-117.15294696,,,0,mts:imp12,1,M-TC-Bus,,12th & Imperial TC,imp12
 mts:60401,60401,13th St & Fern Av,32.57503491,-117.10558266,,,0,,1,F-N/B,,13th&Fern,
 mts:60342,60342,13th St & Grove Av,32.57276194,-117.10558010,,,0,,1,N-N/B,,13th&Grove,
 mts:60229,60229,13th St & Holly Av,32.57164428,-117.10583544,,,0,,1,N-S/B,,13th&Holly,
@@ -80,13 +80,13 @@ mts:50029,50029,24th St & B Av,32.66274886,-117.09862560,,,0,,1,M-Street-E/B,,24
 mts:50078,50078,24th St & D Av,32.66315798,-117.09788545,,,0,,1,F-W/B,,24th&D,
 mts:50027,50027,24th St & National City Bl,32.66209762,-117.10099453,,,0,,1,F-E/B,,24th&Natl City,
 mts:50053,50053,24th St & National City Bl,32.66220853,-117.10125229,,,0,,1,N-W/B,,24th&Natl City,
-mts:75014,75014,24th Street Station,32.66196491,-117.10800607,,,0,24tS,0,M-TC-Train-N/B,,24th St,24tS
-mts:75015,75015,24th Street Station,32.66170409,-117.10800516,,,0,24tS,0,M-TC-Train-S/B,,24th St,24tS
-mts:91136,91136,24th Street Transit Center,32.66195902,-117.10790431,,,0,24tro,1,M-TC-Bus,,24thTC,24tro
-mts:91138,91138,24th Street Transit Center,32.66162193,-117.10776456,,,0,24tro,0,,,24thTC,24tro
-mts:91139,91139,24th Street Transit Center,32.66157522,-117.10736771,,,0,24tro,0,,,24thTC,24tro
-mts:75074,75074,25th & Commercial St Station,32.70527695,-117.13873095,,,0,25tS,0,,,25th & Commercial St,25tS
-mts:75075,75075,25th & Commercial St Station,32.70528997,-117.14115393,,,0,25tS,0,,,25th & Commercial St,25tS
+mts:75014,75014,24th Street Station,32.66196491,-117.10800607,,,0,mts:24tS,0,M-TC-Train-N/B,,24th St,24tS
+mts:75015,75015,24th Street Station,32.66170409,-117.10800516,,,0,mts:24tS,0,M-TC-Train-S/B,,24th St,24tS
+mts:91136,91136,24th Street Transit Center,32.66195902,-117.10790431,,,0,mts:24tro,1,M-TC-Bus,,24thTC,24tro
+mts:91138,91138,24th Street Transit Center,32.66162193,-117.10776456,,,0,mts:24tro,0,,,24thTC,24tro
+mts:91139,91139,24th Street Transit Center,32.66157522,-117.10736771,,,0,mts:24tro,0,,,24thTC,24tro
+mts:75074,75074,25th & Commercial St Station,32.70527695,-117.13873095,,,0,mts:25tS,0,,,25th & Commercial St,25tS
+mts:75075,75075,25th & Commercial St Station,32.70528997,-117.14115393,,,0,mts:25tS,0,,,25th & Commercial St,25tS
 mts:11684,11684,25th St & Broadway,32.71611353,-117.14036505,,,0,,1,N-S/B,,25th&Brdwy,
 mts:11682,11682,25th St & Imperial Av,32.70648888,-117.14027759,,,0,,1,N-S/B,,25th&Imperial,
 mts:12464,12464,25th St & Imperial Av,32.70610834,-117.14006894,,,0,,0,N-N/B,,25th&Imperial,imp25
@@ -136,8 +136,8 @@ mts:11697,11697,30th St & Redwood St,32.73753465,-117.12935874,,,0,,1,N-S/B,,30t
 mts:12830,12830,30th St & Redwood St,32.73765660,-117.12921686,,,0,,1,F-N/B,,30th&Redwood,30red
 mts:11693,11693,30th St & University Av,32.74863258,-117.13020780,,,0,,1,N-S/B,,30th&Univ,30uni
 mts:12824,12824,30th St & University Av,32.74879854,-117.13005985,,,0,,1,F-N/B,,30th&Univ,30uniN
-mts:75072,75072,32nd/Commercial St Station,32.70576993,-117.12475301,,,0,32nS,0,,,32nd/Commercial St,32nS
-mts:75073,75073,32nd/Commercial St Station,32.70577705,-117.12452390,,,0,32nS,0,,,32nd/Commercial St,32nS
+mts:75072,75072,32nd/Commercial St Station,32.70576993,-117.12475301,,,0,mts:32nS,0,,,32nd/Commercial St,32nS
+mts:75073,75073,32nd/Commercial St Station,32.70577705,-117.12452390,,,0,mts:32nS,0,,,32nd/Commercial St,32nS
 mts:10563,10563,36th St & Imperial Av,32.70530322,-117.11689209,,,0,,0,F-S/B,,36th&Imperial,
 mts:12212,12212,3rd Av & Anita St,32.59827629,-117.06461148,,,0,,1,F-S/B,,3rd&Anita,
 mts:12939,12939,3rd Av & Anita St,32.59877277,-117.06434657,,,0,,1,F-N/B,,3rd&Anita,
@@ -176,7 +176,7 @@ mts:60103,60103,3rd St & I Av,32.69874606,-117.18051990,,,0,,1,N-W/B,,3rd&I,3rdi
 mts:88908,88908,3rd St & Madison Av,32.80030414,-116.92702562,,,0,,0,N-S/B,,3rd&Madison,
 mts:60163,60163,3rd St & Orange Av,32.69612958,-117.17429355,,,0,,1,F-W/B,,3rd&Orange,
 mts:12508,12508,40th St & Imperial Av,32.70469927,-117.10814472,,,0,,2,F-N/B,,40th&Imperial,
-mts:99481,99481,40th St & University Av,32.74954555,-117.10947919,,,0,i15uns,0,F-S/B,,40th&Univ,i15uns
+mts:99481,99481,40th St & University Av,32.74954555,-117.10947919,,,0,mts:i15uns,0,F-S/B,,40th&Univ,i15uns
 mts:60622,60622,41st St & Dwight St,32.74424673,-117.10706635,,,0,,2,N-S/B,,41st&Dwight,
 mts:60621,60621,41st St & Landis St,32.74575308,-117.10704198,,,0,,2,F-S/B,,41st&Landis,
 mts:12512,12512,43rd St & Beta St,32.69048330,-117.10230535,,,0,,1,N-N/B,,43rd&Beta,
@@ -205,8 +205,8 @@ mts:12880,12880,47th St & Ocean View Bl,32.70072640,-117.09359184,,,0,,1,F-N/B,,
 mts:11737,11737,47th St & T St,32.69828973,-117.09381231,,,0,,1,F-S/B,,47th&T,
 mts:12879,12879,47th St & T St,32.69885748,-117.09358371,,,0,,1,F-N/B,,47th&T,
 mts:88891,88891,47th St Trolley Station,32.70832954,-117.09379789,,,0,,0,N-S/B,,47th Trly,
-mts:75070,75070,47th Street Station,32.70843908,-117.09481908,,,0,47tS,0,,,47th St,47tS
-mts:75071,75071,47th Street Station,32.70844807,-117.09507209,,,0,47tS,0,,,47th St,47tS
+mts:75070,75070,47th Street Station,32.70843908,-117.09481908,,,0,mts:47tS,0,,,47th St,47tS
+mts:75071,75071,47th Street Station,32.70844807,-117.09507209,,,0,mts:47tS,0,,,47th St,47tS
 mts:12035,12035,4th Av & Ash St,32.71954557,-117.16117922,,,0,,1,F-S/B,,4th&Ash,
 mts:12036,12036,4th Av & B St,32.71725334,-117.16117503,,,0,,1,M-Street-S/B,,4th&B,4thB
 mts:12031,12031,4th Av & Broadway,32.71514623,-117.16118934,,,0,,1,F-S/B,,4th&Brdwy,4thbro
@@ -303,9 +303,9 @@ mts:99236,99236,65th St & Brooklyn Av,32.71342667,-117.05796078,,,0,,1,F-N/B,,65
 mts:12966,12966,70th St & El Cajon Bl,32.76912778,-117.04694893,,,0,,1,F-N/B,,70th&El Cjn,elc70
 mts:12232,12232,70th St & Saranac St,32.77064914,-117.04715138,,,0,,1,F-S/B,,70th&Saranac,elc69
 mts:12573,12573,70th St & Saranac St,32.77066995,-117.04690758,,,0,,1,N-N/B,,70th&Saranac,
-mts:99098,99098,70th St Trolley Station,32.77214037,-117.04178720,,,0,70tSta,1,M-TC-Bus,,70th Trly,70tSta
-mts:75032,75032,70th Street Station,32.77214700,-117.04229510,,,0,70tS,0,,,70th St,70tS
-mts:75033,75033,70th Street Station,32.77229009,-117.04248410,,,0,70tS,0,,,70th St,70tS
+mts:99098,99098,70th St Trolley Station,32.77214037,-117.04178720,,,0,mts:70tSta,1,M-TC-Bus,,70th Trly,70tSta
+mts:75032,75032,70th Street Station,32.77214700,-117.04229510,,,0,mts:70tS,0,,,70th St,70tS
+mts:75033,75033,70th Street Station,32.77229009,-117.04248410,,,0,mts:70tS,0,,,70th St,70tS
 mts:89026,89026,7th Av & F St,32.71350376,-117.15823982,,,0,,0,N-N/B,,7th&F,
 mts:10600,10600,8th St & C Av,32.67653456,-117.10390916,,,0,,1,N-E/B,,8th&C,
 mts:13411,13411,8th St & C Av,32.67683388,-117.10355133,,,0,,1,N-W/B,,8th&C,8thnat
@@ -313,13 +313,13 @@ mts:11358,11358,8th St & E Av,32.67737441,-117.10169767,,,0,,1,N-W/B,,8th&E,
 mts:10228,10228,8th St & F Av,32.67756198,-117.10040606,,,0,,1,F-E/B,,8th&F,
 mts:99486,99486,8th St & Highland Av,32.67810331,-117.09922835,,,0,,1,F-W/B,,8th&Highland,hig8th
 mts:10593,10593,8th St & National City Bl,32.67597280,-117.10604530,,,0,,1,F-E/B,,8th&Natl City,8thnat
-mts:75016,75016,8th Street Station,32.67501911,-117.11309508,,,0,8thS,0,M-TC-Train-N/B,,8th St,8thS
-mts:75017,75017,8th Street Station,32.67473308,-117.11308188,,,0,8thS,0,M-TC-Train-S/B,,8th St,8thS
-mts:70050,70050,8th Street Transit Center,32.67446741,-117.11302728,,,0,8thtro,0,,,8thTC,8thtr1
-mts:70052,70052,8th Street Transit Center,32.67489492,-117.11320695,,,0,8thtro,0,,,8thTC,8thtro
-mts:70053,70053,8th Street Transit Center,32.67507851,-117.11328674,,,0,8thtro,0,,,8thTC,8thtro
-mts:70054,70054,8th Street Transit Center,32.67533901,-117.11337379,,,0,8thtro,0,,,8thTC,8thtro
-mts:70055,70055,8th Street Transit Center,32.67552812,-117.11345038,,,0,8thtro,0,,,8thTC,8thtro
+mts:75016,75016,8th Street Station,32.67501911,-117.11309508,,,0,mts:8thS,0,M-TC-Train-N/B,,8th St,8thS
+mts:75017,75017,8th Street Station,32.67473308,-117.11308188,,,0,mts:8thS,0,M-TC-Train-S/B,,8th St,8thS
+mts:70050,70050,8th Street Transit Center,32.67446741,-117.11302728,,,0,mts:8thtro,0,,,8thTC,8thtr1
+mts:70052,70052,8th Street Transit Center,32.67489492,-117.11320695,,,0,mts:8thtro,0,,,8thTC,8thtro
+mts:70053,70053,8th Street Transit Center,32.67507851,-117.11328674,,,0,mts:8thtro,0,,,8thTC,8thtro
+mts:70054,70054,8th Street Transit Center,32.67533901,-117.11337379,,,0,mts:8thtro,0,,,8thTC,8thtro
+mts:70055,70055,8th Street Transit Center,32.67552812,-117.11345038,,,0,mts:8thtro,0,,,8thTC,8thtro
 mts:12438,12438,9th Av & C St,32.71648316,-117.15640723,,,0,,1,N-N/B,,9th&C,9thc
 mts:60225,60225,9th St & Ebony Av,32.57732889,-117.11438565,,,0,,1,M-Street-S/B,,9th&Ebony,
 mts:60396,60396,9th St & Ebony Av,32.57737993,-117.11416216,,,0,,1,N-N/B,,9th&Ebony,imp9th
@@ -379,7 +379,7 @@ mts:60519,60519,Airway Rd & Dublin Dr,32.56062701,-116.97504901,,,0,,2,F-E/B,,Ai
 mts:60540,60540,Airway Rd & Dublin Dr,32.56078096,-116.97597523,,,0,,1,F-W/B,,Airway&Dublin,
 mts:60538,60538,Airway Rd & Excellante St,32.56063189,-116.96953174,,,0,,1,F-W/B,,Airway&Excellante,
 mts:92260,92260,Airway Rd & La Media Rd,32.56043121,-116.96197563,,,0,,2,F-E/B,,Airway&La Media,
-mts:99087,99087,Akins Av & Encanto/62nd St Trolley Station,32.71029635,-117.06378064,,,0,enctro,1,N-W/B,,Akins&Encanto/62nd Trly,enctro
+mts:99087,99087,Akins Av & Encanto/62nd St Trolley Station,32.71029635,-117.06378064,,,0,mts:enctro,1,N-W/B,,Akins&Encanto/62nd Trly,enctro
 mts:88933,88933,Alleghany St & Munda Rd,32.68129156,-117.06072938,,,0,,0,F-W/B,,Alleghany&Munda,
 mts:50092,50092,Alleghany St & Reo Dr,32.67907860,-117.06840632,,,0,,1,F-W/B,,Alleghany&Reo,
 mts:88934,88934,Alleghany St & Westport St,32.68004863,-117.06532305,,,0,,0,F-W/B,,Alleghany&Westport,
@@ -405,10 +405,10 @@ mts:40101,40101,Alpine Bl & South Grade Rd,32.83442945,-116.75048604,,,0,,1,N-E/
 mts:99395,99395,Alpine Bl & South Grade Rd,32.83477651,-116.75145198,,,0,,1,N-N/B,,Alpine&SGrade,albalp
 mts:40099,40099,Alpine Bl & Tavern Rd,32.83768718,-116.77961758,,,0,,1,N-E/B,,Alpine&Tavern,alpshp
 mts:40489,40489,Alpine Bl & Tavern Rd,32.83789979,-116.77874634,,,0,,1,F-W/B,,Alpine&Tavern,
-mts:75028,75028,Amaya Drive Station,32.78540990,-117.00186302,,,0,amaS,0,,,Amaya Drive,amaS
-mts:75029,75029,Amaya Drive Station,32.78541311,-117.00160600,,,0,amaS,0,,,Amaya Drive,amaS
-mts:75084,75084,America Plaza Station,32.71638588,-117.16881107,,,0,apzS,0,,,America Plaza,apzS
-mts:75085,75085,America Plaza Station,32.71662690,-117.16881390,,,0,apzS,0,,,America Plaza,apzS
+mts:75028,75028,Amaya Drive Station,32.78540990,-117.00186302,,,0,mts:amaS,0,,,Amaya Drive,amaS
+mts:75029,75029,Amaya Drive Station,32.78541311,-117.00160600,,,0,mts:amaS,0,,,Amaya Drive,amaS
+mts:75084,75084,America Plaza Station,32.71638588,-117.16881107,,,0,mts:apzS,0,,,America Plaza,apzS
+mts:75085,75085,America Plaza Station,32.71662690,-117.16881390,,,0,mts:apzS,0,,,America Plaza,apzS
 mts:99062,99062,Anchorage Ln & Shelter Island Dr,32.72009413,-117.22807923,,,0,,2,F-W/B,,Anchorage&Shelter Island,sheanc
 mts:30020,30020,Anita St & 4th Av,32.59841677,-117.07036302,,,0,,1,N-E/B,,Anita&4th,
 mts:39003,39003,Anita St & 4th Av,32.59854743,-117.07014019,,,0,,1,F-W/B,,Anita&4th,
@@ -420,8 +420,8 @@ mts:99478,99478,Armstrong Pl & Mesa College Dr,32.80424599,-117.16349419,,,0,,1,
 mts:12023,12023,Armstrong St & Armstrong Pl,32.80508180,-117.16234425,,,0,,1,N-S/B,,Armstrong&Armstrong,
 mts:12420,12420,Armstrong St & Baltic St,32.80563821,-117.16218078,,,0,,1,N-N/B,,Armstrong&Baltic,
 mts:12421,12421,Armstrong St & Beagle St,32.80763831,-117.16154732,,,0,,1,N-N/B,,Armstrong&Beagle,
-mts:75024,75024,Arnele Avenue Station,32.80466109,-116.97568505,,,0,arnS,0,,,Arnele Av,arnS
-mts:75025,75025,Arnele Avenue Station,32.80448906,-116.97577313,,,0,arnS,0,,,Arnele Av,arnS
+mts:75024,75024,Arnele Avenue Station,32.80466109,-116.97568505,,,0,mts:arnS,0,,,Arnele Av,arnS
+mts:75025,75025,Arnele Avenue Station,32.80448906,-116.97577313,,,0,mts:arnS,0,,,Arnele Av,arnS
 mts:40333,40333,Arnold Wy & Alpine Bl,32.83540656,-116.76715456,,,0,,2,F-W/B,,Arnold&Alpine,alparn
 mts:40240,40240,Arnold Wy & Alpine Grove Ln,32.83579015,-116.77330987,,,0,,1,F-E/B,,Arnold&Alpine Grove,
 mts:40331,40331,Arnold Wy & Alpine Grove Ln,32.83594670,-116.77333684,,,0,,2,N-W/B,,Arnold&Alpine Grove,
@@ -475,12 +475,12 @@ mts:99447,99447,Balboa Av & Shopping Center Drwy,32.81994976,-117.17949963,,,0,,
 mts:99448,99448,Balboa Av & Shopping Center Drwy,32.82002812,-117.18040863,,,0,,1,F-W/B,,Balboa&Shopping Ctr,
 mts:10853,10853,Balboa Av & Terry Bennett Drwy,32.82190689,-117.15842364,,,0,,1,M-Street-W/B,,Balboa&Terry Bennett,
 mts:99190,99190,Balboa Av & Viewridge Av,32.82255904,-117.12521134,,,0,,1,F-W/B,,Balboa&Viewridge,balruf
-mts:77774,77774,Balboa Avenue Station,32.80573790,-117.21405986,,,0,balS,0,,,BalboaStation,balS
-mts:77775,77775,Balboa Avenue Station,32.80585769,-117.21406638,,,0,balS,0,,,BalboaStation,balS
-mts:89000,89000,Balboa Avenue Transit Center,32.80514233,-117.21356288,,,0,baltro,0,M-TC-Bus,,BalboaTC,baltro
-mts:89001,89001,Balboa Avenue Transit Center,32.80529506,-117.21364429,,,0,baltro,0,M-TC-Bus,,BalboaTC,baltro
-mts:89002,89002,Balboa Avenue Transit Center,32.80548683,-117.21376029,,,0,baltro,0,M-TC-Bus,,BalboaTC,baltro
-mts:89004,89004,Balboa Avenue Transit Center,32.80584392,-117.21396468,,,0,baltro,0,M-TC-Bus,,BalboaTC,baltro
+mts:77774,77774,Balboa Avenue Station,32.80573790,-117.21405986,,,0,mts:balS,0,,,BalboaStation,balS
+mts:77775,77775,Balboa Avenue Station,32.80585769,-117.21406638,,,0,mts:balS,0,,,BalboaStation,balS
+mts:89000,89000,Balboa Avenue Transit Center,32.80514233,-117.21356288,,,0,mts:baltro,0,M-TC-Bus,,BalboaTC,baltro
+mts:89001,89001,Balboa Avenue Transit Center,32.80529506,-117.21364429,,,0,mts:baltro,0,M-TC-Bus,,BalboaTC,baltro
+mts:89002,89002,Balboa Avenue Transit Center,32.80548683,-117.21376029,,,0,mts:baltro,0,M-TC-Bus,,BalboaTC,baltro
+mts:89004,89004,Balboa Avenue Transit Center,32.80584392,-117.21396468,,,0,mts:baltro,0,M-TC-Bus,,BalboaTC,baltro
 mts:13022,13022,Baltimore Dr & Aztec Dr,32.77743774,-117.02953668,,,0,,1,M-Street-W/B,,Baltimore&Aztec,
 mts:13140,13140,Baltimore Dr & Aztec Dr,32.77700481,-117.02932462,,,0,,1,M-Street-E/B,,Baltimore&Aztec,
 mts:11456,11456,Baltimore Dr & Lake Murray Bl,32.78022896,-117.03277266,,,0,,1,F-E/B,,Baltimore&Lake Murray,ballak
@@ -507,8 +507,8 @@ mts:13199,13199,Barnes Canyon Rd & Lusk Bl,32.89987771,-117.19675179,,,0,,1,N-E/
 mts:13226,13226,Barnes Canyon Rd & Lusk Bl,32.90009690,-117.19648373,,,0,,1,F-W/B,,Barnes Cyn&Lusk,
 mts:99270,99270,Barnes Canyon Rd & Pacific Heights Bl,32.90131328,-117.19376654,,,0,,1,F-W/B,,Barnes Cyn&Pcfc Heights,
 mts:99271,99271,Barnes Canyon Rd & Pacific Heights Bl,32.90130203,-117.19344061,,,0,,1,N-E/B,,Barnes Cyn&Pcfc Heights,
-mts:75018,75018,Barrio Logan Station,32.69812698,-117.14666504,,,0,barS,0,M-TC-Train-N/B,,Barrio Logan,barS
-mts:75019,75019,Barrio Logan Station,32.69788609,-117.14645586,,,0,barS,0,M-TC-Train-S/B,,Barrio Logan,barS
+mts:75018,75018,Barrio Logan Station,32.69812698,-117.14666504,,,0,mts:barS,0,M-TC-Train-N/B,,Barrio Logan,barS
+mts:75019,75019,Barrio Logan Station,32.69788609,-117.14645586,,,0,mts:barS,0,M-TC-Train-S/B,,Barrio Logan,barS
 mts:13383,13383,Bayard St & Garnet Av,32.79714634,-117.25377806,,,0,,1,N-S/B,,Bayard&Garnet,baygar
 mts:11763,11763,Bayview Heights Dr & 1670,32.72316573,-117.07891156,,,0,,1,M-Street-W/B,,Bayview Heights&1670,
 mts:13109,13109,Bayview Heights Dr & 1737,32.72316717,-117.07869698,,,0,,2,M-Street-E/B,,Bayview Heights&1737,
@@ -543,8 +543,8 @@ mts:60204,60204,Beyer Bl & Poplar St,32.55992490,-117.05065915,,,0,,0,F-W/B,,Bey
 mts:60245,60245,Beyer Bl & Poplar St,32.55985981,-117.05094741,,,0,,1,N-S/B,,Beyer&Poplar,beytro
 mts:60310,60310,Beyer Bl & Precision Park Ln,32.56531717,-117.05993872,,,0,,1,F-S/B,,Beyer&Precision Park,
 mts:60360,60360,Beyer Bl & Precision Park Ln,32.56544206,-117.05975487,,,0,,1,N-N/B,,Beyer&Precision Park,
-mts:75002,75002,Beyer Blvd Station,32.55765602,-117.04706184,,,0,beyS,0,M-TC-Train-N/B,,Beyer Bl,beyS
-mts:75003,75003,Beyer Blvd Station,32.55745297,-117.04683900,,,0,beyS,0,M-TC-Train-S/B,,Beyer Bl,beyS
+mts:75002,75002,Beyer Blvd Station,32.55765602,-117.04706184,,,0,mts:beyS,0,M-TC-Train-N/B,,Beyer Bl,beyS
+mts:75003,75003,Beyer Blvd Station,32.55745297,-117.04683900,,,0,mts:beyS,0,M-TC-Train-S/B,,Beyer Bl,beyS
 mts:12211,12211,Beyer Wy & Main St,32.59427896,-117.06435381,,,0,,1,F-S/B,,Beyer&Main,mai3rd
 mts:11783,11783,Beyer Wy & Palm Av,32.58400930,-117.06206129,,,0,,1,N-S/B,,Beyer&Palm,beypal
 mts:12946,12946,Beyer Wy & Palm Av,32.58444915,-117.06163032,,,0,,1,F-N/B,,Beyer&Palm,beypal
@@ -651,8 +651,8 @@ mts:60295,60295,Broadway & J St,32.62364510,-117.08671000,,,0,,1,F-S/B,,Brdwy&J,
 mts:60415,60415,Broadway & J St,32.62464768,-117.08680070,,,0,,1,F-N/B,,Brdwy&J,
 mts:60296,60296,Broadway & K St,32.62005956,-117.08531197,,,0,,1,F-S/B,,Brdwy&K,
 mts:60416,60416,Broadway & K St,32.62104014,-117.08540569,,,0,,1,F-N/B,,Brdwy&K,
-mts:10454,10454,Broadway & Kettner Bl,32.71562174,-117.16881806,,,0,broket,1,F-E/B,,Brdwy&Kettner,broket
-mts:10833,10833,Broadway & Kettner Bl,32.71585722,-117.16893756,,,0,broket,1,N-W/B,,Brdwy&Kettner,broket
+mts:10454,10454,Broadway & Kettner Bl,32.71562174,-117.16881806,,,0,mts:broket,1,F-E/B,,Brdwy&Kettner,broket
+mts:10833,10833,Broadway & Kettner Bl,32.71585722,-117.16893756,,,0,mts:broket,1,N-W/B,,Brdwy&Kettner,broket
 mts:60299,60299,Broadway & L St,32.61673165,-117.08402041,,,0,,1,F-S/B,,Brdwy&L,brol
 mts:60422,60422,Broadway & L St,32.61760544,-117.08405465,,,0,,1,F-N/B,,Brdwy&L,brol
 mts:60408,60408,Broadway & Macintosh St,32.64723487,-117.09564349,,,0,,1,F-N/B,,Brdwy&Macintosh,
@@ -676,8 +676,8 @@ mts:10828,10828,Broadway & Pacific Hwy,32.71584424,-117.17178225,,,0,,1,F-W/B,,B
 mts:99026,99026,Broadway & Pacific Hwy,32.71559841,-117.17047269,,,0,,1,F-E/B,,Brdwy&Pcfc Hwy,bropac
 mts:60192,60192,Broadway & Palomar St,32.60407270,-117.07904962,,,0,,1,N-S/B,,Brdwy&Palomar,
 mts:60426,60426,Broadway & Palomar St,32.60390757,-117.07867465,,,0,,1,F-N/B,,Brdwy&Palomar,
-mts:10109,10109,Broadway & Park Bl,32.71570092,-117.15401278,,,0,citcol,1,N-E/B,,Brdwy&Park,citcol
-mts:99342,99342,Broadway & Park Bl,32.71583248,-117.15406290,,,0,citcol,2,F-W/B,,Brdwy&Park,citcol
+mts:10109,10109,Broadway & Park Bl,32.71570092,-117.15401278,,,0,mts:citcol,1,N-E/B,,Brdwy&Park,citcol
+mts:99342,99342,Broadway & Park Bl,32.71583248,-117.15406290,,,0,mts:citcol,2,F-W/B,,Brdwy&Park,citcol
 mts:40981,40981,Broadway & St John's Plaza,32.74407958,-117.02162806,,,0,,1,M-Street-W/B,,Brdwy&St John's Pza,
 mts:10086,10086,Broadway & State St,32.71556890,-117.16668470,,,0,,1,N-E/B,,Brdwy&State,amplza
 mts:99258,99258,Broadway & Sweetwater Rd,32.74485626,-117.02005100,,,0,,0,N-E/B,,Brdwy&Swtwter,
@@ -912,10 +912,10 @@ mts:10776,10776,Chatsworth Bl & Poe St,32.73695279,-117.23095253,,,0,,1,N-S/B,,C
 mts:10026,10026,Chatsworth Bl & Tennyson St,32.73814733,-117.22970402,,,0,,1,N-N/B,,Chatsworth&Tennyson,
 mts:10779,10779,Chatsworth Bl & Tennyson St,32.73842524,-117.22966483,,,0,,1,N-S/B,,Chatsworth&Tennyson,
 mts:98056,98056,Christmas Circle & Palm Canyon Rd,33.25688680,-116.37576968,,,0,,1,N-S/B,,Christmas Cir&Palm Cyn,borreg
-mts:75090,75090,City College Station,32.71628902,-117.15417292,,,0,ccoS,0,,,City College,ccoS
-mts:75091,75091,City College Station,32.71623012,-117.15422206,,,0,ccoS,0,,,City College,ccoS
-mts:75086,75086,Civic Center Station,32.71671000,-117.16247090,,,0,civS,0,,,Civic Cntr,civS
-mts:75087,75087,Civic Center Station,32.71677298,-117.16242896,,,0,civS,0,,,Civic Cntr,civS
+mts:75090,75090,City College Station,32.71628902,-117.15417292,,,0,mts:ccoS,0,,,City College,ccoS
+mts:75091,75091,City College Station,32.71623012,-117.15422206,,,0,mts:ccoS,0,,,City College,ccoS
+mts:75086,75086,Civic Center Station,32.71671000,-117.16247090,,,0,mts:civS,0,,,Civic Cntr,civS
+mts:75087,75087,Civic Center Station,32.71677298,-117.16242896,,,0,mts:civS,0,,,Civic Cntr,civS
 mts:11588,11588,Clairemont Dr & 3502,32.80433992,-117.19985128,,,0,,1,M-Street-S/B,,Clairemont&3502,
 mts:11580,11580,Clairemont Dr & 3660,32.80747423,-117.20115115,,,0,,1,M-Street-S/B,,Clairemont&3660,
 mts:13028,13028,Clairemont Dr & 4976 (Clairemont Town Square),32.83235826,-117.20414818,,,0,,1,M-Street-E/B,,Clairemont&4976 (Clairemont Town Square),
@@ -952,8 +952,8 @@ mts:11946,11946,Clairemont Dr & Rappahannock Av,32.80547555,-117.20085943,,,0,,1
 mts:12686,12686,Clairemont Dr & Rappahannock Av,32.80549739,-117.20052119,,,0,,1,N-N/B,,Clairemont&Rappahannock,
 mts:11942,11942,Clairemont Dr & Ute Dr,32.80901063,-117.20115473,,,0,,1,F-S/B,,Clairemont&Ute,
 mts:12358,12358,Clairemont Dr & Ute Dr,32.80908177,-117.20083979,,,0,,1,N-N/B,,Clairemont&Ute,
-mts:77772,77772,Clairemont Drive Station,32.78997970,-117.20618712,,,0,claS,0,,,Clairemontive Sta,claS
-mts:77773,77773,Clairemont Drive Station,32.79006453,-117.20612915,,,0,claS,0,,,Clairemontive Sta,claS
+mts:77772,77772,Clairemont Drive Station,32.78997970,-117.20618712,,,0,mts:claS,0,,,Clairemontive Sta,claS
+mts:77773,77773,Clairemont Drive Station,32.79006453,-117.20612915,,,0,mts:claS,0,,,Clairemontive Sta,claS
 mts:11919,11919,Clairemont Mesa Bl & 3305,32.82961287,-117.21471166,,,0,,1,M-Street-E/B,,Cmnt Mesa&3305,
 mts:12992,12992,Clairemont Mesa Bl & 3511,32.82773471,-117.21095065,,,0,,1,M-Street-E/B,,Cmnt Mesa&3511,
 mts:10128,10128,Clairemont Mesa Bl & 8303,32.83266088,-117.14614075,,,0,,1,M-Street-E/B,,Cmnt Mesa&8303,
@@ -962,9 +962,9 @@ mts:60832,60832,Clairemont Mesa Bl & Antigua Bl,32.83120453,-117.10895803,,,0,,1
 mts:11321,11321,Clairemont Mesa Bl & Chesapeake Dr,32.83225229,-117.12298653,,,0,,1,F-W/B,,Cmnt Mesa&Chesapeake,
 mts:12673,12673,Clairemont Mesa Bl & Clairemont Dr,32.82786220,-117.20656703,,,0,,1,F-W/B,,Cmnt Mesa&Clairemont,claclm
 mts:99385,99385,Clairemont Mesa Bl & Clairemont Dr,32.83323415,-117.20070025,,,0,,1,N-W/B,,Cmnt Mesa&Clairemont,
-mts:99363,99363,Clairemont Mesa Bl & Complex Dr,32.83128376,-117.13510363,,,0,kmtc,1,N-E/B,,Cmnt Mesa&Complex,kmtc
-mts:99375,99375,Clairemont Mesa Bl & Complex Dr,32.83129286,-117.13421823,,,0,kmtc,1,F-E/B,,Cmnt Mesa&Complex,clacom
-mts:99377,99377,Clairemont Mesa Bl & Complex Dr,32.83129158,-117.13362897,,,0,kmtc,1,M-Street-E/B,,Cmnt Mesa&Complex,clacom
+mts:99363,99363,Clairemont Mesa Bl & Complex Dr,32.83128376,-117.13510363,,,0,mts:kmtc,1,N-E/B,,Cmnt Mesa&Complex,kmtc
+mts:99375,99375,Clairemont Mesa Bl & Complex Dr,32.83129286,-117.13421823,,,0,mts:kmtc,1,F-E/B,,Cmnt Mesa&Complex,clacom
+mts:99377,99377,Clairemont Mesa Bl & Complex Dr,32.83129158,-117.13362897,,,0,mts:kmtc,1,M-Street-E/B,,Cmnt Mesa&Complex,clacom
 mts:99546,99546,Clairemont Mesa Bl & Complex St,32.83159062,-117.13524019,,,0,,1,F-W/B,,Cmnt Mesa&Complex,kmtc1
 mts:10486,10486,Clairemont Mesa Bl & Convoy St,32.83261300,-117.15233882,,,0,,1,F-E/B,,Cmnt Mesa&Convoy,clacne
 mts:11255,11255,Clairemont Mesa Bl & Convoy St,32.83290176,-117.15381980,,,0,,1,F-W/B,,Cmnt Mesa&Convoy,clacnW
@@ -1058,13 +1058,13 @@ mts:12904,12904,Collwood Bl & Monroe Av,32.76011275,-117.08070021,,,0,,1,F-N/B,,
 mts:60771,60771,Collwood Bl & Montezuma Rd,32.76928628,-117.08572831,,,0,,1,F-S/B,,Collwood&Mntzma,
 mts:88912,88912,Community Rd & Poway Rd,32.95714173,-117.04045433,,,0,,0,F-N/B,,Community&Poway,
 mts:13073,13073,Complex Dr & 8806,32.83016813,-117.13812975,,,0,,2,M-Street-W/B,,Complex&8806,
-mts:88897,88897,Complex Dr & Clairemont Mesa Bl,32.83120892,-117.13457809,,,0,kmtc,0,N-N/B,,Complex&Cmnt Mesa,comcla
-mts:99374,99374,Complex Dr & Clairemont Mesa Bl,32.83061295,-117.13474529,,,0,kmtc,1,F-S/B,,Complex&Cmnt Mesa,comcla
+mts:88897,88897,Complex Dr & Clairemont Mesa Bl,32.83120892,-117.13457809,,,0,mts:kmtc,0,N-N/B,,Complex&Cmnt Mesa,comcla
+mts:99374,99374,Complex Dr & Clairemont Mesa Bl,32.83061295,-117.13474529,,,0,mts:kmtc,1,F-S/B,,Complex&Cmnt Mesa,comcla
 mts:10831,10831,Comstock St & Linda Vista Rd,32.78332022,-117.17143425,,,0,,1,N-W/B,,Comstock&L Vsta,comstk
 mts:13174,13174,Comstock St & Linda Vista Rd,32.78302726,-117.17091384,,,0,,1,F-E/B,,Comstock&L Vsta,comstk
 mts:12736,12736,Comstock St & Ulric St,32.78307443,-117.17011718,,,0,,1,F-W/B,,Comstock&Ulric,
-mts:75096,75096,Convention Center Station,32.70898098,-117.16346306,,,0,conS,0,,,Convention Cntr,conS
-mts:75097,75097,Convention Center Station,32.70881988,-117.16331998,,,0,conS,0,,,Convention Cntr,conS
+mts:75096,75096,Convention Center Station,32.70898098,-117.16346306,,,0,mts:conS,0,,,Convention Cntr,conS
+mts:75097,75097,Convention Center Station,32.70881988,-117.16331998,,,0,mts:conS,0,,,Convention Cntr,conS
 mts:99047,99047,Convoy St & Aero Dr,32.81151770,-117.15315113,,,0,,2,F-N/B,,Convoy&Aero,
 mts:99045,99045,Convoy St & Armour St,32.81978977,-117.15515974,,,0,,1,M-Street-S/B,,Convoy&Armour,cnbalS
 mts:99069,99069,Convoy St & Armour St,32.82025645,-117.15486181,,,0,,1,F-N/B,,Convoy&Armour,cnbalN
@@ -1101,9 +1101,9 @@ mts:60246,60246,Cottonwood Rd & San Ysidro Bl,32.55396679,-117.04803165,,,0,,0,N
 mts:60436,60436,Cottonwood Rd & San Ysidro Bl,32.55415458,-117.04789380,,,0,,1,F-N/B,,Cottonwood&San Ysidro,sancot
 mts:60247,60247,Cottonwood Rd & Seaward Av,32.55697637,-117.04802964,,,0,,1,F-S/B,,Cottonwood&Seaward,
 mts:60364,60364,Cottonwood Rd & Seaward Av,32.55694426,-117.04789629,,,0,,1,N-N/B,,Cottonwood&Seaward,
-mts:75080,75080,County Center/Little Italy Station,32.72149387,-117.16989795,,,0,cocS,0,,,County Cntr/Little Italy,cocS
-mts:75081,75081,County Center/Little Italy Station,32.72136294,-117.16998502,,,0,cocS,0,,,County Cntr/Little Italy,cocS
-mts:75109,75109,Courthouse Station,32.71671555,-117.16602361,,,0,corsta,0,,,Courthouse,corsta
+mts:75080,75080,County Center/Little Italy Station,32.72149387,-117.16989795,,,0,mts:cocS,0,,,County Cntr/Little Italy,cocS
+mts:75081,75081,County Center/Little Italy Station,32.72136294,-117.16998502,,,0,mts:cocS,0,,,County Cntr/Little Italy,cocS
+mts:75109,75109,Courthouse Station,32.71671555,-117.16602361,,,0,mts:corsta,0,,,Courthouse,corsta
 mts:12155,12155,Crawford St & Zion Av (Kaiser),32.79258479,-117.09388604,,,0,,1,F-S/B,,Crawford&Zion (Kaiser),kaihos
 mts:99344,99344,Cumberland St & Calle Tres Lomas,32.67803420,-117.05714576,,,0,,2,N-E/B,,Cumberland&Calle Tres Lomas,
 mts:60810,60810,Cumberland St & Reo Dr,32.67537274,-117.06397506,,,0,,1,F-E/B,,Cumberland&Reo,reocum
@@ -1270,11 +1270,11 @@ mts:30238,30238,E St & E Flower St,32.64818684,-117.06656032,,,0,,1,N-W/B,,E&E F
 mts:39051,39051,E St & Guava St,32.64320807,-117.08641802,,,0,,1,N-E/B,,E&Guava,
 mts:60445,60445,E St & Jefferson Av,32.64077101,-117.09515598,,,0,,1,M-Street-E/B,,E&Jefferson,
 mts:30231,30231,E St & Minot Av,32.64659114,-117.07505054,,,0,,1,F-W/B,,E&Minot,
-mts:75012,75012,E Street Station,32.63910499,-117.09905693,,,0,estS,0,M-TC-Train-N/B,,E St,estS
-mts:75013,75013,E Street Station,32.63884492,-117.09906612,,,0,estS,0,M-TC-Train-S/B,,E St,estS
-mts:70019,70019,E Street Transit Center,32.63905274,-117.09842364,,,0,etro,0,M-TC-Bus,etro,ETC,baytro
-mts:91002,91002,E Street Transit Center,32.63901294,-117.09861491,,,0,etro,1,M-TC-Bus,etro,ETC,baytro
-mts:91007,91007,E Street Transit Center,32.63858371,-117.09868225,,,0,etro,1,M-TC-Bus,,ETC,etro
+mts:75012,75012,E Street Station,32.63910499,-117.09905693,,,0,mts:estS,0,M-TC-Train-N/B,,E St,estS
+mts:75013,75013,E Street Station,32.63884492,-117.09906612,,,0,mts:estS,0,M-TC-Train-S/B,,E St,estS
+mts:70019,70019,E Street Transit Center,32.63905274,-117.09842364,,,0,mts:etro,0,M-TC-Bus,etro,ETC,baytro
+mts:91002,91002,E Street Transit Center,32.63901294,-117.09861491,,,0,mts:etro,1,M-TC-Bus,etro,ETC,baytro
+mts:91007,91007,E Street Transit Center,32.63858371,-117.09868225,,,0,mts:etro,1,M-TC-Bus,,ETC,etro
 mts:98030,98030,Earlham St & Thomsen Wy (Health Clinic),33.05113085,-116.85519045,,,0,,2,N-E/B,,Earlham&Thomsen (Health Clinic),
 mts:98029,98029,Earlham St & Thomsen Wy (Ramona Water Dist),33.05122775,-116.85560886,,,0,,1,M-Street-W/B,,Earlham&Thomsen (Ramona Water Dist),
 mts:30148,30148,East H St & Auburn Av,32.64639673,-116.99238698,,,0,,1,F-E/B,,EH&Auburn,
@@ -1401,22 +1401,22 @@ mts:10150,10150,El Cajon Bl & Utah St,32.75517721,-117.13283955,,,0,,1,N-E/B,,El
 mts:11290,11290,El Cajon Bl & Utah St,32.75547964,-117.13282632,,,0,,1,F-W/B,,El Cjn&Utah,
 mts:11377,11377,El Cajon Bl & Winona Av,32.75672880,-117.08809752,,,0,,1,F-W/B,,El Cjn&Winona,
 mts:13555,13555,El Cajon Bl & Winona Av,32.75653907,-117.08770539,,,0,,0,F-E/B,,El Cjn&Winona,
-mts:75026,75026,El Cajon Station,32.79206489,-116.97613899,,,0,elcS,0,,,El Cajon,elcS
-mts:75027,75027,El Cajon Station,32.79187891,-116.97621685,,,0,elcS,0,,,El Cajon,elcS
-mts:77790,77790,El Cajon Station,32.79283632,-116.97610337,,,0,elcS,0,,,El Cjn Sta,elcS
-mts:70035,70035,El Cajon Transit Center,32.79213190,-116.97577379,,,0,ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
-mts:91072,91072,El Cajon Transit Center,32.79234967,-116.97566495,,,0,ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
-mts:91073,91073,El Cajon Transit Center,32.79190728,-116.97564504,,,0,ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
-mts:91074,91074,El Cajon Transit Center,32.79178339,-116.97567981,,,0,ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
-mts:91075,91075,El Cajon Transit Center,32.79155261,-116.97566489,,,0,ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
-mts:91076,91076,El Cajon Transit Center,32.79170585,-116.97578004,,,0,ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
-mts:92208,92208,El Cajon Transit Center,32.79187638,-116.97575867,,,0,ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
-mts:92209,92209,El Cajon Transit Center,32.79234091,-116.97575274,,,0,ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
-mts:92210,92210,El Cajon Transit Center,32.79264332,-116.97573896,,,0,ecajtc,1,M-TC-Bus,,El Cjn TC,ecajtc
-mts:92212,92212,El Cajon Transit Center,32.79255039,-116.97565033,,,0,ecajtc,1,M-TC-Bus,,El Cjn TC,ecajtc
-mts:75066,75066,Encanto/62nd St Station,32.71013009,-117.06336103,,,0,62nS,0,,,Encanto/62nd St,62nS
-mts:75067,75067,Encanto/62nd St Station,32.71008392,-117.06310995,,,0,62nS,0,,,Encanto/62nd St,62nS
-mts:99108,99108,Encanto/62nd St Trolley Stn,32.71017768,-117.06343819,,,0,enctro,1,F-E/B,,Encanto/62nd Trly Sta,enctro
+mts:75026,75026,El Cajon Station,32.79206489,-116.97613899,,,0,mts:elcS,0,,,El Cajon,elcS
+mts:75027,75027,El Cajon Station,32.79187891,-116.97621685,,,0,mts:elcS,0,,,El Cajon,elcS
+mts:77790,77790,El Cajon Station,32.79283632,-116.97610337,,,0,mts:elcS,0,,,El Cjn Sta,elcS
+mts:70035,70035,El Cajon Transit Center,32.79213190,-116.97577379,,,0,mts:ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
+mts:91072,91072,El Cajon Transit Center,32.79234967,-116.97566495,,,0,mts:ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
+mts:91073,91073,El Cajon Transit Center,32.79190728,-116.97564504,,,0,mts:ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
+mts:91074,91074,El Cajon Transit Center,32.79178339,-116.97567981,,,0,mts:ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
+mts:91075,91075,El Cajon Transit Center,32.79155261,-116.97566489,,,0,mts:ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
+mts:91076,91076,El Cajon Transit Center,32.79170585,-116.97578004,,,0,mts:ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
+mts:92208,92208,El Cajon Transit Center,32.79187638,-116.97575867,,,0,mts:ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
+mts:92209,92209,El Cajon Transit Center,32.79234091,-116.97575274,,,0,mts:ecajtc,0,M-TC-Bus,,El Cjn TC,ecajtc
+mts:92210,92210,El Cajon Transit Center,32.79264332,-116.97573896,,,0,mts:ecajtc,1,M-TC-Bus,,El Cjn TC,ecajtc
+mts:92212,92212,El Cajon Transit Center,32.79255039,-116.97565033,,,0,mts:ecajtc,1,M-TC-Bus,,El Cjn TC,ecajtc
+mts:75066,75066,Encanto/62nd St Station,32.71013009,-117.06336103,,,0,mts:62nS,0,,,Encanto/62nd St,62nS
+mts:75067,75067,Encanto/62nd St Station,32.71008392,-117.06310995,,,0,mts:62nS,0,,,Encanto/62nd St,62nS
+mts:99108,99108,Encanto/62nd St Trolley Stn,32.71017768,-117.06343819,,,0,mts:enctro,1,F-E/B,,Encanto/62nd Trly Sta,enctro
 mts:96033,96033,Escondido Transit Center,33.11902565,-117.08983701,,,0,,1,M-Street-W/B,,Escondido TC,esctc8
 mts:99496,99496,Escondido Transit Center,33.11833164,-117.09085267,,,0,,0,,,Escondido TC,esctc
 mts:40611,40611,Espola Rd & Durhullen Dr,32.98411107,-117.02347230,,,0,,0,F-S/B,,Espola&Durhullen,
@@ -1470,21 +1470,21 @@ mts:12542,12542,Euclid Av & Trinidad Wy,32.69987819,-117.08495330,,,0,,1,N-N/B,,
 mts:12166,12166,Euclid Av & Unity Place Drwy,32.70890865,-117.08511686,,,0,,1,N-S/B,,Euclid&Unity Pl,
 mts:88880,88880,Euclid Av & Wightman St,32.74754584,-117.09212575,,,0,,0,F-N/B,,Euclid&Wightman,
 mts:50130,50130,Euclid Av & Windsor Heights Apts,32.68144619,-117.08158440,,,0,,1,F-S/B,,Euclid&Windsor Heights Apts,
-mts:70024,70024,Euclid Ave Station,32.71000327,-117.08663245,,,0,euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
-mts:75068,75068,Euclid Ave Station,32.70958396,-117.08612912,,,0,eucS,0,,,Euclid Ave,eucS
-mts:75069,75069,Euclid Ave Station,32.70950703,-117.08576103,,,0,eucS,0,,,Euclid Ave,eucS
-mts:91031,91031,Euclid Ave Station,32.70998947,-117.08623570,,,0,euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
-mts:91032,91032,Euclid Ave Station,32.71000728,-117.08604080,,,0,euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
-mts:91033,91033,Euclid Ave Station,32.70995988,-117.08614114,,,0,euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
-mts:91035,91035,Euclid Ave Station,32.70995836,-117.08636544,,,0,euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
-mts:91037,91037,Euclid Ave Station,32.70979656,-117.08631189,,,0,euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
-mts:91038,91038,Euclid Ave Station,32.70978700,-117.08610048,,,0,euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
-mts:91039,91039,Euclid Ave Station,32.70995421,-117.08576072,,,0,euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
-mts:91041,91041,Euclid Ave Station,32.71011824,-117.08629544,,,0,euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
-mts:94017,94017,Euclid Ave Station,32.71011464,-117.08601581,,,0,euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
+mts:70024,70024,Euclid Ave Station,32.71000327,-117.08663245,,,0,mts:euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
+mts:75068,75068,Euclid Ave Station,32.70958396,-117.08612912,,,0,mts:eucS,0,,,Euclid Ave,eucS
+mts:75069,75069,Euclid Ave Station,32.70950703,-117.08576103,,,0,mts:eucS,0,,,Euclid Ave,eucS
+mts:91031,91031,Euclid Ave Station,32.70998947,-117.08623570,,,0,mts:euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
+mts:91032,91032,Euclid Ave Station,32.71000728,-117.08604080,,,0,mts:euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
+mts:91033,91033,Euclid Ave Station,32.70995988,-117.08614114,,,0,mts:euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
+mts:91035,91035,Euclid Ave Station,32.70995836,-117.08636544,,,0,mts:euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
+mts:91037,91037,Euclid Ave Station,32.70979656,-117.08631189,,,0,mts:euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
+mts:91038,91038,Euclid Ave Station,32.70978700,-117.08610048,,,0,mts:euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
+mts:91039,91039,Euclid Ave Station,32.70995421,-117.08576072,,,0,mts:euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
+mts:91041,91041,Euclid Ave Station,32.71011824,-117.08629544,,,0,mts:euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
+mts:94017,94017,Euclid Ave Station,32.71011464,-117.08601581,,,0,mts:euctro,1,M-TC-Bus,,Euclid Av Sta,euctro
 mts:99075,99075,Executive Dr & Executive Wy,32.87590930,-117.20974401,,,0,,1,F-E/B,,Executive&Executive,exeexe
-mts:77785,77785,Executive Drive Station,32.87416804,-117.21402471,,,0,exeS,0,,,Executiveive Sta,exeS
-mts:77786,77786,Executive Drive Station,32.87413569,-117.21404976,,,0,exeS,0,,,Executiveive Sta,exeS
+mts:77785,77785,Executive Drive Station,32.87416804,-117.21402471,,,0,mts:exeS,0,,,Executiveive Sta,exeS
+mts:77786,77786,Executive Drive Station,32.87413569,-117.21404976,,,0,mts:exeS,0,,,Executiveive Sta,exeS
 mts:30088,30088,F St & 2nd Av,32.64259751,-117.07506192,,,0,,1,F-E/B,,F&2nd,
 mts:30228,30228,F St & 2nd Av,32.64244783,-117.07607080,,,0,,1,F-W/B,,F&2nd,
 mts:30011,30011,F St & 3rd Av,32.64107744,-117.08040441,,,0,,1,N-E/B,,F&3rd,3rdf
@@ -1530,25 +1530,25 @@ mts:11995,11995,Fashion Valley Rd & Friars Rd,32.76787370,-117.17141256,,,0,,1,F
 mts:12400,12400,Fashion Valley Rd & Friars Rd,32.76731401,-117.17102024,,,0,,1,N-N/B,,FV&Friars,
 mts:11225,11225,Fashion Valley Rd & Hotel Circle N,32.76165904,-117.16923641,,,0,,1,F-N/B,,FV&Hotel Cir N,
 mts:11623,11623,Fashion Valley Rd & Hotel Circle N,32.76169329,-117.16943520,,,0,,1,N-S/B,,FV&Hotel Cir N,
-mts:75046,75046,Fashion Valley Station,32.76547104,-117.16915192,,,0,favS,0,,,Fashion Valley,favS
-mts:75047,75047,Fashion Valley Station,32.76545309,-117.16890515,,,0,favS,0,,,Fashion Valley,favS
-mts:94038,94038,Fashion Valley Transit Center,32.76571930,-117.16914215,,,0,fasvtc,0,M-TC-Bus,,FV TC,fasvtc
-mts:94039,94039,Fashion Valley Transit Center,32.76567663,-117.16933689,,,0,fasvtc,0,M-TC-Bus,,FV TC,fasvtc
-mts:94041,94041,Fashion Valley Transit Center,32.76557702,-117.16979453,,,0,fasvtc,0,M-TC-Bus,,FV TC,fasvtc
-mts:94042,94042,Fashion Valley Transit Center,32.76552065,-117.16998262,,,0,fasvtc,0,M-TC-Bus,,FV TC,fasvtc
-mts:94043,94043,Fashion Valley Transit Center,32.76540755,-117.17003674,,,0,fasvtc,1,M-TC-Bus,,FV TC,fasvtc
-mts:94044,94044,Fashion Valley Transit Center,32.76546684,-117.16982591,,,0,fasvtc,0,M-TC-Bus,,FV TC,fasvtc
-mts:94045,94045,Fashion Valley Transit Center,32.76550675,-117.16963440,,,0,fasvtc,0,M-TC-Bus,,FV TC,fasvtc
-mts:94048,94048,Fashion Valley Transit Center,32.76565186,-117.16897229,,,0,fasvtc,0,M-TC-Bus,,FV TC,fasvtc
-mts:94050,94050,Fashion Valley Transit Center,32.76552148,-117.16950118,,,0,fasvtc,0,M-TC-Train-W/B,,FV TC,fasvtc
+mts:75046,75046,Fashion Valley Station,32.76547104,-117.16915192,,,0,mts:favS,0,,,Fashion Valley,favS
+mts:75047,75047,Fashion Valley Station,32.76545309,-117.16890515,,,0,mts:favS,0,,,Fashion Valley,favS
+mts:94038,94038,Fashion Valley Transit Center,32.76571930,-117.16914215,,,0,mts:fasvtc,0,M-TC-Bus,,FV TC,fasvtc
+mts:94039,94039,Fashion Valley Transit Center,32.76567663,-117.16933689,,,0,mts:fasvtc,0,M-TC-Bus,,FV TC,fasvtc
+mts:94041,94041,Fashion Valley Transit Center,32.76557702,-117.16979453,,,0,mts:fasvtc,0,M-TC-Bus,,FV TC,fasvtc
+mts:94042,94042,Fashion Valley Transit Center,32.76552065,-117.16998262,,,0,mts:fasvtc,0,M-TC-Bus,,FV TC,fasvtc
+mts:94043,94043,Fashion Valley Transit Center,32.76540755,-117.17003674,,,0,mts:fasvtc,1,M-TC-Bus,,FV TC,fasvtc
+mts:94044,94044,Fashion Valley Transit Center,32.76546684,-117.16982591,,,0,mts:fasvtc,0,M-TC-Bus,,FV TC,fasvtc
+mts:94045,94045,Fashion Valley Transit Center,32.76550675,-117.16963440,,,0,mts:fasvtc,0,M-TC-Bus,,FV TC,fasvtc
+mts:94048,94048,Fashion Valley Transit Center,32.76565186,-117.16897229,,,0,mts:fasvtc,0,M-TC-Bus,,FV TC,fasvtc
+mts:94050,94050,Fashion Valley Transit Center,32.76552148,-117.16950118,,,0,mts:fasvtc,0,M-TC-Train-W/B,,FV TC,fasvtc
 mts:10692,10692,Federal Bl & College Av,32.74140218,-117.04889012,,,0,,1,F-E/B,,Federal&Coll,
 mts:10637,10637,Federal Bl & Euclid Av,32.72127357,-117.08438866,,,0,,1,F-E/B,,Federal&Euclid,
 mts:10642,10642,Federal Bl & Pentecost Wy,32.72141025,-117.08246511,,,0,,1,F-E/B,,Federal&Pentecost,
 mts:11384,11384,Federal Bl & Pentecost Wy,32.72160189,-117.08298390,,,0,,0,F-W/B,,Federal&Pentecost,
-mts:75054,75054,Fenton Parkway Station,32.77827002,-117.12723711,,,0,fenS,0,,,Fenton Pkwy,fenS
-mts:75055,75055,Fenton Parkway Station,32.77837004,-117.12700808,,,0,fenS,0,,,Fenton Pkwy,fenS
-mts:75088,75088,Fifth Avenue Station,32.71679000,-117.15967791,,,0,5thS,0,,,5th Av,5thS
-mts:75089,75089,Fifth Avenue Station,32.71672400,-117.15972014,,,0,5thS,0,,,5th Av,5thS
+mts:75054,75054,Fenton Parkway Station,32.77827002,-117.12723711,,,0,mts:fenS,0,,,Fenton Pkwy,fenS
+mts:75055,75055,Fenton Parkway Station,32.77837004,-117.12700808,,,0,mts:fenS,0,,,Fenton Pkwy,fenS
+mts:75088,75088,Fifth Avenue Station,32.71679000,-117.15967791,,,0,mts:5thS,0,,,5th Av,5thS
+mts:75089,75089,Fifth Avenue Station,32.71672400,-117.15972014,,,0,mts:5thS,0,,,5th Av,5thS
 mts:40179,40179,Fletcher Pkwy & Cuyamaca St,32.80724769,-116.97871684,,,0,,1,F-E/B,,Fletcher&Cuyamaca,
 mts:40289,40289,Fletcher Pkwy & Cuyamaca St,32.80767447,-116.97858693,,,0,,1,N-W/B,,Fletcher&Cuyamaca,
 mts:40168,40168,Fletcher Pkwy & Garfield Av,32.80251646,-116.99683720,,,0,,1,F-E/B,,Fletcher&Garfield,flegar
@@ -1596,8 +1596,8 @@ mts:10383,10383,Garnet Av & Olney St,32.80219780,-117.22952819,,,0,,1,F-E/B,,Gar
 mts:11142,11142,Garnet Av & Olney St,32.80225058,-117.23015037,,,0,,1,F-W/B,,Garnet&Olney,
 mts:10390,10390,Garnet Av & Soledad Mountain Rd,32.80496453,-117.22340462,,,0,,1,M-Street-E/B,,Garnet&Soledad Mtn,
 mts:11152,11152,Garnet Av & Soledad Mountain Rd,32.80488920,-117.22424346,,,0,,1,F-W/B,,Garnet&Soledad Mtn,
-mts:75098,75098,Gaslamp Quarter Station,32.70694200,-117.15976288,,,0,gasS,0,,,Gaslamp Quarter,gasS
-mts:75099,75099,Gaslamp Quarter Station,32.70676510,-117.15959916,,,0,gasS,0,,,Gaslamp Quarter,gasS
+mts:75098,75098,Gaslamp Quarter Station,32.70694200,-117.15976288,,,0,mts:gasS,0,,,Gaslamp Quarter,gasS
+mts:75099,75099,Gaslamp Quarter Station,32.70676510,-117.15959916,,,0,mts:gasS,0,,,Gaslamp Quarter,gasS
 mts:11717,11717,Gateway Dr & Crenshaw St,32.72488655,-117.10821122,,,0,,2,N-S/B,,Gateway&Crenshaw,
 mts:11591,11591,Genesee Av & Appleton St,32.83735236,-117.19592624,,,0,,1,F-S/B,,Gnsee&Appleton,
 mts:11576,11576,Genesee Av & April Ct,32.85036966,-117.20410901,,,0,,1,N-S/B,,Gnsee&April,
@@ -1631,7 +1631,7 @@ mts:10482,10482,Genesee Av & Health Center Dr,32.79240747,-117.15649882,,,0,,1,M
 mts:11582,11582,Genesee Av & Hwy 52 (Ramp),32.84488322,-117.20023674,,,0,,0,M-Street-S/B,,Gnsee&Hwy 52 (Ramp),
 mts:12688,12688,Genesee Av & Hwy 52 (Ramp),32.84590572,-117.20094458,,,0,,1,M-Street-N/B,,Gnsee&Hwy 52 (Ramp),
 mts:13171,13171,Genesee Av & La Jolla Village Dr,32.87204311,-117.21420630,,,0,,1,F-S/B,,Gnsee&LJ Vlge,genljS
-mts:13387,13387,Genesee Av & La Jolla Village Dr,32.87321691,-117.21383157,,,0,genljN,1,F-N/B,,Gnsee&LJ Vlge,genljN
+mts:13387,13387,Genesee Av & La Jolla Village Dr,32.87321691,-117.21383157,,,0,mts:genljN,1,F-N/B,,Gnsee&LJ Vlge,genljN
 mts:12694,12694,Genesee Av & Lehrer Dr,32.83808064,-117.19593733,,,0,,0,F-N/B,,Gnsee&Lehrer,
 mts:10461,10461,Genesee Av & Linda Vista Rd,32.79121733,-117.16507066,,,0,,1,F-E/B,,Gnsee&L Vsta,genlvS
 mts:11230,11230,Genesee Av & Linda Vista Rd,32.79199895,-117.16641295,,,0,,1,F-N/B,,Gnsee&L Vsta,genlvN
@@ -1656,8 +1656,8 @@ mts:12678,12678,Genesee Av & Radcliffe Ln,32.85251050,-117.20378705,,,0,,0,M-Str
 mts:10093,10093,Genesee Av & Richland St,32.79116236,-117.16321530,,,0,,1,N-E/B,,Gnsee&Richland,
 mts:11238,11238,Genesee Av & Richland St,32.79141424,-117.16334808,,,0,,1,M-Street-W/B,,Gnsee&Richland,
 mts:88883,88883,Gigantic St & Excellante St,32.56261782,-116.96818382,,,0,,0,N-W/B,,Gigantic&Excellante,swotay
-mts:75022,75022,Gillespie Field Station,32.82699596,-116.98207995,,,0,welS,0,,,Gillespie Field,welS
-mts:75023,75023,Gillespie Field Station,32.82676394,-116.98204188,,,0,welS,0,,,Gillespie Field,welS
+mts:75022,75022,Gillespie Field Station,32.82699596,-116.98207995,,,0,mts:welS,0,,,Gillespie Field,welS
+mts:75023,75023,Gillespie Field Station,32.82676394,-116.98204188,,,0,mts:welS,0,,,Gillespie Field,welS
 mts:11820,11820,Gillispie Dr & Jamacha Bl,32.70783808,-117.00743596,,,0,,1,N-S/B,,Gillispie&Jamacha,giljam
 mts:11902,11902,Gilman & Myers,32.87695458,-117.23478704,,,0,,0,F-E/B,,Gilman&Myers,gilmye
 mts:11548,11548,Gilman Dr & Eucalyptus Grove Ln,32.87578135,-117.23921017,,,0,,1,F-S/B,,Gilman&Eucalyptus Grove,schola
@@ -1753,10 +1753,10 @@ mts:11819,11819,Grossmont Center Dr & Center Dr,32.78028243,-117.01014775,,,0,,1
 mts:12986,12986,Grossmont Center Dr & Center Dr,32.78090437,-117.01046546,,,0,,1,N-W/B,,Grossmont Ctr&Ctr,
 mts:40157,40157,Grossmont Center Dr & Healthcare Dr,32.77916950,-117.00832593,,,0,,1,N-W/B,,Grossmont Ctr&Healthcare,
 mts:40983,40983,Grossmont College,32.81516769,-117.00542669,,,0,,1,M-TC-Bus,,Grossmont Coll,grcoll
-mts:75030,75030,Grossmont Station,32.78164207,-117.01126702,,,0,groS,0,,,Grossmont,groS
-mts:75031,75031,Grossmont Station,32.78160811,-117.01147008,,,0,groS,0,,,Grossmont,groS
-mts:94053,94053,Grossmont Transit Center,32.78173492,-117.01127628,,,0,grotro,1,M-TC-Train-N/B,,Grossmont TC,grotro
-mts:94055,94055,Grossmont Transit Center,32.78185325,-117.01125128,,,0,grotro,1,M-TC-Train-N/B,,Grossmont TC,grotro
+mts:75030,75030,Grossmont Station,32.78164207,-117.01126702,,,0,mts:groS,0,,,Grossmont,groS
+mts:75031,75031,Grossmont Station,32.78160811,-117.01147008,,,0,mts:groS,0,,,Grossmont,groS
+mts:94053,94053,Grossmont Transit Center,32.78173492,-117.01127628,,,0,mts:grotro,1,M-TC-Train-N/B,,Grossmont TC,grotro
+mts:94055,94055,Grossmont Transit Center,32.78185325,-117.01125128,,,0,mts:grotro,1,M-TC-Train-N/B,,Grossmont TC,grotro
 mts:94004,94004,Grove Transit Center,32.74130535,-117.05659033,,,0,,0,M-TC-Bus,,Grove TC,colgrv
 mts:94005,94005,Grove Transit Center,32.74156951,-117.05654396,,,0,,0,M-TC-Bus,,Grove TC,grove
 mts:94006,94006,Grove Transit Center,32.74171274,-117.05649649,,,0,,0,M-TC-Bus,,Grove TC,grove
@@ -1775,21 +1775,21 @@ mts:30174,30174,H St & Corte Helena,32.63696034,-117.06847036,,,0,,0,F-W/B,,H&Co
 mts:30164,30164,H St & Fig Av,32.63294378,-117.08297835,,,0,,1,M-Street-W/B,,H&Fig,
 mts:30024,30024,H St & Hilltop Dr,32.63764697,-117.06522840,,,0,,1,N-E/B,,H&Hilltop,hsthil
 mts:30240,30240,H St & Hilltop Dr,32.63761086,-117.06611486,,,0,,1,F-W/B,,H&Hilltop,hsthil
-mts:75010,75010,H Street Station,32.63017791,-117.09557712,,,0,hstS,0,M-TC-Train-N/B,,H St,hstS
-mts:75011,75011,H Street Station,32.62989293,-117.09557211,,,0,hstS,0,M-TC-Train-S/B,,H St,hstS
-mts:70039,70039,H Street Transit Center,32.62960411,-117.09504414,,,0,htro,1,M-TC-Bus,,HTC,htro
-mts:70041,70041,H Street Transit Center,32.62969391,-117.09485499,,,0,htro,1,M-TC-Bus,,HTC,htro
-mts:70042,70042,H Street Transit Center,32.62977889,-117.09460603,,,0,htro,1,M-TC-Bus,,HTC,htro
+mts:75010,75010,H Street Station,32.63017791,-117.09557712,,,0,mts:hstS,0,M-TC-Train-N/B,,H St,hstS
+mts:75011,75011,H Street Station,32.62989293,-117.09557211,,,0,mts:hstS,0,M-TC-Train-S/B,,H St,hstS
+mts:70039,70039,H Street Transit Center,32.62960411,-117.09504414,,,0,mts:htro,1,M-TC-Bus,,HTC,htro
+mts:70041,70041,H Street Transit Center,32.62969391,-117.09485499,,,0,mts:htro,1,M-TC-Bus,,HTC,htro
+mts:70042,70042,H Street Transit Center,32.62977889,-117.09460603,,,0,mts:htro,1,M-TC-Bus,,HTC,htro
 mts:96025,96025,Harbison Av & E 16th St,32.67823103,-117.07227874,,,0,,1,F-N/B,,Harbison&E 16th,
 mts:96027,96027,Harbison Av & E 16th St,32.67805142,-117.07242331,,,0,,0,N-S/B,,Harbison&E 16th,
 mts:99321,99321,Harbison Av & Plaza Bl,32.68137214,-117.07398826,,,0,,1,F-S/B,,Harbison&Pza,
-mts:75104,75104,Harborside Station,32.69132590,-117.13286390,,,0,harS,0,,,Harborside,harS
-mts:75105,75105,Harborside Station,32.69115188,-117.13263886,,,0,harS,0,,,Harborside,harS
+mts:75104,75104,Harborside Station,32.69132590,-117.13286390,,,0,mts:harS,0,,,Harborside,harS
+mts:75105,75105,Harborside Station,32.69115188,-117.13263886,,,0,mts:harS,0,,,Harborside,harS
 mts:11613,11613,Hawk St & Fort Stockton Dr,32.75112550,-117.17234653,,,0,,0,N-S/B,,Hawk&Frt Stcktn,hawfor
 mts:12720,12720,Hawk St & Fort Stockton Dr,32.75110740,-117.17219347,,,0,,0,F-N/B,,Hawk&Frt Stcktn,hawfor
 mts:12019,12019,Hawthorn St & 2nd Av,32.72711415,-117.16314993,,,0,,1,N-E/B,,Hawthorn&2nd,
-mts:75048,75048,Hazard Center Station,32.77025712,-117.15815189,,,0,hazS,0,,,Hazard Cntr,hazS
-mts:75049,75049,Hazard Center Station,32.77023790,-117.15841000,,,0,hazS,0,,,Hazard Cntr,hazS
+mts:75048,75048,Hazard Center Station,32.77025712,-117.15815189,,,0,mts:hazS,0,,,Hazard Cntr,hazS
+mts:75049,75049,Hazard Center Station,32.77023790,-117.15841000,,,0,mts:hazS,0,,,Hazard Cntr,hazS
 mts:12051,12051,Health Center Dr & Frost St (Sharp Mem),32.80007759,-117.15551035,,,0,,1,M-Street-S/B,,Health Ctr&Frost (Sharp Mem),shahos
 mts:12442,12442,Health Center Dr & Frost St (Sharp Mem),32.80005950,-117.15535396,,,0,,1,N-N/B,,Health Ctr&Frost (Sharp Mem),shahos
 mts:13146,13146,Health Center Dr & Hope Stn,32.79807311,-117.15625710,,,0,,1,F-N/B,,Health Ctr&Hopen,
@@ -1942,10 +1942,10 @@ mts:98131,98131,Hwy 94 & Steele Canyon Rd,32.72724366,-116.91010981,,,0,,2,F-N/B
 mts:98132,98132,Hwy 94 & Steele Canyon Rd,32.72777195,-116.90897244,,,0,,2,M-Street-E/B,,Hwy 94&Steele Cyn,
 mts:98121,98121,Hwy 94 & Summit Rd,32.61882745,-116.74073277,,,0,,2,M-Street-E/B,,Hwy 94&Summit,
 mts:98122,98122,Hwy 94 & Summit Rd,32.61882173,-116.74147968,,,0,,2,N-E/B,,Hwy 94&Summit,
-mts:88918,88918,I-15 Centerline Sta & El Cajon Bl,32.75551349,-117.10867284,,,0,i15eln,0,F-N/B,,I-15 Ctrlinea&El Cjn,i15eln
-mts:88919,88919,I-15 Centerline Sta & El Cajon Bl,32.75487017,-117.10889524,,,0,i15els,0,F-S/B,,I-15 Ctrlinea&El Cjn,i15els
-mts:88916,88916,I-15 Centerline Sta & University Av,32.74998335,-117.10865473,,,0,i15unn,0,F-N/B,,I-15 Ctrlinea&Univ,i15unn
-mts:88917,88917,I-15 Centerline Sta & University Av,32.74941963,-117.10893122,,,0,i15uns,0,F-S/B,,I-15 Ctrlinea&Univ,i15uns
+mts:88918,88918,I-15 Centerline Sta & El Cajon Bl,32.75551349,-117.10867284,,,0,mts:i15eln,0,F-N/B,,I-15 Ctrlinea&El Cjn,i15eln
+mts:88919,88919,I-15 Centerline Sta & El Cajon Bl,32.75487017,-117.10889524,,,0,mts:i15els,0,F-S/B,,I-15 Ctrlinea&El Cjn,i15els
+mts:88916,88916,I-15 Centerline Sta & University Av,32.74998335,-117.10865473,,,0,mts:i15unn,0,F-N/B,,I-15 Ctrlinea&Univ,i15unn
+mts:88917,88917,I-15 Centerline Sta & University Av,32.74941963,-117.10893122,,,0,mts:i15uns,0,F-S/B,,I-15 Ctrlinea&Univ,i15uns
 mts:60555,60555,I-15 Ramp & El Cajon Bl,32.75495216,-117.10825038,,,0,,1,N-N/B,,I-15 Ramp&El Cjn,i15ele
 mts:60556,60556,I-15 Ramp & El Cajon Bl,32.75544248,-117.10927975,,,0,,1,N-S/B,,I-15 Ramp&El Cjn,i15elw
 mts:13487,13487,I-15 Ramp & University Av,32.74990115,-117.10932979,,,0,,1,N-S/B,,I-15 Ramp&Univ,i15uw1
@@ -2028,7 +2028,7 @@ mts:60032,60032,Imperial Beach Bl & Granger St,32.57643574,-117.10254167,,,0,,0,
 mts:60182,60182,Imperial Beach Bl & Granger St,32.57662625,-117.10241691,,,0,,1,F-W/B,,Imperial Bch&Granger,
 mts:60066,60066,Imperial Beach Bl & Seacoast Dr,32.57655379,-117.13067995,,,0,,1,F-E/B,,Imperial Bch&Seacoast,
 mts:60443,60443,Imperial Beach Bl & Seacoast Dr,32.57672637,-117.13152890,,,0,,1,N-W/B,,Imperial Bch&Seacoast,
-mts:99791,99791,India St & C St,32.71699254,-117.16817559,,,0,amptro,1,F-N/B,,India&C,amptro
+mts:99791,99791,India St & C St,32.71699254,-117.16817559,,,0,mts:amptro,1,F-N/B,,India&C,amptro
 mts:12406,12406,India St & Cedar St,32.72230279,-117.16815938,,,0,,0,F-N/B,,India&Cedar,
 mts:13119,13119,Ingraham St & 3866,32.79055203,-117.23817798,,,0,,1,M-Street-S/B,,Ingraham&3866,
 mts:13151,13151,Ingraham St & 3873,32.79035982,-117.23781138,,,0,,1,M-Street-N/B,,Ingraham&3873,
@@ -2063,20 +2063,20 @@ mts:60091,60091,Iris Av & Monterey Park Dr,32.56907485,-117.06982746,,,0,,1,F-E/
 mts:60198,60198,Iris Av & Monterey Park Dr,32.56920324,-117.07035772,,,0,,1,F-W/B,,Iris&Monterey Park,
 mts:60048,60048,Iris Av & Monterey Pine Dr,32.56908188,-117.07248260,,,0,,1,N-E/B,,Iris&Monterey Pine,
 mts:60446,60446,Iris Av & Monterey Pine Dr,32.56927699,-117.07330885,,,0,,1,M-Street-W/B,,Iris&Monterey Pine,
-mts:75004,75004,Iris Avenue Station,32.56976200,-117.06717616,,,0,iriS,0,M-TC-Train-N/B,,Iris Av,iriS
-mts:75005,75005,Iris Avenue Station,32.56951494,-117.06696484,,,0,iriS,0,M-TC-Train-S/B,,Iris Av,iriS
-mts:70025,70025,Iris Avenue Transit Center,32.56956949,-117.06632299,,,0,iritro,1,M-TC-Bus,,IrisTC,iritro
-mts:89028,89028,Iris Avenue Transit Center,32.56928303,-117.06712109,,,0,iritrW,0,M-TC-Bus,,IrisTC,iritrW
-mts:89029,89029,Iris Avenue Transit Center,32.56924631,-117.06722981,,,0,iritrW,0,M-TC-Bus,,IrisTC,iritrW
-mts:91011,91011,Iris Avenue Transit Center,32.56954167,-117.06625003,,,0,iritro,0,M-TC-Bus,,IrisTC,iritro
-mts:91012,91012,Iris Avenue Transit Center,32.56972586,-117.06607743,,,0,iritro,0,M-TC-Bus,,IrisTC,iritro
-mts:91013,91013,Iris Avenue Transit Center,32.56997366,-117.06584505,,,0,iritro,0,M-TC-Bus,,IrisTC,iritro
-mts:91015,91015,Iris Avenue Transit Center,32.56967281,-117.06628532,,,0,iritro,0,M-TC-Bus,,IrisTC,iritro
-mts:91016,91016,Iris Avenue Transit Center,32.56972022,-117.06618190,,,0,iritro,0,M-TC-Bus,,IrisTC,iritro
-mts:91017,91017,Iris Avenue Transit Center,32.56981375,-117.06616978,,,0,iritro,0,M-TC-Bus,,IrisTC,iritro
-mts:91018,91018,Iris Avenue Transit Center,32.56998940,-117.06595912,,,0,iritro,0,M-TC-Bus,,IrisTC,iritro
-mts:91019,91019,Iris Avenue Transit Center,32.56994923,-117.06604769,,,0,iritro,0,M-TC-Bus,,IrisTC,iritro
-mts:91021,91021,Iris Avenue Transit Center,32.57009024,-117.06592240,,,0,iritro,0,M-TC-Bus,,IrisTC,iritro
+mts:75004,75004,Iris Avenue Station,32.56976200,-117.06717616,,,0,mts:iriS,0,M-TC-Train-N/B,,Iris Av,iriS
+mts:75005,75005,Iris Avenue Station,32.56951494,-117.06696484,,,0,mts:iriS,0,M-TC-Train-S/B,,Iris Av,iriS
+mts:70025,70025,Iris Avenue Transit Center,32.56956949,-117.06632299,,,0,mts:iritro,1,M-TC-Bus,,IrisTC,iritro
+mts:89028,89028,Iris Avenue Transit Center,32.56928303,-117.06712109,,,0,mts:iritrW,0,M-TC-Bus,,IrisTC,iritrW
+mts:89029,89029,Iris Avenue Transit Center,32.56924631,-117.06722981,,,0,mts:iritrW,0,M-TC-Bus,,IrisTC,iritrW
+mts:91011,91011,Iris Avenue Transit Center,32.56954167,-117.06625003,,,0,mts:iritro,0,M-TC-Bus,,IrisTC,iritro
+mts:91012,91012,Iris Avenue Transit Center,32.56972586,-117.06607743,,,0,mts:iritro,0,M-TC-Bus,,IrisTC,iritro
+mts:91013,91013,Iris Avenue Transit Center,32.56997366,-117.06584505,,,0,mts:iritro,0,M-TC-Bus,,IrisTC,iritro
+mts:91015,91015,Iris Avenue Transit Center,32.56967281,-117.06628532,,,0,mts:iritro,0,M-TC-Bus,,IrisTC,iritro
+mts:91016,91016,Iris Avenue Transit Center,32.56972022,-117.06618190,,,0,mts:iritro,0,M-TC-Bus,,IrisTC,iritro
+mts:91017,91017,Iris Avenue Transit Center,32.56981375,-117.06616978,,,0,mts:iritro,0,M-TC-Bus,,IrisTC,iritro
+mts:91018,91018,Iris Avenue Transit Center,32.56998940,-117.06595912,,,0,mts:iritro,0,M-TC-Bus,,IrisTC,iritro
+mts:91019,91019,Iris Avenue Transit Center,32.56994923,-117.06604769,,,0,mts:iritro,0,M-TC-Bus,,IrisTC,iritro
+mts:91021,91021,Iris Avenue Transit Center,32.57009024,-117.06592240,,,0,mts:iritro,0,M-TC-Bus,,IrisTC,iritro
 mts:10325,10325,Jackson Dr & Boulder Lake Av,32.79354688,-117.02074360,,,0,,2,N-E/B,,Jackson&Boulder Lake,
 mts:11085,11085,Jackson Dr & Boulder Lake Av,32.79371804,-117.02018214,,,0,,2,N-W/B,,Jackson&Boulder Lake,
 mts:10315,10315,Jackson Dr & Cowles Mountain Bl,32.79530501,-117.02833461,,,0,,1,N-E/B,,Jackson&Cowles Mtn,
@@ -2284,8 +2284,8 @@ mts:10328,10328,La Mesa Bl & University Av,32.76780465,-117.01542724,,,0,,1,N-N/
 mts:13170,13170,La Mesa Bl & University Av,32.76522850,-117.02655622,,,0,,1,F-N/B,,La Mesa&Univ,
 mts:99291,99291,La Mesa Bl & University Av,32.76781161,-117.01563550,,,0,,1,F-S/B,,La Mesa&Univ,
 mts:40390,40390,La Mesa Bl & Wilson St,32.77218323,-117.00647323,,,0,,1,F-W/B,,La Mesa&Wilson,
-mts:75034,75034,La Mesa Blvd Station,32.76513688,-117.02056497,,,0,lamS,0,M-TC-Train-N/B,,La Mesa Bl,lamS
-mts:75035,75035,La Mesa Blvd Station,32.76490512,-117.02053106,,,0,lamS,0,M-TC-Train-S/B,,La Mesa Bl,lamS
+mts:75034,75034,La Mesa Blvd Station,32.76513688,-117.02056497,,,0,mts:lamS,0,M-TC-Train-N/B,,La Mesa Bl,lamS
+mts:75035,75035,La Mesa Blvd Station,32.76490512,-117.02053106,,,0,mts:lamS,0,M-TC-Train-S/B,,La Mesa Bl,lamS
 mts:40757,40757,Lake Jennings Park Rd & Business 8,32.84585561,-116.88244125,,,0,,2,F-S/B,,Lake Jennings Park&Bus 8,
 mts:40881,40881,Lake Jennings Park Rd & Old Hwy 80,32.84432172,-116.88141438,,,0,,2,F-N/B,,Lake Jennings Park&Old80,
 mts:98085,98085,Lake Morena Dr & Gladiola Dr (Malt Shop),32.68012296,-116.51209835,,,0,,2,N-W/B,,Lake Morena&Gladiola (Malt Shop),lakmor
@@ -2323,8 +2323,8 @@ mts:99213,99213,Lane Av & Mackenzie Creek Rd,32.65692696,-116.96196408,,,0,,1,N-
 mts:99214,99214,Lane Av & Mackenzie Creek Rd,32.65671381,-116.96175118,,,0,,1,M-Street-N/B,,Lane&Mackenzie Creek,
 mts:99212,99212,Lane Av & Proctor Valley Rd,32.66120074,-116.96007507,,,0,,1,F-S/B,,Lane&Proctor Vly,
 mts:99932,99932,Lebon Dr & Palmilla Dr,32.86510613,-117.22502417,,,0,,1,F-N/B,,Lebon&Palmilla,
-mts:75038,75038,Lemon Grove Depot,32.74348189,-117.03065392,,,0,broS,0,M-TC-Train-N/B,,Lemon Grove,broS
-mts:75039,75039,Lemon Grove Depot,32.74329610,-117.03078301,,,0,broS,0,M-TC-Train-S/B,,Lemon Grove,broS
+mts:75038,75038,Lemon Grove Depot,32.74348189,-117.03065392,,,0,mts:broS,0,M-TC-Train-N/B,,Lemon Grove,broS
+mts:75039,75039,Lemon Grove Depot,32.74329610,-117.03078301,,,0,mts:broS,0,M-TC-Train-S/B,,Lemon Grove,broS
 mts:10080,10080,Lewis St & Ingalls St,32.75172830,-117.17516630,,,0,,0,N-E/B,,Lewis&Ingalls,
 mts:11217,11217,Lewis St & Jackdaw St,32.75188861,-117.17431256,,,0,,0,F-W/B,,Lewis&Jackdaw,
 mts:10826,10826,Lewis St & Lark St,32.75186373,-117.17579872,,,0,,0,N-W/B,,Lewis&Lark,
@@ -2546,8 +2546,8 @@ mts:10267,10267,Market St & Merlin Dr,32.70999972,-117.07162581,,,0,,0,N-E/B,,Mr
 mts:11032,11032,Market St & Merlin Dr,32.71010580,-117.07096684,,,0,,2,N-W/B,,Mrkt&Merlin,
 mts:10221,10221,Market St & Morrison St,32.71138957,-117.10570654,,,0,,1,N-E/B,,Mrkt&Morrison,
 mts:10977,10977,Market St & Morrison St,32.71161079,-117.10591025,,,0,,1,F-W/B,,Mrkt&Morrison,
-mts:10108,10108,Market St & Park Bl,32.71146838,-117.15398888,,,0,marpar,1,N-E/B,,Mrkt&Park,marpar
-mts:10858,10858,Market St & Park Bl,32.71164624,-117.15409799,,,0,marpar,1,F-W/B,,Mrkt&Park,marpar
+mts:10108,10108,Market St & Park Bl,32.71146838,-117.15398888,,,0,mts:marpar,1,N-E/B,,Mrkt&Park,marpar
+mts:10858,10858,Market St & Park Bl,32.71164624,-117.15409799,,,0,mts:marpar,1,F-W/B,,Mrkt&Park,marpar
 mts:10963,10963,Market St & Quail St,32.71162651,-117.10957760,,,0,,1,N-E/B,,Mrkt&Quail,
 mts:11029,11029,Market St & Radio Dr,32.71011720,-117.07214381,,,0,,2,N-W/B,,Mrkt&Radio,
 mts:99438,99438,Marshall Av & Arnele Av,32.80457670,-116.97535891,,,0,,1,F-N/B,,Marshall&Arnele,
@@ -2562,8 +2562,8 @@ mts:12235,12235,Massachusetts Av & Mt Vernon St,32.73124286,-117.04306515,,,0,,1
 mts:12574,12574,Massachusetts Av & Mt Vernon St,32.73081815,-117.04286297,,,0,,0,N-N/B,,Mass&Mt Vernon,masmtv
 mts:12236,12236,Massachusetts Av & Rosemary Ln,32.73312576,-117.04303657,,,0,,2,F-S/B,,Mass&Rosemary,
 mts:11795,11795,Massachusetts Av & San Miguel Av,32.73620431,-117.04299923,,,0,,1,M-Street-S/B,,Mass&San Miguel,masmig
-mts:75040,75040,Massachusetts Ave Station,32.72355904,-117.03948895,,,0,masS,0,M-TC-Train-N/B,,Mass Ave,masS
-mts:75041,75041,Massachusetts Ave Station,32.72346190,-117.03967992,,,0,masS,0,M-TC-Train-S/B,,Mass Ave,masS
+mts:75040,75040,Massachusetts Ave Station,32.72355904,-117.03948895,,,0,mts:masS,0,M-TC-Train-N/B,,Mass Ave,masS
+mts:75041,75041,Massachusetts Ave Station,32.72346190,-117.03967992,,,0,mts:masS,0,M-TC-Train-S/B,,Mass Ave,masS
 mts:41055,41055,Mast Bl & 8756 (West Hills Hs),32.84895639,-117.01721080,,,0,,1,M-Street-E/B,,Mast&8756 (WHills Hs),whilhs
 mts:41059,41059,Mast Bl & Fanita Pkwy,32.85025035,-117.00427265,,,0,,1,F-E/B,,Mast&Fanita,
 mts:41056,41056,Mast Bl & Medina Dr,32.84961771,-117.01027122,,,0,,1,F-E/B,,Mast&Medina,
@@ -2601,8 +2601,8 @@ mts:10476,10476,Mesa College Dr & Ashford St,32.80172099,-117.16002484,,,0,,1,F-
 mts:11661,11661,Mesa College Dr & Berger Av,32.80311559,-117.15163299,,,0,,1,N-W/B,,Mesa Coll&Berger,
 mts:10471,10471,Metropolitan Dr & Mission Valley Rd,32.77793796,-117.15742682,,,0,,1,F-W/B,,Metropolitan&MV,
 mts:10475,10475,Metropolitan Dr & Murray Canyon Rd,32.77729545,-117.15771301,,,0,,1,F-E/B,,Metropolitan&Murray Cyn,
-mts:75078,75078,Middletown Station,32.73378587,-117.17492298,,,0,midS,0,,,Middletown,midS
-mts:75079,75079,Middletown Station,32.73351391,-117.17479297,,,0,midS,0,,,Middletown,midS
+mts:75078,75078,Middletown Station,32.73378587,-117.17492298,,,0,mts:midS,0,,,Middletown,midS
+mts:75079,75079,Middletown Station,32.73351391,-117.17479297,,,0,mts:midS,0,,,Middletown,midS
 mts:40603,40603,Midland Rd & Aubrey St,32.97130483,-117.03624374,,,0,,0,F-S/B,,Midland&Aubrey,
 mts:89045,89045,Midland Rd & Aubrey St,32.97100012,-117.03605548,,,0,,0,N-N/B,,Midland&Aubrey,
 mts:40600,40600,Midland Rd & Cynthia Ln,32.96086930,-117.03643208,,,0,,1,F-S/B,,Midland&Cynthia,
@@ -2773,10 +2773,10 @@ mts:12870,12870,Mission Gorge Rd & Vandever Av,32.78808777,-117.09756539,,,0,,1,
 mts:40259,40259,Mission Gorge Rd & West Hills Pkwy,32.83710258,-117.02594339,,,0,,1,N-W/B,,Msn Grg&WHills,miswhi
 mts:13408,13408,Mission Gorge Rd & Zion Av,32.79221679,-117.09745219,,,0,,1,N-N/B,,Msn Grg&Zion,
 mts:99464,99464,Mission Gorge Rd & Zion Av,32.79267994,-117.09764864,,,0,,1,F-S/B,,Msn Grg&Zion,
-mts:75058,75058,Mission San Diego Station,32.78098289,-117.11110498,,,0,msdS,0,,,Mission SD,msdS
-mts:75059,75059,Mission San Diego Station,32.78081391,-117.11097904,,,0,msdS,0,,,Mission SD,msdS
-mts:75050,75050,Mission Valley Center Station,32.77108307,-117.14985611,,,0,mivS,0,,,Msn Vly Cntr,mivS
-mts:75051,75051,Mission Valley Center Station,32.77109313,-117.15013501,,,0,mivS,0,,,Msn Vly Cntr,mivS
+mts:75058,75058,Mission San Diego Station,32.78098289,-117.11110498,,,0,mts:msdS,0,,,Mission SD,msdS
+mts:75059,75059,Mission San Diego Station,32.78081391,-117.11097904,,,0,mts:msdS,0,,,Mission SD,msdS
+mts:75050,75050,Mission Valley Center Station,32.77108307,-117.14985611,,,0,mts:mivS,0,,,Msn Vly Cntr,mivS
+mts:75051,75051,Mission Valley Center Station,32.77109313,-117.15013501,,,0,mts:mivS,0,,,Msn Vly Cntr,mivS
 mts:91130,91130,Mission Valley Rd & Mission Center Rd,32.77770784,-117.15582697,,,0,,1,N-S/B,,MV&Mission Ctr,mivmic
 mts:91312,91312,Mission Valley Rd & Mission Center Rd,32.77793396,-117.15535102,,,0,,1,F-W/B,,MV&Mission Ctr,mivmic
 mts:41084,41084,Mollison Av & Pepper Dr,32.82314507,-116.94969856,,,0,,2,N-N/B,,Mollison&Pepper,
@@ -2822,8 +2822,8 @@ mts:11578,11578,Morena Bl & Savannah St,32.77123921,-117.20201891,,,0,,1,N-S/B,,
 mts:99853,99853,Morena Bl & Sherman St,32.76593301,-117.19864991,,,0,,1,N-S/B,,Morena&Sherman,
 mts:12680,12680,Morena Bl & Viola St,32.77213243,-117.20202531,,,0,,1,F-N/B,,Morena&Viola,
 mts:11583,11583,Morena Bl & W Morena Bl,32.76806148,-117.19957721,,,0,,1,N-S/B,,Morena&W Morena,
-mts:75044,75044,Morena/Linda Vista Station,32.76352707,-117.19655802,,,0,morS,0,,,Morena/Linda Vista,morS
-mts:75045,75045,Morena/Linda Vista Station,32.76358613,-117.19684915,,,0,morS,0,,,Morena/Linda Vista,morS
+mts:75044,75044,Morena/Linda Vista Station,32.76352707,-117.19655802,,,0,mts:morS,0,,,Morena/Linda Vista,morS
+mts:75045,75045,Morena/Linda Vista Station,32.76358613,-117.19684915,,,0,mts:morS,0,,,Morena/Linda Vista,morS
 mts:99219,99219,Murphy Canyon Rd & Aero Dr,32.80882779,-117.11581210,,,0,,1,N-N/B,,Murphy Cyn&Aero,
 mts:91133,91133,Murray Canyon Rd & Metropolitan Dr,32.77675644,-117.15812716,,,0,,1,F-S/B,,Murray Cyn&Metropolitan,
 mts:10483,10483,Murray Canyon Rd & Mission Heights Rd,32.77606944,-117.15773616,,,0,,1,F-N/B,,Murray Cyn&Mission Heights,
@@ -2953,8 +2953,8 @@ mts:10399,10399,Nobel Dr & Regents Rd,32.86723165,-117.21861871,,,0,,1,F-E/B,,No
 mts:11163,11163,Nobel Dr & Regents Rd,32.86781453,-117.21929604,,,0,,0,F-W/B,,Nobel&Rgnts,regnob
 mts:99588,99588,Nobel Dr & Shoreline Dr,32.86443877,-117.20169200,,,0,,1,F-W/B,,Nobel&Shoreline,nobsho
 mts:13267,13267,Nobel Dr & Towne Centre Dr,32.86579859,-117.20889118,,,0,,1,F-W/B,,Nobel&Towne Centre,
-mts:77776,77776,Nobel Drive Station,32.86686173,-117.23046202,,,0,nobS,0,,,Nobelive Sta,nobS
-mts:77778,77778,Nobel Drive Station,32.86696566,-117.23038762,,,0,nobS,0,,,Nobelive Sta,nobS
+mts:77776,77776,Nobel Drive Station,32.86686173,-117.23046202,,,0,mts:nobS,0,,,Nobelive Sta,nobS
+mts:77778,77778,Nobel Drive Station,32.86696566,-117.23038762,,,0,mts:nobS,0,,,Nobelive Sta,nobS
 mts:10535,10535,Ocean View Bl & 28th St,32.70109979,-117.13329595,,,0,,1,F-E/B,,Ocn Vw&28th,
 mts:10912,10912,Ocean View Bl & 28th St,32.70124801,-117.13370703,,,0,,0,N-W/B,,Ocn Vw&28th,
 mts:10918,10918,Ocean View Bl & 29th St,32.70126660,-117.13149349,,,0,,0,N-W/B,,Ocn Vw&29th,
@@ -3028,19 +3028,19 @@ mts:98100,98100,Old Hwy 80 & Riverside St,32.84107034,-116.61311848,,,0,,2,F-S/B
 mts:40096,40096,Old Hwy 80 & Silva Rd,32.85732891,-116.82540983,,,0,,2,N-E/B,,Old80&Silva,
 mts:40486,40486,Old Hwy 80 & Silva Rd,32.85752793,-116.82516690,,,0,,2,N-W/B,,Old80&Silva,
 mts:40094,40094,Old Hwy 80 & Spring View Ct,32.84758666,-116.86897044,,,0,,1,N-E/B,,Old80&Spring View,
-mts:75042,75042,Old Town Station,32.75490800,-117.19948716,,,0,oldS,0,,,Old Town,oldS
-mts:75043,75043,Old Town Station,32.75469700,-117.19954799,,,0,oldS,0,,,Old Town,oldS
-mts:89009,89009,Old Town Transit Center,32.75412410,-117.20016860,,,0,ottcw2,0,,,Old Town TC,ottcw2
-mts:94019,94019,Old Town Transit Center,32.75430957,-117.19971198,,,0,ottc_w,1,M-TC-Bus,oldttc,Old Town TC,ottc_w
-mts:94020,94020,Old Town Transit Center,32.75446297,-117.19977868,,,0,ottc_w,1,M-TC-Bus,oldttc,Old Town TC,ottc_w
-mts:94024,94024,Old Town Transit Center,32.75459899,-117.19996230,,,0,ottc_w,1,M-TC-Bus,oldttc,Old Town TC,ottc_w
-mts:94025,94025,Old Town Transit Center,32.75426737,-117.19983838,,,0,ottc_w,1,M-TC-Bus,oldttc,Old Town TC,ottc_w
-mts:94027,94027,Old Town Transit Center,32.75482915,-117.19934027,,,0,ottc_e,1,M-TC-Bus,oldttc,Old Town TC,ottc_e
-mts:94028,94028,Old Town Transit Center,32.75464817,-117.19928627,,,0,ottc_e,1,M-TC-Bus,oldttc,Old Town TC,ottc_e
-mts:94030,94030,Old Town Transit Center,32.75448649,-117.19922273,,,0,ottc_e,1,M-TC-Bus,oldttc,Old Town TC,ottc_e
-mts:94031,94031,Old Town Transit Center,32.75484674,-117.19919734,,,0,ottc_e,1,M-TC-Bus,oldttc,Old Town TC,ottc_e
-mts:94034,94034,Old Town Transit Center,32.75433064,-117.19911697,,,0,ottc_e,1,M-TC-Bus,oldttc,Old Town TC,ottc_e
-mts:96034,96034,Old Town Transit Center,32.75478907,-117.19990580,,,0,ottc_w,1,M-TC-Bus,oldttc,Old Town TC,ottc_w
+mts:75042,75042,Old Town Station,32.75490800,-117.19948716,,,0,mts:oldS,0,,,Old Town,oldS
+mts:75043,75043,Old Town Station,32.75469700,-117.19954799,,,0,mts:oldS,0,,,Old Town,oldS
+mts:89009,89009,Old Town Transit Center,32.75412410,-117.20016860,,,0,mts:ottcw2,0,,,Old Town TC,ottcw2
+mts:94019,94019,Old Town Transit Center,32.75430957,-117.19971198,,,0,mts:ottc_w,1,M-TC-Bus,oldttc,Old Town TC,ottc_w
+mts:94020,94020,Old Town Transit Center,32.75446297,-117.19977868,,,0,mts:ottc_w,1,M-TC-Bus,oldttc,Old Town TC,ottc_w
+mts:94024,94024,Old Town Transit Center,32.75459899,-117.19996230,,,0,mts:ottc_w,1,M-TC-Bus,oldttc,Old Town TC,ottc_w
+mts:94025,94025,Old Town Transit Center,32.75426737,-117.19983838,,,0,mts:ottc_w,1,M-TC-Bus,oldttc,Old Town TC,ottc_w
+mts:94027,94027,Old Town Transit Center,32.75482915,-117.19934027,,,0,mts:ottc_e,1,M-TC-Bus,oldttc,Old Town TC,ottc_e
+mts:94028,94028,Old Town Transit Center,32.75464817,-117.19928627,,,0,mts:ottc_e,1,M-TC-Bus,oldttc,Old Town TC,ottc_e
+mts:94030,94030,Old Town Transit Center,32.75448649,-117.19922273,,,0,mts:ottc_e,1,M-TC-Bus,oldttc,Old Town TC,ottc_e
+mts:94031,94031,Old Town Transit Center,32.75484674,-117.19919734,,,0,mts:ottc_e,1,M-TC-Bus,oldttc,Old Town TC,ottc_e
+mts:94034,94034,Old Town Transit Center,32.75433064,-117.19911697,,,0,mts:ottc_e,1,M-TC-Bus,oldttc,Old Town TC,ottc_e
+mts:96034,96034,Old Town Transit Center,32.75478907,-117.19990580,,,0,mts:ottc_w,1,M-TC-Bus,oldttc,Old Town TC,ottc_w
 mts:40487,40487,Olde Hwy 80 & Dunbar Ln,32.85798268,-116.82015174,,,0,,2,F-W/B,,Olde Hwy 80&Dunbar,
 mts:41037,41037,Olde Hwy 80 & Marina Springs Ln,32.84872479,-116.86230023,,,0,,2,F-W/B,,Olde Hwy 80&Marina Sprgs,
 mts:30315,30315,Oleander Av & Ivy Ct,32.62579368,-117.03805097,,,0,,1,N-S/B,,Oleander&Ivy,telole
@@ -3144,8 +3144,8 @@ mts:88956,88956,Otay Ranch Station,32.62456316,-116.96454088,,,0,,0,M-Street-S/B
 mts:88957,88957,Otay Ranch Station,32.62472677,-116.96447953,,,0,,0,M-Street-N/B,,Otay Ranch Sta,otrsta
 mts:60458,60458,Outer Rd & 1027,32.57796734,-117.08235248,,,0,,2,M-Street-N/B,,Outer&1027,
 mts:60454,60454,Outer Rd & 1060,32.57728903,-117.08186242,,,0,,1,N-S/B,,Outer&1060,
-mts:75106,75106,Pacific Fleet Station,32.68609889,-117.12479089,,,0,pacS,0,,,Pacific Fleet,pacS
-mts:75107,75107,Pacific Fleet Station,32.68589302,-117.12463707,,,0,pacS,0,,,Pacific Fleet,pacS
+mts:75106,75106,Pacific Fleet Station,32.68609889,-117.12479089,,,0,mts:pacS,0,,,Pacific Fleet,pacS
+mts:75107,75107,Pacific Fleet Station,32.68589302,-117.12463707,,,0,mts:pacS,0,,,Pacific Fleet,pacS
 mts:99061,99061,Pacific Heights Bl & Mira Mesa Bl,32.90076954,-117.19009862,,,0,,1,F-N/B,,Pcfc Heights&Mra Msa,pacmir
 mts:12366,12366,Pacific Hwy & 4137,32.74459303,-117.19296929,,,0,,1,M-Street-N/B,,Pcfc Hwy&4137,
 mts:99025,99025,Pacific Hwy & Broadway,32.71615347,-117.17085888,,,0,,1,F-N/B,,Pcfc Hwy&Brdwy,bropac
@@ -3153,7 +3153,7 @@ mts:12691,12691,Pacific Hwy & Enterprise St,32.74760274,-117.19798095,,,0,,1,F-N
 mts:11589,11589,Pacific Hwy & Sports Arena Bl,32.74735154,-117.19812136,,,0,,1,F-S/B,,Pcfc Hwy&Sports Arena,
 mts:12377,12377,Pacific Hwy & Washington St,32.74108432,-117.18487285,,,0,,1,F-N/B,,Pcfc Hwy&Wshngtn,waspac
 mts:11957,11957,Pacific Hwy & Witherby St (Gate 4),32.74426556,-117.19302108,,,0,,1,M-Street-S/B,,Pcfc Hwy&Witherby (Gate 4),
-mts:89008,89008,Pacific Hwy @ Old Town Transit Center,32.75372615,-117.20059268,,,0,ottcw2,0,,,Pcfc Hwy @ Old Town TC,ottcw2
+mts:89008,89008,Pacific Hwy @ Old Town Transit Center,32.75372615,-117.20059268,,,0,mts:ottcw2,0,,,Pcfc Hwy @ Old Town TC,ottcw2
 mts:60078,60078,Palm Av & 13th St,32.58371434,-117.10522852,,,0,,1,F-E/B,,Palm&13th,
 mts:60143,60143,Palm Av & 13th St,32.58405639,-117.10544610,,,0,,1,N-W/B,,Palm&13th,
 mts:60034,60034,Palm Av & 16th St,32.58370586,-117.09970315,,,0,,1,N-E/B,,Palm&16th,
@@ -3204,8 +3204,8 @@ mts:60036,60036,Palm Av & Thermal Av,32.58370170,-117.09711577,,,0,,1,N-E/B,,Pal
 mts:60185,60185,Palm Av & Thermal Av,32.58402904,-117.09707670,,,0,,1,F-W/B,,Palm&Thermal,
 mts:60470,60470,Palm Av & Twining Av,32.58359391,-117.04527066,,,0,,1,F-E/B,,Palm&Twining,
 mts:60482,60482,Palm Av & Twining Av,32.58383513,-117.04494495,,,0,,1,N-W/B,,Palm&Twining,
-mts:75006,75006,Palm Avenue Station,32.58477987,-117.08375293,,,0,plmS,0,M-TC-Train-N/B,,Palm Av,plmS
-mts:75007,75007,Palm Avenue Station,32.58445400,-117.08385991,,,0,plmS,0,M-TC-Train-S/B,,Palm Av,plmS
+mts:75006,75006,Palm Avenue Station,32.58477987,-117.08375293,,,0,mts:plmS,0,M-TC-Train-N/B,,Palm Av,plmS
+mts:75007,75007,Palm Avenue Station,32.58445400,-117.08385991,,,0,mts:plmS,0,M-TC-Train-S/B,,Palm Av,plmS
 mts:98055,98055,Palm Canyon Dr & Sunset Realty,33.25646462,-116.37742756,,,0,,2,M-Street-E/B,,Palm Cyn&Sunset Realty,
 mts:98002,98002,Palm Canyon Rd & 1010,33.25672815,-116.36055189,,,0,,2,M-Street-W/B,,Palm Cyn&1010,
 mts:98001,98001,Palm Canyon Rd & 818,33.25678001,-116.36981596,,,0,,2,M-Street-W/B,,Palm Cyn&818,
@@ -3232,11 +3232,11 @@ mts:30224,30224,Palomar St & Broadway,32.60351370,-117.07961585,,,0,,1,F-W/B,,Pa
 mts:30084,30084,Palomar St & Orange Av,32.60363357,-117.07732129,,,0,,2,F-E/B,,Palomar&Orange,
 mts:30165,30165,Palomar St & Orange Av,32.60381090,-117.07751778,,,0,,1,M-Street-W/B,,Palomar&Orange,
 mts:30096,30096,Palomar St & Preston Pl,32.60563635,-117.07017652,,,0,,0,F-E/B,,Palomar&Preston,
-mts:75008,75008,Palomar Street Station,32.60329399,-117.08508185,,,0,palS,0,M-TC-Train-N/B,,Palomar St,palS
-mts:75009,75009,Palomar Street Station,32.60302707,-117.08508809,,,0,palS,0,M-TC-Train-S/B,,Palomar St,palS
-mts:91001,91001,Palomar Street Transit Center,32.60280258,-117.08479471,,,0,paltro,1,M-TC-Bus,,PalomarTC,paltro
-mts:91003,91003,Palomar Street Transit Center,32.60313152,-117.08492445,,,0,paltro,1,M-TC-Bus,,PalomarTC,paltro
-mts:96004,96004,Palomar Street Transit Center,32.60296427,-117.08486442,,,0,paltro,1,M-TC-Bus,,PalomarTC,paltro
+mts:75008,75008,Palomar Street Station,32.60329399,-117.08508185,,,0,mts:palS,0,M-TC-Train-N/B,,Palomar St,palS
+mts:75009,75009,Palomar Street Station,32.60302707,-117.08508809,,,0,mts:palS,0,M-TC-Train-S/B,,Palomar St,palS
+mts:91001,91001,Palomar Street Transit Center,32.60280258,-117.08479471,,,0,mts:paltro,1,M-TC-Bus,,PalomarTC,paltro
+mts:91003,91003,Palomar Street Transit Center,32.60313152,-117.08492445,,,0,mts:paltro,1,M-TC-Bus,,PalomarTC,paltro
+mts:96004,96004,Palomar Street Transit Center,32.60296427,-117.08486442,,,0,mts:paltro,1,M-TC-Bus,,PalomarTC,paltro
 mts:60718,60718,Paradise Valley Rd & Briarwood Rd,32.69171050,-117.03633243,,,0,,1,F-E/B,,Pdse Vly&Briarwood,
 mts:60723,60723,Paradise Valley Rd & Briarwood Rd,32.69176714,-117.03736329,,,0,,1,F-W/B,,Pdse Vly&Briarwood,
 mts:10722,10722,Paradise Valley Rd & Deep Dell Rd,32.69549801,-117.02895518,,,0,,1,F-E/B,,Pdse Vly&Deep Dell,deepar
@@ -3258,12 +3258,12 @@ mts:60717,60717,Paradise Valley Rd & Woodman St,32.68902171,-117.04587709,,,0,,1
 mts:60739,60739,Paradise Valley Rd & Woodman St,32.68900689,-117.04689427,,,0,,1,F-W/B,,Pdse Vly&Woodman,woopa1
 mts:99319,99319,Paradise Valley Rd & Worthington St,32.69730961,-117.01926839,,,0,,1,M-Street-W/B,,Pdse Vly&Worthington,
 mts:99320,99320,Paradise Valley Rd & Worthington St,32.69705953,-117.01926296,,,0,,1,M-Street-E/B,,Pdse Vly&Worthington,
-mts:75092,75092,Park & Market Station,32.71105999,-117.15372103,,,0,marS,0,,,Park & Market,marS
-mts:75093,75093,Park & Market Station,32.71092006,-117.15380087,,,0,marS,0,,,Park & Market,marS
+mts:75092,75092,Park & Market Station,32.71105999,-117.15372103,,,0,mts:marS,0,,,Park & Market,marS
+mts:75093,75093,Park & Market Station,32.71092006,-117.15380087,,,0,mts:marS,0,,,Park & Market,marS
 mts:99006,99006,Park Bl & 10th Av (Petco Park),32.70694025,-117.15522005,,,0,,1,M-Street-N/B,,Park&10th (Petco Park),
 mts:12053,12053,Park Bl & B St,32.71829933,-117.15386711,,,0,,1,N-S/B,,Park&B,
 mts:12786,12786,Park Bl & B St,32.71804818,-117.15363369,,,0,,1,F-N/B,,Park&B,
-mts:91107,91107,Park Bl & Broadway,32.71601546,-117.15384694,,,0,citcol,1,N-S/B,,Park&Brdwy,citcol
+mts:91107,91107,Park Bl & Broadway,32.71601546,-117.15384694,,,0,mts:citcol,1,N-S/B,,Park&Brdwy,citcol
 mts:12062,12062,Park Bl & Cypress Av,32.74406003,-117.14762031,,,0,,1,F-S/B,,Park&Cypress,
 mts:12795,12795,Park Bl & Cypress Av,32.74462248,-117.14737887,,,0,,1,F-N/B,,Park&Cypress,
 mts:12800,12800,Park Bl & El Cajon Bl,32.75574122,-117.14610647,,,0,,1,F-N/B,,Park&El Cjn,
@@ -3502,8 +3502,8 @@ mts:12404,12404,Reynard Wy & Eagle St,32.73702832,-117.16977297,,,0,,0,N-N/B,,Re
 mts:11621,11621,Reynard Wy & Otsego Dr,32.74225617,-117.17048773,,,0,,0,N-S/B,,Reynard&Otsego,
 mts:12735,12735,Reynard Wy & Otsego Dr,32.74249549,-117.17046096,,,0,,0,F-N/B,,Reynard&Otsego,
 mts:11998,11998,Reynard Wy & Redwood St,32.73733740,-117.16997457,,,0,,0,F-S/B,,Reynard&Redwood,
-mts:75052,75052,Rio Vista Station,32.77363297,-117.14196704,,,0,rioS,0,,,Rio Vista,rioS
-mts:75053,75053,Rio Vista Station,32.77362089,-117.14169885,,,0,rioS,0,,,Rio Vista,rioS
+mts:75052,75052,Rio Vista Station,32.77363297,-117.14196704,,,0,mts:rioS,0,,,Rio Vista,rioS
+mts:75053,75053,Rio Vista Station,32.77362089,-117.14169885,,,0,mts:rioS,0,,,Rio Vista,rioS
 mts:11893,11893,Rosecrans St & Armada Pl,32.71785207,-117.23592581,,,0,,0,F-W/B,,Rosecrans&Armada,
 mts:12648,12648,Rosecrans St & Bessemer St,32.71919390,-117.23413631,,,0,,0,F-E/B,,Rosecrans&Bessemer,
 mts:12654,12654,Rosecrans St & Canon St,32.72163854,-117.23157218,,,0,,1,F-E/B,,Rosecrans&Canon,roscan
@@ -3626,20 +3626,20 @@ mts:60595,60595,San Ysidro Bl & Via De San Ysidro,32.55283446,-117.04590230,,,0,
 mts:60249,60249,San Ysidro Bl & Virginia Av,32.55009809,-117.03675240,,,0,,1,N-S/B,,San Ysidro&Virginia,
 mts:60440,60440,San Ysidro Bl & Virginia Av,32.55000561,-117.03617071,,,0,,1,N-N/B,,San Ysidro&Virginia,
 mts:60365,60365,San Ysidro Bl & W Park Av,32.55236898,-117.04435339,,,0,,1,N-N/B,,San Ysidro&W Park,
-mts:75000,75000,San Ysidro Station,32.54456598,-117.02953904,,,0,sayS,0,M-TC-Train-N/B,,San Ysidro,sayS
-mts:64001,64001,San Ysidro Transit Center,32.54475530,-117.02980646,,,0,sytro,1,M-TC-Bus,,San Ysidro TC,sytro
-mts:99347,99347,San Ysidro Transit Center,32.54459878,-117.02969735,,,0,sytro,1,N-N/B,,San Ysidro TC,sytro
+mts:75000,75000,San Ysidro Station,32.54456598,-117.02953904,,,0,mts:sayS,0,M-TC-Train-N/B,,San Ysidro,sayS
+mts:64001,64001,San Ysidro Transit Center,32.54475530,-117.02980646,,,0,mts:sytro,1,M-TC-Bus,,San Ysidro TC,sytro
+mts:99347,99347,San Ysidro Transit Center,32.54459878,-117.02969735,,,0,mts:sytro,1,N-N/B,,San Ysidro TC,sytro
 mts:12468,12468,Sandrock Rd & Murray Ridge Rd,32.80363038,-117.13939494,,,0,,1,N-N/B,,Sandrock&Murray Ridge,mursan
 mts:60744,60744,Sandrock Rd & Murray Ridge Rd,32.80371584,-117.13974077,,,0,,1,F-S/B,,Sandrock&Murray Ridge,mursan
-mts:75082,75082,Santa Fe Depot,32.71732492,-117.16986094,,,0,sfdS,0,,,Santa Fe,sfdS
-mts:75083,75083,Santa Fe Depot,32.71732388,-117.16977900,,,0,sfdS,0,,,Santa Fe,sfdS
+mts:75082,75082,Santa Fe Depot,32.71732492,-117.16986094,,,0,mts:sfdS,0,,,Santa Fe,sfdS
+mts:75083,75083,Santa Fe Depot,32.71732388,-117.16977900,,,0,mts:sfdS,0,,,Santa Fe,sfdS
 mts:99589,99589,Santa Fe Depot,32.71705839,-117.16929797,,,0,,0,F-S/B,,Santa Fe Depot,ampket
 mts:88954,88954,Santa Venetia Station,32.62697743,-116.97582290,,,0,,0,M-Street-E/B,,Santa Venetia Sta,snvsta
 mts:88955,88955,Santa Venetia Station,32.62694704,-116.97547643,,,0,,0,M-Street-W/B,,Santa Venetia Sta,snvsta
-mts:91091,91091,Santee Town Center,32.84250209,-116.98063666,,,0,santtc,0,M-TC-Bus,,Santee Town Ctr,santtc
-mts:91092,91092,Santee Town Center,32.84234735,-116.98077538,,,0,santtc,0,M-TC-Bus,,Santee Town Ctr,santtc
-mts:96006,96006,Santee Town Center,32.84259478,-116.98076441,,,0,santtc,0,M-TC-Bus,,Santee Town Ctr,santtc
-mts:75020,75020,Santee Town Center Station,32.84155808,-116.98113185,,,0,sanS,0,,,Santee Town Cntr,sanS
+mts:91091,91091,Santee Town Center,32.84250209,-116.98063666,,,0,mts:santtc,0,M-TC-Bus,,Santee Town Ctr,santtc
+mts:91092,91092,Santee Town Center,32.84234735,-116.98077538,,,0,mts:santtc,0,M-TC-Bus,,Santee Town Ctr,santtc
+mts:96006,96006,Santee Town Center,32.84259478,-116.98076441,,,0,mts:santtc,0,M-TC-Bus,,Santee Town Ctr,santtc
+mts:75020,75020,Santee Town Center Station,32.84155808,-116.98113185,,,0,mts:sanS,0,,,Santee Town Cntr,sanS
 mts:60788,60788,Santo Rd & Aero Dr,32.81022886,-117.10526109,,,0,,1,F-N/B,,Santo&Aero,
 mts:11721,11721,Santo Rd & Aero Rd,32.81046294,-117.10559209,,,0,,1,N-S/B,,Santo&Aero,
 mts:12130,12130,Santo Rd & Orleck St,32.81927597,-117.10405153,,,0,,1,F-S/B,,Santo&Orleck,
@@ -3675,19 +3675,19 @@ mts:13286,13286,Scripps Ranch Bl & Scripps Lake Dr,32.91112110,-117.10998946,,,0
 mts:13291,13291,Scripps Ranch Bl & Scripps Lake Dr,32.91215910,-117.10972915,,,0,,0,F-N/B,,Scripps Ranch&Scripps Lake,
 mts:13288,13288,Scripps Ranch Bl & Scripps Ranch Ct,32.90548395,-117.10919472,,,0,,0,N-S/B,,Scripps Ranch&Scripps Ranch,
 mts:13289,13289,Scripps Ranch Bl & Scripps Ranch Ct,32.90558504,-117.10888617,,,0,,0,F-N/B,,Scripps Ranch&Scripps Ranch,
-mts:75062,75062,SDSU Station,32.77327502,-117.07063815,,,0,sdsS,0,,,SDSU,sdsS
-mts:75063,75063,SDSU Station,32.77316493,-117.07037198,,,0,sdsS,0,,,SDSU,sdsS
-mts:99017,99017,SDSU Transit Center,32.77313910,-117.07065966,,,0,sdsutc,1,M-TC-Bus,,SDSU TC,sdsutc
-mts:99094,99094,SDSU Transit Center,32.77312869,-117.07015855,,,0,sdsutc,1,M-TC-Bus,,SDSU TC,sdsutc
-mts:99095,99095,SDSU Transit Center,32.77290675,-117.07005563,,,0,sdsutc,1,M-TC-Bus,,SDSU TC,sdsutc
-mts:99096,99096,SDSU Transit Center,32.77304520,-117.07155345,,,0,sdsutc,1,M-TC-Bus,,SDSU TC,sdsutc
+mts:75062,75062,SDSU Station,32.77327502,-117.07063815,,,0,mts:sdsS,0,,,SDSU,sdsS
+mts:75063,75063,SDSU Station,32.77316493,-117.07037198,,,0,mts:sdsS,0,,,SDSU,sdsS
+mts:99017,99017,SDSU Transit Center,32.77313910,-117.07065966,,,0,mts:sdsutc,1,M-TC-Bus,,SDSU TC,sdsutc
+mts:99094,99094,SDSU Transit Center,32.77312869,-117.07015855,,,0,mts:sdsutc,1,M-TC-Bus,,SDSU TC,sdsutc
+mts:99095,99095,SDSU Transit Center,32.77290675,-117.07005563,,,0,mts:sdsutc,1,M-TC-Bus,,SDSU TC,sdsutc
+mts:99096,99096,SDSU Transit Center,32.77304520,-117.07155345,,,0,mts:sdsutc,1,M-TC-Bus,,SDSU TC,sdsutc
 mts:60223,60223,Seacoast Dr & Dahlia Av,32.58328806,-117.13176649,,,0,,1,N-S/B,,Seacoast&Dahlia,seadah
 mts:60502,60502,Seacoast Dr & Daisy Av,32.58185886,-117.13176519,,,0,,1,N-S/B,,Seacoast&Daisy,
 mts:60222,60222,Seacoast Dr & Evergreen Av,32.57963521,-117.13178194,,,0,,1,N-S/B,,Seacoast&Evergreen,seaeve
 mts:60392,60392,Seacoast Dr & Evergreen Av,32.57981236,-117.13160841,,,0,,1,F-N/B,,Seacoast&Evergreen,
 mts:60329,60329,Seacoast Dr & Palm Av,32.58373452,-117.13159889,,,0,,1,N-N/B,,Seacoast&Palm,
-mts:75094,75094,Seaport Village Station,32.71173999,-117.16845216,,,0,seaS,0,,,Seaport Village,seaS
-mts:75095,75095,Seaport Village Station,32.71200095,-117.16862004,,,0,seaS,0,,,Seaport Village,seaS
+mts:75094,75094,Seaport Village Station,32.71173999,-117.16845216,,,0,mts:seaS,0,,,Seaport Village,seaS
+mts:75095,75095,Seaport Village Station,32.71200095,-117.16862004,,,0,mts:seaS,0,,,Seaport Village,seaS
 mts:13059,13059,SeaWorld,32.76390304,-117.22945696,,,0,,1,M-Special_Loc,,SeaWorld,seawld
 mts:99381,99381,Shelter Island Dr & Rosecrans St,32.72231136,-117.23060748,,,0,,1,F-S/B,,Shelter Island&Rosecrans,
 mts:89035,89035,Sheridan Rd & Evening Primrose Trail,32.62034455,-116.46460746,,,0,,0,N-N/B,,Sheridan&Evening Primrose Trail,
@@ -3759,13 +3759,13 @@ mts:10299,10299,Skyline Dr & Sychar Rd,32.70316505,-117.04294908,,,0,,1,N-E/B,,S
 mts:11063,11063,Skyline Dr & Sychar Rd,32.70355163,-117.04266974,,,0,,1,N-W/B,,Skyline&Sychar,
 mts:11437,11437,Skyline Dr & Tuther Way,32.70299550,-117.04452416,,,0,,1,F-W/B,,Skyline&Tuther Way,
 mts:10287,10287,Skyline Dr & Woodman St,32.70117147,-117.05539095,,,0,,1,N-E/B,,Skyline&Woodman,woosky
-mts:60205,60205,South Vista Av & Cottonwood Rd,32.55808081,-117.04809804,,,0,svicot,0,F-W/B,,SVista&Cottonwood,svicot
-mts:60052,60052,South Vista Av & Sunset Ln,32.55803537,-117.04832481,,,0,svicot,2,F-S/B,,SVista&Sunset,svicot
-mts:92251,92251,Southwestern College Transit Center,32.64143620,-116.99595102,,,0,swcoll,0,M-TC-Bus,,Southwestern Coll TC,swcoll
-mts:92252,92252,Southwestern College Transit Center,32.64131376,-116.99574533,,,0,swcoll,0,M-TC-Bus,,Southwestern Coll TC,swcoll
-mts:92254,92254,Southwestern College Transit Center,32.64168378,-116.99636892,,,0,swcoll,0,M-TC-Bus,,Southwestern Coll TC,swcoll
-mts:98998,98998,Southwestern College Transit Center,32.64097099,-116.99516097,,,0,swcoll,0,,,Southwestern Coll TC,swcoll
-mts:98999,98999,Southwestern College Transit Center,32.64111797,-116.99539934,,,0,swcoll,0,M-TC-Bus,,Southwestern Coll TC,swcoll
+mts:60205,60205,South Vista Av & Cottonwood Rd,32.55808081,-117.04809804,,,0,mts:svicot,0,F-W/B,,SVista&Cottonwood,svicot
+mts:60052,60052,South Vista Av & Sunset Ln,32.55803537,-117.04832481,,,0,mts:svicot,2,F-S/B,,SVista&Sunset,svicot
+mts:92251,92251,Southwestern College Transit Center,32.64143620,-116.99595102,,,0,mts:swcoll,0,M-TC-Bus,,Southwestern Coll TC,swcoll
+mts:92252,92252,Southwestern College Transit Center,32.64131376,-116.99574533,,,0,mts:swcoll,0,M-TC-Bus,,Southwestern Coll TC,swcoll
+mts:92254,92254,Southwestern College Transit Center,32.64168378,-116.99636892,,,0,mts:swcoll,0,M-TC-Bus,,Southwestern Coll TC,swcoll
+mts:98998,98998,Southwestern College Transit Center,32.64097099,-116.99516097,,,0,mts:swcoll,0,,,Southwestern Coll TC,swcoll
+mts:98999,98999,Southwestern College Transit Center,32.64111797,-116.99539934,,,0,mts:swcoll,0,M-TC-Bus,,Southwestern Coll TC,swcoll
 mts:13344,13344,Sports Arena Bl & 3250,32.75326284,-117.20853808,,,0,,1,M-Street-N/B,,Sports Arena&3250,
 mts:13341,13341,Sports Arena Bl & 3505,32.75358810,-117.21195039,,,0,,1,M-Street-S/B,,Sports Arena&3505,
 mts:13340,13340,Sports Arena Bl & 3737,32.75419191,-117.21522917,,,0,,1,M-TC-Train-S/B,,Sports Arena&3737,
@@ -3776,10 +3776,10 @@ mts:13339,13339,Sports Arena Bl & Midway Dr,32.75469812,-117.21832476,,,0,,0,F-S
 mts:13345,13345,Sports Arena Bl & Sports Arena Drwy,32.75401646,-117.21235515,,,0,,1,F-N/B,,Sports Arena&Sports Arena,
 mts:40616,40616,Spring St & Palm Av,32.75562450,-117.01480099,,,0,,1,N-S/B,,Spring&Palm,
 mts:40715,40715,Spring St & Palm Av,32.75492429,-117.01336375,,,0,,1,M-Street-W/B,,Spring&Palm,
-mts:70031,70031,Spring Street Station,32.75689946,-117.01724476,,,0,sprtro,0,,,Spring St Sta,sprtro
-mts:70032,70032,Spring Street Station,32.75696738,-117.01719689,,,0,sprtro,1,M-TC-Bus,,Spring St Sta,sprtro
-mts:75036,75036,Spring Street Station,32.75690711,-117.01738502,,,0,sprS,0,M-TC-Train-N/B,,Spring St,sprS
-mts:75037,75037,Spring Street Station,32.75675394,-117.01753104,,,0,sprS,0,M-TC-Train-S/B,,Spring St,sprS
+mts:70031,70031,Spring Street Station,32.75689946,-117.01724476,,,0,mts:sprtro,0,,,Spring St Sta,sprtro
+mts:70032,70032,Spring Street Station,32.75696738,-117.01719689,,,0,mts:sprtro,1,M-TC-Bus,,Spring St Sta,sprtro
+mts:75036,75036,Spring Street Station,32.75690711,-117.01738502,,,0,mts:sprS,0,M-TC-Train-N/B,,Spring St,sprS
+mts:75037,75037,Spring Street Station,32.75675394,-117.01753104,,,0,mts:sprS,0,M-TC-Train-S/B,,Spring St,sprS
 mts:98118,98118,Sr 188 & Humphries Rd,32.58281618,-116.63349429,,,0,,2,F-N/B,,Sr 188&Humphries,
 mts:98117,98117,Sr 188 & Tecate Mart,32.57850031,-116.62844412,,,0,,2,M-Street-N/B,,Sr 188&Tecate Mart,tecate
 mts:98022,98022,Sr 67 & Day St,33.03457361,-116.88118988,,,0,,2,M-Street-N/B,,Sr 67&Day,
@@ -3787,8 +3787,8 @@ mts:98020,98020,Sr 67 & Letton St,33.03250994,-116.88379842,,,0,,1,F-N/B,,Sr 67&
 mts:98021,98021,Sr 67 & Letton St,33.03266365,-116.88383868,,,0,,2,N-S/B,,Sr 67&Letton,
 mts:99591,99591,SR-905 & Caliente Av,32.56577644,-117.01498770,,,0,,1,N-E/B,,SR-905&Caliente,cal905
 mts:99592,99592,SR-905 & Caliente Av,32.56705095,-117.01466995,,,0,,1,F-W/B,,SR-905&Caliente,905cal
-mts:75056,75056,Stadium Station,32.78092904,-117.11949198,,,0,quaS,0,,,Stadium,quaS
-mts:75057,75057,Stadium Station,32.78102507,-117.11971092,,,0,quaS,0,,,Stadium,quaS
+mts:75056,75056,Stadium Station,32.78092904,-117.11949198,,,0,mts:quaS,0,,,Stadium,quaS
+mts:75057,75057,Stadium Station,32.78102507,-117.11971092,,,0,mts:quaS,0,,,Stadium,quaS
 mts:99387,99387,Stalmer St & Angelucci St,32.80795224,-117.15623901,,,0,,1,F-W/B,,Stalmer&Angelucci,
 mts:99390,99390,Stalmer St & Angelucci St,32.80783523,-117.15607833,,,0,,1,N-E/B,,Stalmer&Angelucci,
 mts:10854,10854,Starling Dr & Health Center Dr,32.79292929,-117.15617878,,,0,,1,N-W/B,,Starling&Health Ctr,
@@ -3859,8 +3859,8 @@ mts:12689,12689,Taylor St & Juan St,32.75656106,-117.19858152,,,0,,1,F-E/B,,Tayl
 mts:11590,11590,Taylor St & Presidio Dr,32.75923111,-117.19663254,,,0,,2,N-W/B,,Taylor&Presidio,
 mts:12692,12692,Taylor St & Presidio Dr,32.75926361,-117.19633688,,,0,,1,F-E/B,,Taylor&Presidio,
 mts:11584,11584,Taylor St & Sunset St,32.75738276,-117.19823907,,,0,,1,F-S/B,,Taylor&Sunset,
-mts:77770,77770,Tecolote Road Station,32.76981209,-117.20508853,,,0,tecS,0,,,Tecolote Road Sta,tecS
-mts:77771,77771,Tecolote Road Station,32.76991399,-117.20506166,,,0,tecS,0,,,Tecolote Road Sta,tecS
+mts:77770,77770,Tecolote Road Station,32.76981209,-117.20508853,,,0,mts:tecS,0,,,Tecolote Road Sta,tecS
+mts:77771,77771,Tecolote Road Station,32.76991399,-117.20506166,,,0,mts:tecS,0,,,Tecolote Road Sta,tecS
 mts:96035,96035,Temple St & Midland Rd,32.96919864,-117.03577298,,,0,,1,F-E/B,,Temple&Midland,temmid
 mts:90002,90002,Terminal 1 Transportation Island,32.73133209,-117.19654097,,,0,,0,,,Trm 1 Transportation Island,AIREN1
 mts:90003,90003,Terminal 2 Transportation Island,32.73127112,-117.20185703,,,0,,0,,,Trm 2 Transportation Island,AIREN2
@@ -3897,25 +3897,25 @@ mts:40018,40018,Twin Peaks Rd & Tierra Bonita Rd,32.97809563,-117.02791875,,,0,,
 mts:40378,40378,Twin Peaks Rd & Tierra Bonita Rd,32.97833162,-117.02797954,,,0,,0,F-W/B,,Twin Peaks&Tierra Bonita,
 mts:41128,41128,Tyler St & Spring Grove Ln,32.73043755,-117.01299881,,,0,,1,F-W/B,,Tyler&Spring Grove,
 mts:41117,41117,Tyler St & Tyler Ct,32.73034076,-117.01220455,,,0,,1,N-E/B,,Tyler&Tyler,
-mts:77781,77781,UCSD Central Campus Station,32.87829122,-117.23184702,,,0,pepS,0,,,UCSD Central Campus Sta,pepS
-mts:77782,77782,UCSD Central Campus Station,32.87844073,-117.23177898,,,0,pepS,0,,,UCSD Central Campus Sta,pepS
-mts:88986,88986,UCSD Central Campus Station,32.87943236,-117.23195747,,,0,peptc,0,M-TC-Bus,,UCSD Central Campus Sta,peptc
-mts:75064,75064,UCSD Health East Station,32.77730904,-117.05670693,,,0,avlS,0,,,UCSD Health East,avlS
-mts:75065,75065,UCSD Health East Station,32.77742199,-117.05691814,,,0,avlS,0,,,UCSD Health East,avlS
-mts:77783,77783,UCSD Health La Jolla Station,32.88190183,-117.22359758,,,0,voiS,0,,,UCSD Health LJ Sta,voiS
-mts:77784,77784,UCSD Health La Jolla Station,32.88181636,-117.22349207,,,0,voiS,0,,,UCSD Health LJ Sta,voiS
+mts:77781,77781,UCSD Central Campus Station,32.87829122,-117.23184702,,,0,mts:pepS,0,,,UCSD Central Campus Sta,pepS
+mts:77782,77782,UCSD Central Campus Station,32.87844073,-117.23177898,,,0,mts:pepS,0,,,UCSD Central Campus Sta,pepS
+mts:88986,88986,UCSD Central Campus Station,32.87943236,-117.23195747,,,0,mts:peptc,0,M-TC-Bus,,UCSD Central Campus Sta,peptc
+mts:75064,75064,UCSD Health East Station,32.77730904,-117.05670693,,,0,mts:avlS,0,,,UCSD Health East,avlS
+mts:75065,75065,UCSD Health East Station,32.77742199,-117.05691814,,,0,mts:avlS,0,,,UCSD Health East,avlS
+mts:77783,77783,UCSD Health La Jolla Station,32.88190183,-117.22359758,,,0,mts:voiS,0,,,UCSD Health LJ Sta,voiS
+mts:77784,77784,UCSD Health La Jolla Station,32.88181636,-117.22349207,,,0,mts:voiS,0,,,UCSD Health LJ Sta,voiS
 mts:12006,12006,Ulric St & Fashion Hills Bl,32.77371844,-117.16753712,,,0,,1,F-S/B,,Ulric&Fashion Hills,
 mts:94059,94059,Ulric St & Fashion Hills Bl,32.77399814,-117.16762462,,,0,,1,N-N/B,,Ulric&Fashion Hills,
 mts:12008,12008,Ulric St & Linbrook Dr,32.77347133,-117.16639262,,,0,,1,F-S/B,,Ulric&Linbrook,
 mts:12410,12410,Ulric St & Linbrook Dr,32.77367903,-117.16618331,,,0,,1,N-N/B,,Ulric&Linbrook,
 mts:11622,11622,Ulric St & Tait St,32.78120942,-117.16958362,,,0,,1,N-S/B,,Ulric&Tait,
 mts:12738,12738,Ulric St & Tait St,32.78136203,-117.16938999,,,0,,1,F-N/B,,Ulric&Tait,
-mts:75060,75060,Union Grantville Station,32.78039787,-117.09738402,,,0,frmS,0,,,Union Grantville,frmS
-mts:75061,75061,Union Grantville Station,32.78053987,-117.09755913,,,0,frmS,0,,,Union Grantville,frmS
-mts:99015,99015,Union Grantville Station,32.78043436,-117.09699394,,,0,gratro,1,M-TC-Bus,,Union Grantville Sta,gratro
-mts:99580,99580,Union Grantville Station,32.78040259,-117.09721814,,,0,gratro,0,,,Union Grantville Sta,gratro
-mts:99581,99581,Union Grantville Station,32.78021295,-117.09721631,,,0,gratro,0,,,Union Grantville Sta,gratro
-mts:99582,99582,Union Grantville Station,32.78025015,-117.09700193,,,0,gratro,0,,,Union Grantville Sta,gratro
+mts:75060,75060,Union Grantville Station,32.78039787,-117.09738402,,,0,mts:frmS,0,,,Union Grantville,frmS
+mts:75061,75061,Union Grantville Station,32.78053987,-117.09755913,,,0,mts:frmS,0,,,Union Grantville,frmS
+mts:99015,99015,Union Grantville Station,32.78043436,-117.09699394,,,0,mts:gratro,1,M-TC-Bus,,Union Grantville Sta,gratro
+mts:99580,99580,Union Grantville Station,32.78040259,-117.09721814,,,0,mts:gratro,0,,,Union Grantville Sta,gratro
+mts:99581,99581,Union Grantville Station,32.78021295,-117.09721631,,,0,mts:gratro,0,,,Union Grantville Sta,gratro
+mts:99582,99582,Union Grantville Station,32.78025015,-117.09700193,,,0,mts:gratro,0,,,Union Grantville Sta,gratro
 mts:10106,10106,University Av & 10th Av,32.74831789,-117.15546302,,,0,,1,N-E/B,,Univ&10th,
 mts:10161,10161,University Av & 30th St,32.74833550,-117.13024061,,,0,,1,N-E/B,,Univ&30th,uni30t
 mts:11298,11298,University Av & 30th St,32.74856439,-117.13051935,,,0,,1,F-W/B,,Univ&30th,uni30t
@@ -4015,19 +4015,19 @@ mts:11447,11447,University Av & Yale Av,32.75590510,-117.04048984,,,0,,1,F-W/B,,
 mts:13521,13521,University Av & Yale Av,32.75566946,-117.04037714,,,0,,1,N-E/B,,Univ&Yale,
 mts:10162,10162,Upas St & 30th St,32.74102988,-117.12948143,,,0,,1,N-E/B,,Upas&30th,
 mts:10924,10924,Upas St & 30th St,32.74117963,-117.12968130,,,0,,1,N-W/B,,Upas&30th,
-mts:77787,77787,UTC Station,32.86920431,-117.21401071,,,0,utcS,0,,,UTC Sta,utcS
-mts:95030,95030,UTC Transit Center,32.86878900,-117.21355378,,,0,utc,1,M-TC-Bus,,UTC TC,utc
-mts:95031,95031,UTC Transit Center,32.86856359,-117.21352200,,,0,utc,1,M-TC-Bus,,UTC TC,utc
-mts:95032,95032,UTC Transit Center,32.86906000,-117.21373067,,,0,utc,1,M-TC-Bus,,UTC TC,utc
-mts:95033,95033,UTC Transit Center,32.86836552,-117.21368495,,,0,utc,1,M-TC-Bus,,UTC TC,utc
-mts:95034,95034,UTC Transit Center,32.86924824,-117.21355881,,,0,utc,1,M-TC-Bus,,UTC TC,utc
-mts:95037,95037,UTC Transit Center,32.86950540,-117.21371242,,,0,utc,0,M-TC-Bus,,UTC TC,utc
-mts:95039,95039,UTC Transit Center,32.86932796,-117.21369778,,,0,utc,0,M-TC-Bus,,UTC TC,utc
-mts:99186,99186,UTC Transit Center,32.86857075,-117.21369697,,,0,utc,1,N-S/B,,UTC TC,utc
+mts:77787,77787,UTC Station,32.86920431,-117.21401071,,,0,mts:utcS,0,,,UTC Sta,utcS
+mts:95030,95030,UTC Transit Center,32.86878900,-117.21355378,,,0,mts:utc,1,M-TC-Bus,,UTC TC,utc
+mts:95031,95031,UTC Transit Center,32.86856359,-117.21352200,,,0,mts:utc,1,M-TC-Bus,,UTC TC,utc
+mts:95032,95032,UTC Transit Center,32.86906000,-117.21373067,,,0,mts:utc,1,M-TC-Bus,,UTC TC,utc
+mts:95033,95033,UTC Transit Center,32.86836552,-117.21368495,,,0,mts:utc,1,M-TC-Bus,,UTC TC,utc
+mts:95034,95034,UTC Transit Center,32.86924824,-117.21355881,,,0,mts:utc,1,M-TC-Bus,,UTC TC,utc
+mts:95037,95037,UTC Transit Center,32.86950540,-117.21371242,,,0,mts:utc,0,M-TC-Bus,,UTC TC,utc
+mts:95039,95039,UTC Transit Center,32.86932796,-117.21369778,,,0,mts:utc,0,M-TC-Bus,,UTC TC,utc
+mts:99186,99186,UTC Transit Center,32.86857075,-117.21369697,,,0,mts:utc,1,N-S/B,,UTC TC,utc
 mts:88962,88962,VA Hospital,32.87489427,-117.23347676,,,0,,0,F-N/B,,VA Hospital,vilvah
 mts:88988,88988,VA Hospital,32.87475345,-117.23383412,,,0,,0,F-S/B,,VA Hospital,vilvah
-mts:77779,77779,VA Medical Center Station,32.87415396,-117.22992964,,,0,vahS,0,,,VA Medical Ctr Sta,vahS
-mts:77780,77780,VA Medical Center Station,32.87425324,-117.22981838,,,0,vahS,0,,,VA Medical Ctr Sta,vahS
+mts:77779,77779,VA Medical Center Station,32.87415396,-117.22992964,,,0,mts:vahS,0,,,VA Medical Ctr Sta,vahS
+mts:77780,77780,VA Medical Center Station,32.87425324,-117.22981838,,,0,mts:vahS,0,,,VA Medical Ctr Sta,vahS
 mts:60529,60529,Via De La Amistad & Roll Dr,32.55282102,-116.93676963,,,0,,1,F-E/B,,Via De La Amistad&Roll,otabor
 mts:98099,98099,Viejas Bl & Viejas Grade Rd (Perkins Store),32.85312310,-116.61551333,,,0,,2,N-S/B,,Viejas&Viejas Grade (Perkinsore),
 mts:99463,99463,Villa La Jolla Dr & Gilman Dr,32.86416066,-117.23575766,,,0,,2,F-E/B,,Villa LJ&Gilman,
@@ -4130,8 +4130,8 @@ mts:13353,13353,Washington St & India St,32.74303266,-117.18128679,,,0,,1,N-E/B,
 mts:13356,13356,Washington St & India St,32.74348402,-117.18120700,,,0,,2,N-W/B,,Wshngtn&India,
 mts:13351,13351,Washington St & Pacific Hwy,32.74062889,-117.18403872,,,0,,1,N-E/B,,Wshngtn&Pcfc Hwy,waspac
 mts:99373,99373,Washington St & Trolley Tracks,32.74153561,-117.18371336,,,0,,1,N-W/B,,Wshngtn&Trly Tracks,waspac
-mts:75076,75076,Washington Street Station,32.74172394,-117.18446791,,,0,wasS,0,,,Washington St,wasS
-mts:75077,75077,Washington Street Station,32.74154197,-117.18429004,,,0,wasS,0,,,Washington St,wasS
+mts:75076,75076,Washington Street Station,32.74172394,-117.18446791,,,0,mts:wasS,0,,,Washington St,wasS
+mts:75077,75077,Washington Street Station,32.74154197,-117.18429004,,,0,mts:wasS,0,,,Washington St,wasS
 mts:12181,12181,West Bernardo Dr & 16882,33.02099965,-117.08113823,,,0,,1,M-Street-S/B,,WBdo&16882,
 mts:13157,13157,West Bernardo Dr & 16911,33.02176260,-117.08130531,,,0,,1,M-Street-N/B,,WBdo&16911,
 mts:12915,12915,West Bernardo Dr & Caminito Siega,33.03038998,-117.08172957,,,0,,1,F-N/B,,WBdo&Cmto Siega,
@@ -5354,7 +5354,7 @@ nctd:22169,22169,Encinitas Bl & Vulcan Av,  33.048751,-117.293200,,,0,,,N-E/B,,E
 nctd:22170,22170,Encinitas Station Park and Ride,  33.047185,-117.292909,,,0,,,,,Encinitas Sta Park and Ride,
 nctd:22171,22171,Hwy 101 & Chesterfield Dr,  33.018560,-117.282219,,,0,,,F-S/B,,Hwy 101 & Chesterfield,
 nctd:22172,22172,Plaza St & Highway 101,  32.991703,-117.272093,,,0,,,N-E/B,,Pza&Highway 101,plz101
-nctd:22193,22193,Carlsbad Poinsettia Station,  33.109718,-117.319024,,,0,cpsta,,M-TC-Bus,,Clsbd Poinsettia Sta,cpsta
+nctd:22193,22193,Carlsbad Poinsettia Station,  33.109718,-117.319024,,,0,nctd:cpsta,,M-TC-Bus,,Clsbd Poinsettia Sta,cpsta
 nctd:22198,22198,Mission Rd & Aberdeen Av,  33.145906,-117.177638,,,0,,,M-Street-E/B,,Mission&Aberdeen,
 nctd:22199,22199,Mission Rd & Aberdeen Av,  33.146227,-117.178445,,,0,,,N-W/B,,Mission&Aberdeen,
 nctd:22201,22201,Stuart Mesa & Yamanaka,  33.255260,-117.407895,,,0,,,N-N/B,,Stuart Mesa&Yamanaka,
@@ -5851,13 +5851,13 @@ nctd:24940,24940,El Norte Pkwy & La Honda Dr,  33.151695,-117.056884,,,0,,,N-E/B
 nctd:24941,24941,El Norte Pkwy & Lincoln Av,  33.150952,-117.054233,,,0,,,N-W/B,,El Norte&Lincoln,
 nctd:24942,24942,Citrus Av,  33.149466,-117.050936,,,0,,,F-E/B,,Citrus,
 nctd:24943,24943,Mission Av & Old Grove Market Way,  33.229955,-117.311264,,,0,,,N-W/B,,Mission & Old Grove Mrkt Way,
-nctd:24944,24944,Encinitas Station Stall 3,  33.045531,-117.292692,,,0,encsta,,M-TC-Bus,,Encinitas Staall 3,encsta
-nctd:24945,24945,Encinitas Station Stall 2,  33.045350,-117.292670,,,0,encsta,,M-TC-Bus,,Encinitas Staall 2,encsta
-nctd:24948,24948,Encinitas Station Stall 5,  33.045384,-117.292830,,,0,encsta,,M-TC-Bus,,Encinitas Staall 5,encsta
-nctd:24949,24949,Encinitas Station Stall 6,  33.045560,-117.292855,,,0,encsta,,M-TC-Bus,,Encinitas Staall 6,encsta
-nctd:24953,24953,Carlsbad Village Station,  33.160728,-117.351003,,,0,cvsta,,M-TC-Bus,,Clsbd Vlge Sta,cvsta
-nctd:24954,24954,Carlsbad Village Station Stall 4,  33.160922,-117.351168,,,0,cvsta,,M-TC-Bus,,Clsbd Vlge Staall 4,cvsta
-nctd:24955,24955,Carlsbad Village Station Stall 5,  33.161072,-117.351288,,,0,cvsta,,M-TC-Bus,,Clsbd Vlge Staall 5,cvsta
+nctd:24944,24944,Encinitas Station Stall 3,  33.045531,-117.292692,,,0,nctd:encsta,,M-TC-Bus,,Encinitas Staall 3,encsta
+nctd:24945,24945,Encinitas Station Stall 2,  33.045350,-117.292670,,,0,nctd:encsta,,M-TC-Bus,,Encinitas Staall 2,encsta
+nctd:24948,24948,Encinitas Station Stall 5,  33.045384,-117.292830,,,0,nctd:encsta,,M-TC-Bus,,Encinitas Staall 5,encsta
+nctd:24949,24949,Encinitas Station Stall 6,  33.045560,-117.292855,,,0,nctd:encsta,,M-TC-Bus,,Encinitas Staall 6,encsta
+nctd:24953,24953,Carlsbad Village Station,  33.160728,-117.351003,,,0,nctd:cvsta,,M-TC-Bus,,Clsbd Vlge Sta,cvsta
+nctd:24954,24954,Carlsbad Village Station Stall 4,  33.160922,-117.351168,,,0,nctd:cvsta,,M-TC-Bus,,Clsbd Vlge Staall 4,cvsta
+nctd:24955,24955,Carlsbad Village Station Stall 5,  33.161072,-117.351288,,,0,nctd:cvsta,,M-TC-Bus,,Clsbd Vlge Staall 5,cvsta
 nctd:24958,24958,Palomar Medical Center,  33.121909,-117.120843,,,0,,,M-Special_Loc,,Palomar Medical Ctr,palwes
 nctd:24959,24959,N Torrey Pines Rd & John J Hopkins Dr,  32.897798,-117.242093,,,0,,,F-S/B,,N Try Pines & John J Hopkins,scripS
 nctd:24960,24960,Midway & Washington Av,  33.141812,-117.054007,,,0,,,F-N/B,,Midway&Wshngtn,wasmiW
@@ -5886,13 +5886,13 @@ nctd:24995,24995,College Blvd & Silver Bluff Dr,  33.239720,-117.290342,,,0,,,F-
 nctd:24996,24996,Mission Rd & Marcos St,  33.144734,-117.170597,,,0,,,F-W/B,,Mission&Marcos,
 nctd:24997,24997,Olive Av & Plymouth Dr,  33.204832,-117.250966,,,0,,,F-W/B,,Olive&Plymouth,
 nctd:24998,24998,Eucalyptus Av & Crescent Dr,  33.198155,-117.227352,,,0,,,,,Eucalyptus&Crescent,
-nctd:25002,25002,San Luis Rey Transit Center  Stall 2,  33.254522,-117.298539,,,0,slrtc,,M-TC-Bus,,San Luis Rey TC all 2,slrtc
-nctd:25003,25003,San Luis Rey Transit Center  Stall 3,  33.254510,-117.298316,,,0,slrtc,,M-TC-Bus,,San Luis Rey TC all 3,slrtc
-nctd:25004,25004,San Luis Rey Transit Center  Stall 4,  33.254495,-117.298094,,,0,slrtc,,M-TC-Bus,,San Luis Rey TC all 4,slrtc
-nctd:25005,25005,San Luis Rey Transit Center  Stall 5,  33.254478,-117.297881,,,0,slrtc,,M-TC-Bus,,San Luis Rey TC all 5,slrtc
-nctd:25008,25008,San Luis Rey Transit Center  Stall 8,  33.254333,-117.298049,,,0,slrtc,,M-TC-Bus,,San Luis Rey TC all 8,slrtc
-nctd:25009,25009,San Luis Rey Transit Center  Stall 9,  33.254348,-117.298272,,,0,slrtc,,M-TC-Bus,,San Luis Rey TC all 9,slrtc
-nctd:25010,25010,San Luis Rey Transit Center  Stall 10,  33.254363,-117.298481,,,0,slrtc,,M-TC-Bus,,San Luis Rey TC all 10,slrtc
+nctd:25002,25002,San Luis Rey Transit Center  Stall 2,  33.254522,-117.298539,,,0,nctd:slrtc,,M-TC-Bus,,San Luis Rey TC all 2,slrtc
+nctd:25003,25003,San Luis Rey Transit Center  Stall 3,  33.254510,-117.298316,,,0,nctd:slrtc,,M-TC-Bus,,San Luis Rey TC all 3,slrtc
+nctd:25004,25004,San Luis Rey Transit Center  Stall 4,  33.254495,-117.298094,,,0,nctd:slrtc,,M-TC-Bus,,San Luis Rey TC all 4,slrtc
+nctd:25005,25005,San Luis Rey Transit Center  Stall 5,  33.254478,-117.297881,,,0,nctd:slrtc,,M-TC-Bus,,San Luis Rey TC all 5,slrtc
+nctd:25008,25008,San Luis Rey Transit Center  Stall 8,  33.254333,-117.298049,,,0,nctd:slrtc,,M-TC-Bus,,San Luis Rey TC all 8,slrtc
+nctd:25009,25009,San Luis Rey Transit Center  Stall 9,  33.254348,-117.298272,,,0,nctd:slrtc,,M-TC-Bus,,San Luis Rey TC all 9,slrtc
+nctd:25010,25010,San Luis Rey Transit Center  Stall 10,  33.254363,-117.298481,,,0,nctd:slrtc,,M-TC-Bus,,San Luis Rey TC all 10,slrtc
 nctd:25013,25013,El Camino  Real & Lisa St,  33.151434,-117.303655,,,0,,,F-S/B,,El Cmo  Real&Lisa,
 nctd:25014,25014,Andreasen Dr & Enterprise St,  33.111957,-117.116227,,,0,,,F-W/B,,Andreasen&Enterprise,
 nctd:25016,25016,Hwy 76 & Magee Rd,  33.363774,-117.057136,,,0,,,N-W/B,,Hwy 76 & Magee,
@@ -5983,43 +5983,43 @@ nctd:92024,92024,Plaza Camino Real Transit Center Stall 4,  33.178327,-117.33637
 nctd:92025,92025,Plaza Camino Real Transit Center Stall 5,  33.178334,-117.336185,,,0,,,M-TC-Bus,,Pza Cmo Real TCall 5,pcrtc
 nctd:92026,92026,Plaza Camino Real Transit Center Stall 6,  33.178264,-117.336283,,,0,,,M-TC-Bus,,Pza Cmo Real TCall 6,pcrtc
 nctd:92027,92027,Plaza Camino Real Transit Center Stall 7,  33.178279,-117.336482,,,0,,,M-Street-W/B,,Pza Cmo Real TCall 7,pcrtc
-nctd:92029,92029,Vista Transit Center Stall 4,  33.202954,-117.245093,,,0,visttc,,M-TC-Bus,,Vista TCall 4,visttc
-nctd:92030,92030,Vista Transit Center Stall 5,  33.203141,-117.245194,,,0,visttc,,M-TC-Bus,,Vista TCall 5,visttc
-nctd:92031,92031,Vista Transit Center Stall 6,  33.203246,-117.245283,,,0,visttc,,F-N/B,,Vista TCall 6,visttc
-nctd:92032,92032,Vista Transit Center Stall 7,  33.203375,-117.245383,,,0,visttc,,M-TC-Bus,,Vista TCall 7,visttc
-nctd:92033,92033,Vista Transit Center Stall 8,  33.203523,-117.245451,,,0,visttc,,M-TC-Bus,,Vista TCall 8,visttc
-nctd:92034,92034,Vista Transit Center Stall 9,  33.203700,-117.245532,,,0,visttc,,F-N/B,,Vista TCall 9,visttc
-nctd:92036,92036,Vista Transit Center Stall 10,  33.203828,-117.245593,,,0,visttc,,F-N/B,,Vista TCall 10,visttc
-nctd:92037,92037,Palomar College Transit Center Stall 1,  33.147694,-117.185682,,,0,palctc,,M-TC-Bus,,Palomar Coll TCall 1,palctc
-nctd:92038,92038,Palomar College Transit Center Stall 2,  33.147747,-117.185890,,,0,palctc,,M-Street-W/B,,Palomar Coll TCall 2,palctc
-nctd:92039,92039,Palomar College Transit Center Stall 3,  33.147802,-117.186092,,,0,palctc,,M-TC-Bus,,Palomar Coll TCall 3,palctc
-nctd:92040,92040,Palomar College Transit Center Stall 4,  33.147913,-117.185931,,,0,palctc,,M-Street-E/B,,Palomar Coll TCall 4,palctc
-nctd:92041,92041,Palomar College Transit Center Stall 5,  33.147850,-117.185732,,,0,palctc,,M-Street-E/B,,Palomar Coll TCall 5,palctc
-nctd:92044,92044,Escondido Transit Center Stall 4,  33.118741,-117.090442,,,0,esctc,,M-Street-W/B,esctc,Escondido TCall 4,esctc4
-nctd:92045,92045,Escondido Transit Center Stall 5,  33.118669,-117.090621,,,0,esctc,,M-Street-W/B,,Escondido TCall 5,esctc
-nctd:92046,92046,Escondido Transit Center Stall 6,  33.118711,-117.090915,,,0,esctc,,M-Street-E/B,,Escondido TCall 6,esctc
-nctd:92047,92047,Escondido Transit Center Stall 7,  33.118811,-117.091043,,,0,esctc,,M-Street-E/B,,Escondido TCall 7,esctc
-nctd:92048,92048,Escondido Transit Center Stall 8,  33.118973,-117.091084,,,0,esctc,,M-Street-E/B,,Escondido TCall 8,esctc
-nctd:92049,92049,Escondido Transit Center Stall 9,  33.119178,-117.090946,,,0,esctc,,M-TC-Bus,,Escondido TCall 9,esctc
-nctd:92050,92050,Escondido Transit Center Stall 10,  33.119240,-117.090652,,,0,esctc,,M-Street-E/B,,Escondido TCall 10,esctc
-nctd:92051,92051,Escondido Transit Center Stall 11,  33.119159,-117.090400,,,0,esctc,,M-Street-E/B,,Escondido TCall 11,esctc
-nctd:92052,92052,Escondido Transit Center Stall 12,  33.119093,-117.090092,,,0,esctc,,M-Street-N/B,,Escondido TCall 12,esctc
-nctd:92053,92053,Escondido Transit Center Stall 13,  33.119201,-117.089852,,,0,esctc,,M-TC-Bus,,Escondido TCall 13,esctc
-nctd:92054,92054,Escondido Transit Center Stall 14,  33.119353,-117.089765,,,0,esctc,,M-Street-W/B,,Escondido TCall 14,esctc
-nctd:92055,92055,Escondido Transit Center Stall 15,  33.119516,-117.089662,,,0,esctc,,M-Street-W/B,,Escondido TCall 15,esctc
+nctd:92029,92029,Vista Transit Center Stall 4,  33.202954,-117.245093,,,0,nctd:visttc,,M-TC-Bus,,Vista TCall 4,visttc
+nctd:92030,92030,Vista Transit Center Stall 5,  33.203141,-117.245194,,,0,nctd:visttc,,M-TC-Bus,,Vista TCall 5,visttc
+nctd:92031,92031,Vista Transit Center Stall 6,  33.203246,-117.245283,,,0,nctd:visttc,,F-N/B,,Vista TCall 6,visttc
+nctd:92032,92032,Vista Transit Center Stall 7,  33.203375,-117.245383,,,0,nctd:visttc,,M-TC-Bus,,Vista TCall 7,visttc
+nctd:92033,92033,Vista Transit Center Stall 8,  33.203523,-117.245451,,,0,nctd:visttc,,M-TC-Bus,,Vista TCall 8,visttc
+nctd:92034,92034,Vista Transit Center Stall 9,  33.203700,-117.245532,,,0,nctd:visttc,,F-N/B,,Vista TCall 9,visttc
+nctd:92036,92036,Vista Transit Center Stall 10,  33.203828,-117.245593,,,0,nctd:visttc,,F-N/B,,Vista TCall 10,visttc
+nctd:92037,92037,Palomar College Transit Center Stall 1,  33.147694,-117.185682,,,0,nctd:palctc,,M-TC-Bus,,Palomar Coll TCall 1,palctc
+nctd:92038,92038,Palomar College Transit Center Stall 2,  33.147747,-117.185890,,,0,nctd:palctc,,M-Street-W/B,,Palomar Coll TCall 2,palctc
+nctd:92039,92039,Palomar College Transit Center Stall 3,  33.147802,-117.186092,,,0,nctd:palctc,,M-TC-Bus,,Palomar Coll TCall 3,palctc
+nctd:92040,92040,Palomar College Transit Center Stall 4,  33.147913,-117.185931,,,0,nctd:palctc,,M-Street-E/B,,Palomar Coll TCall 4,palctc
+nctd:92041,92041,Palomar College Transit Center Stall 5,  33.147850,-117.185732,,,0,nctd:palctc,,M-Street-E/B,,Palomar Coll TCall 5,palctc
+nctd:92044,92044,Escondido Transit Center Stall 4,  33.118741,-117.090442,,,0,nctd:esctc,,M-Street-W/B,esctc,Escondido TCall 4,esctc4
+nctd:92045,92045,Escondido Transit Center Stall 5,  33.118669,-117.090621,,,0,nctd:esctc,,M-Street-W/B,,Escondido TCall 5,esctc
+nctd:92046,92046,Escondido Transit Center Stall 6,  33.118711,-117.090915,,,0,nctd:esctc,,M-Street-E/B,,Escondido TCall 6,esctc
+nctd:92047,92047,Escondido Transit Center Stall 7,  33.118811,-117.091043,,,0,nctd:esctc,,M-Street-E/B,,Escondido TCall 7,esctc
+nctd:92048,92048,Escondido Transit Center Stall 8,  33.118973,-117.091084,,,0,nctd:esctc,,M-Street-E/B,,Escondido TCall 8,esctc
+nctd:92049,92049,Escondido Transit Center Stall 9,  33.119178,-117.090946,,,0,nctd:esctc,,M-TC-Bus,,Escondido TCall 9,esctc
+nctd:92050,92050,Escondido Transit Center Stall 10,  33.119240,-117.090652,,,0,nctd:esctc,,M-Street-E/B,,Escondido TCall 10,esctc
+nctd:92051,92051,Escondido Transit Center Stall 11,  33.119159,-117.090400,,,0,nctd:esctc,,M-Street-E/B,,Escondido TCall 11,esctc
+nctd:92052,92052,Escondido Transit Center Stall 12,  33.119093,-117.090092,,,0,nctd:esctc,,M-Street-N/B,,Escondido TCall 12,esctc
+nctd:92053,92053,Escondido Transit Center Stall 13,  33.119201,-117.089852,,,0,nctd:esctc,,M-TC-Bus,,Escondido TCall 13,esctc
+nctd:92054,92054,Escondido Transit Center Stall 14,  33.119353,-117.089765,,,0,nctd:esctc,,M-Street-W/B,,Escondido TCall 14,esctc
+nctd:92055,92055,Escondido Transit Center Stall 15,  33.119516,-117.089662,,,0,nctd:esctc,,M-Street-W/B,,Escondido TCall 15,esctc
 nctd:92090,92090,Washington Av & Ash St,  33.133499,-117.067187,,,0,,,F-E/B,,Wshngtn&Ash,
 nctd:92092,92092,Mission Av & Broadway,  33.130418,-117.084889,,,0,,,F-E/B,,Mission&Brdwy,
 nctd:92100,92100,Valley Center Rd & Morningstar Rd,  33.249497,-116.963190,,,0,,,F-N/B,,Vly Ctr&Morningstar,
 nctd:92102,92102,Yarrow Dr & Camino Vida Roble (6351),  33.120159,-117.273751,,,0,,,N-S/B,,Yarrow&Cmo Vida Roble (6351),
 nctd:92122,92122,Westfield North County,  33.071112,-117.062915,,,0,,,M-TC-Bus,,Westfield NCounty,ncfair
 nctd:92123,92123,Westfield North County,  33.072164,-117.064548,,,0,,,M-TC-Bus,,Westfield NCounty,ncfair
-nctd:92124,92124,Oceanside Transit Center Stall 2,  33.193937,-117.379857,,,0,octc,,M-TC-Bus,,Oceanside TCall 2,octc
-nctd:92125,92125,Oceanside Transit Center Stall 3,  33.193787,-117.379744,,,0,octc,,M-TC-Bus,,Oceanside TCall 3,octc
-nctd:92127,92127,Oceanside Transit Center Stall 4,  33.193624,-117.379582,,,0,octc,,M-TC-Bus,,Oceanside TCall 4,octc
-nctd:92128,92128,Oceanside Transit Center Stall 5,  33.193487,-117.379465,,,0,octc,,M-TC-Bus,,Oceanside TCall 5,octc
-nctd:92131,92131,Oceanside Transit Center Stall 8,  33.193507,-117.379675,,,0,octc,,M-TC-Bus,,Oceanside TCall 8,octc
-nctd:92132,92132,Oceanside Transit Center Stall 9,  33.193655,-117.379791,,,0,octc,,M-TC-Bus,,Oceanside TCall 9,octc
-nctd:92133,92133,Oceanside Transit Center Stall 10,  33.193802,-117.379921,,,0,octc,,M-TC-Bus,,Oceanside TCall 10,octc
+nctd:92124,92124,Oceanside Transit Center Stall 2,  33.193937,-117.379857,,,0,nctd:octc,,M-TC-Bus,,Oceanside TCall 2,octc
+nctd:92125,92125,Oceanside Transit Center Stall 3,  33.193787,-117.379744,,,0,nctd:octc,,M-TC-Bus,,Oceanside TCall 3,octc
+nctd:92127,92127,Oceanside Transit Center Stall 4,  33.193624,-117.379582,,,0,nctd:octc,,M-TC-Bus,,Oceanside TCall 4,octc
+nctd:92128,92128,Oceanside Transit Center Stall 5,  33.193487,-117.379465,,,0,nctd:octc,,M-TC-Bus,,Oceanside TCall 5,octc
+nctd:92131,92131,Oceanside Transit Center Stall 8,  33.193507,-117.379675,,,0,nctd:octc,,M-TC-Bus,,Oceanside TCall 8,octc
+nctd:92132,92132,Oceanside Transit Center Stall 9,  33.193655,-117.379791,,,0,nctd:octc,,M-TC-Bus,,Oceanside TCall 9,octc
+nctd:92133,92133,Oceanside Transit Center Stall 10,  33.193802,-117.379921,,,0,nctd:octc,,M-TC-Bus,,Oceanside TCall 10,octc
 nctd:92200,92200,Vandegrift Bl & A St,  33.302541,-117.344963,,,0,,,F-W/B,,Vandegrift&A,22area
 nctd:93229,93229,Center Dr & Avenida Ricardo,  33.135926,-117.121602,,,0,,,F-E/B,,Ctr&Avda Ricardo,
 nctd:93231,93231,El Norte Pkwy & E Valley Pkwy,  33.149833,-117.033990,,,0,,,F-W/B,,El Norte&E Vly,enpvaW

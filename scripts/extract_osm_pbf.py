@@ -13,6 +13,8 @@ Or set r5.geofabrik_source_pbf in configs/san_diego.yaml and run with no --input
 from __future__ import annotations
 
 import argparse
+import os
+import shlex
 import shutil
 import subprocess
 import sys
@@ -22,6 +24,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT))
 
 from src.utils.config import load_merged_config  # noqa: E402
+from src.utils.paths import find_osmium_executable  # noqa: E402
 
 
 def main() -> None:
@@ -66,7 +69,7 @@ def main() -> None:
         rest = pp.as_posix().split(":", 1)[1].lstrip("/")  # e.g. "Users/..."
         return f"/mnt/{drive}/{rest}"
 
-    exe = shutil.which("osmium")
+    exe = find_osmium_executable()
 
     bbox = cfg.get("bbox")
     if not bbox or len(bbox) != 4:
@@ -81,18 +84,32 @@ def main() -> None:
         print("Running:", " ".join(cmd))
         subprocess.run(cmd, check=True)
     else:
-        # Windows path doesn't have `osmium`. If WSL is available, run inside WSL instead.
-        if shutil.which("wsl") is None:
+        use_wsl = os.environ.get("BAYESTRANSIT_OSMIUM_USE_WSL", "").strip().lower() in (
+            "1",
+            "true",
+            "yes",
+        )
+        if not use_wsl:
             print(
-                "ERROR: `osmium` not on PATH and `wsl` not available.\n"
-                "Install osmium-tool on Windows, or run `osmium extract` inside WSL.",
+                "ERROR: `osmium` not found.\n"
+                "  conda: `conda activate <env>` (so CONDA_PREFIX is set), or set OSMIUM_EXE to\n"
+                "  the full path to osmium.exe (often %CONDA_PREFIX%\\Library\\bin\\osmium.exe).\n"
+                "  Optional WSL: set BAYESTRANSIT_OSMIUM_USE_WSL=1 and install osmium-tool in WSL.",
             )
+            sys.exit(1)
+
+        if shutil.which("wsl") is None:
+            print("ERROR: BAYESTRANSIT_OSMIUM_USE_WSL=1 but `wsl` not on PATH.")
             sys.exit(1)
 
         wsl_inp = _win_to_wsl_path(inp)
         wsl_out = _win_to_wsl_path(out)
-        wsl_cmd = ["wsl", "--", "osmium", "extract", "-b", bbox_arg, wsl_inp, "-o", wsl_out]
-        print("Running via WSL:", " ".join(wsl_cmd))
+        inner = (
+            f"osmium extract -b {shlex.quote(bbox_arg)} "
+            f"{shlex.quote(wsl_inp)} -o {shlex.quote(wsl_out)}"
+        )
+        wsl_cmd = ["wsl", "--", "sh", "-lc", inner]
+        print("Running via WSL: wsl -- sh -lc", repr(inner))
         try:
             subprocess.run(wsl_cmd, check=True)
         except subprocess.CalledProcessError as e:

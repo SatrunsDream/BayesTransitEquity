@@ -104,50 +104,50 @@ mts:520,mts:MTS,Orange,El Cajon - Courthouse,0,https://www.sdmts.com/schedules-r
 mts:550,mts:MTS,Silver,Downtown Loop,0,https://www.sdmts.com/schedules-real-time?fragment=silver_line,B4BCC2,000000,,,,,
 mts:COR,mts:MTS,,Coronado Ferry,4,http://www.sdhe.com/coronado-ferry,000099,FFFFFF,,COR-W,COR-E,,
 mts:AIR,mts:SAN,,Old Town to Airport Shuttle,3,https://www.san.org/Parking-Transportation/Public-Transportation#117819-trolley-service,000099,FFFFFF,,,,,
-nctd:301,,101,Oceanside - UTC/VA/UCSD,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:302,,302,Oceanside - Vista via Vista Way,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:303,,303,Oceanside - Vista via Mission Av,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:304,,304,Encinitas - Palomar College,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:305,,305,Vista - Escondido,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:306,,306,Vista - Fallbrook,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:308,,308,Escondido - Solana Beach,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:309,,309,Town Center North - Encinitas via ECR,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:311,,311,East Oceanside,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:313,,313,Oceanside TC - Town Center North,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:315,,315,College Bl Sprinter Sta - 22 Area via Vandegrift,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:318,,318,Oceanside TC - Vista TC via Oceanside Blvd,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:323,,323,College Sprinter - Quarry Creek,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:325,,325,Carlsbad Village - College Sprinter,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:332,,332,Vista TC - Buena Creek Station,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:334,,334,Vista Circulator,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:347,,347,CSUSM to PCTC,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:350,,350,BREEZE Rapid:  ETC - Del Lago TC,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:351,,351,Escondido Circulator (CCW),3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:352,,352,Midway & Washington (Clock),3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:353,,353,Escondido to Nordahl Market Pl via Citracado,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:354,,354,Escondido TC - Orange Glen High School,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:355,,355,N. Broadway to El Norte Parkway,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:356,,356,Morningview & Escondido Blvd (Clock),3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:357,,357,Valley Parkway to El Norte Parkway,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:358,,358,Escondido Country Club (Clock),3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:359,,359,Escondido Country Club (Counter),3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:371,,371,Escondido - Ramona,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,FLEX
-nctd:388,,388,Escondido - Pala,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:392,,392,Oceanside TC - 14 Area,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,FLEX
-nctd:395,,395,Oceanside TC - Camp San Onofre,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,FLEX
-nctd:398,,,COASTER,2,http://www.gonctd.com/coaster,00459D,FFFFFF,,,,,COASTER
-nctd:399,,,SPRINTER,0,http://www.gonctd.com/sprinter,00AB9B,FFFFFF,,,,,SPRINTER
-nctd:444,,444,Poinsettia Station Coaster Conx - Faraday,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:445,,445,Poinsettia - Palomar College via PAR,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:471,,471,Sorrento Valley East Coaster Connection,3,http://www.gonctd.com/breeze,8080FF, FFFFFF,,,,,FLEX
-nctd:472,,472,Sorrento Mesa Coaster Connection,3,http://www.gonctd.com/breeze,8080FF, FFFFFF,,,,,FLEX
-nctd:473,,473,Carroll Canyon Coaster Connection,3,http://www.gonctd.com/breeze,8080FF, FFFFFF,,,,,FLEX
-nctd:478,,478,Torrey Pines Coaster Connection,3,http://www.gonctd.com/breeze,8080FF, FFFFFF,,,,,FLEX
-nctd:479,,479,University City and UCSD Coaster Connection,3,http://www.gonctd.com/breeze,8080FF, FFFFFF,,,,,FLEX
-nctd:604,,604,Encinitas - San Marcos,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:608,,608,Escondido TC - Del Lago Academy,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:609,,609,Encinitas Station - Sage Creek HS,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:623,,623,College Sprinter - Sage Creek HS,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:632,,632,Vista TC - Rancho Buena Vista HS,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:651,,651,Escondido Circulator - Orange Glen HS,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
-nctd:652,,652,Midway & Washington - Orange Glen HS,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:301,nctd:NCTD,101,Oceanside - UTC/VA/UCSD,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:302,nctd:NCTD,302,Oceanside - Vista via Vista Way,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:303,nctd:NCTD,303,Oceanside - Vista via Mission Av,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:304,nctd:NCTD,304,Encinitas - Palomar College,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:305,nctd:NCTD,305,Vista - Escondido,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:306,nctd:NCTD,306,Vista - Fallbrook,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:308,nctd:NCTD,308,Escondido - Solana Beach,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:309,nctd:NCTD,309,Town Center North - Encinitas via ECR,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:311,nctd:NCTD,311,East Oceanside,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:313,nctd:NCTD,313,Oceanside TC - Town Center North,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:315,nctd:NCTD,315,College Bl Sprinter Sta - 22 Area via Vandegrift,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:318,nctd:NCTD,318,Oceanside TC - Vista TC via Oceanside Blvd,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:323,nctd:NCTD,323,College Sprinter - Quarry Creek,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:325,nctd:NCTD,325,Carlsbad Village - College Sprinter,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:332,nctd:NCTD,332,Vista TC - Buena Creek Station,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:334,nctd:NCTD,334,Vista Circulator,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:347,nctd:NCTD,347,CSUSM to PCTC,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:350,nctd:NCTD,350,BREEZE Rapid:  ETC - Del Lago TC,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:351,nctd:NCTD,351,Escondido Circulator (CCW),3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:352,nctd:NCTD,352,Midway & Washington (Clock),3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:353,nctd:NCTD,353,Escondido to Nordahl Market Pl via Citracado,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:354,nctd:NCTD,354,Escondido TC - Orange Glen High School,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:355,nctd:NCTD,355,N. Broadway to El Norte Parkway,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:356,nctd:NCTD,356,Morningview & Escondido Blvd (Clock),3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:357,nctd:NCTD,357,Valley Parkway to El Norte Parkway,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:358,nctd:NCTD,358,Escondido Country Club (Clock),3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:359,nctd:NCTD,359,Escondido Country Club (Counter),3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:371,nctd:NCTD,371,Escondido - Ramona,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,FLEX
+nctd:388,nctd:NCTD,388,Escondido - Pala,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:392,nctd:NCTD,392,Oceanside TC - 14 Area,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,FLEX
+nctd:395,nctd:NCTD,395,Oceanside TC - Camp San Onofre,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,FLEX
+nctd:398,nctd:NCTD,,COASTER,2,http://www.gonctd.com/coaster,00459D,FFFFFF,,,,,COASTER
+nctd:399,nctd:NCTD,,SPRINTER,0,http://www.gonctd.com/sprinter,00AB9B,FFFFFF,,,,,SPRINTER
+nctd:444,nctd:NCTD,444,Poinsettia Station Coaster Conx - Faraday,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:445,nctd:NCTD,445,Poinsettia - Palomar College via PAR,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:471,nctd:NCTD,471,Sorrento Valley East Coaster Connection,3,http://www.gonctd.com/breeze,8080FF, FFFFFF,,,,,FLEX
+nctd:472,nctd:NCTD,472,Sorrento Mesa Coaster Connection,3,http://www.gonctd.com/breeze,8080FF, FFFFFF,,,,,FLEX
+nctd:473,nctd:NCTD,473,Carroll Canyon Coaster Connection,3,http://www.gonctd.com/breeze,8080FF, FFFFFF,,,,,FLEX
+nctd:478,nctd:NCTD,478,Torrey Pines Coaster Connection,3,http://www.gonctd.com/breeze,8080FF, FFFFFF,,,,,FLEX
+nctd:479,nctd:NCTD,479,University City and UCSD Coaster Connection,3,http://www.gonctd.com/breeze,8080FF, FFFFFF,,,,,FLEX
+nctd:604,nctd:NCTD,604,Encinitas - San Marcos,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:608,nctd:NCTD,608,Escondido TC - Del Lago Academy,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:609,nctd:NCTD,609,Encinitas Station - Sage Creek HS,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:623,nctd:NCTD,623,College Sprinter - Sage Creek HS,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:632,nctd:NCTD,632,Vista TC - Rancho Buena Vista HS,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:651,nctd:NCTD,651,Escondido Circulator - Orange Glen HS,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE
+nctd:652,nctd:NCTD,652,Midway & Washington - Orange Glen HS,3,http://www.gonctd.com/breeze,008C9B,FFFFFF,,,,,BREEZE

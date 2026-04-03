@@ -1,3 +1,2 @@
 feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version,feed_contact_email,feed_contact_url
-MTS,https://www.sdmts.com,EN,20260125,20260606,2601 unmerged v2,customerfeedback@sdmts.com,
-NCTD,http://www.gonctd.com,EN,,,Version_20250205,,
+MTS + NCTD,https://www.sdmts.com,EN,20260125,20260606,merged|2601 unmerged v2|Version_20250205,customerfeedback@sdmts.com,

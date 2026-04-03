@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-04-01T18:46:06.673331+00:00",
+  "city": "san_diego",
+  "data_freeze_date": "2026-04-01",
+  "sources": [
+    {
+      "label": "R5 OSM PBF",
+      "status": "failed",
+      "error": "Command '['wsl', '--', 'bash', '-lc', 'osmium extract -b -117.4,32.53,-116.8,33.35 /mnt/c/Users/sardo/OneDrive/Desktop/Classes/Projects/BayesTransitEquity/data/interim/osm/california-latest.osm.pbf -o /mnt/c/Users/sardo/OneDrive/Desktop/Classes/Projects/BayesTransitEquity/data/raw/osm/san_diego_study.osm.pbf']' returned non-zero exit status 127.",
+      "tool_used": "osmium-wsl"
+    }
+  ]
+}

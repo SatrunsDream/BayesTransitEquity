@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-04-01T22:48:43.556902+00:00",
+  "city": "san_diego",
+  "data_freeze_date": "2026-04-01",
+  "sources": [
+    {
+      "label": "R5 OSM PBF",
+      "source_type": "osm_pbf_r5",
+      "tool": "osmium",
+      "bbox": "-117.4,32.53,-116.8,33.35",
+      "source_pbf": "data\\interim\\osm\\california-latest.osm.pbf",
+      "dest": "data\\raw\\osm\\san_diego_study.osm.pbf",
+      "status": "downloaded",
+      "md5": "2ec5a162cd6082e1749da1aaf66b78b0",
+      "size_bytes": 74483808,
+      "downloaded_at": "2026-04-01T22:48:43.343511+00:00"
+    }
+  ]
+}

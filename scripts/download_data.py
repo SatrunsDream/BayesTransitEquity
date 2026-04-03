@@ -642,7 +642,56 @@ def download_osm_pbf_for_r5(
     bbox_arg = f"{min_lon},{min_lat},{max_lon},{max_lat}"
     out.parent.mkdir(parents=True, exist_ok=True)
 
-    osmium = shutil.which("osmium")
+    def _find_osmium() -> str | None:
+        """
+        Return a subprocess-safe osmium command string, or None if not found.
+
+        On Windows, Conda installs the binary as 'osmium.EXE' (uppercase).
+        osmium's own argument parser only strips lowercase '.exe' from argv[0],
+        so passing the full path causes 'Unknown command or option osmium.EXE'.
+        Fix: prefer the bare name "osmium" when it is on PATH (argv[0]="osmium"),
+        or normalise the Conda path extension to lowercase before passing it.
+        """
+        import platform
+
+        is_win = platform.system() == "Windows"
+
+        # 1. Explicit env override
+        env_exe = os.environ.get("OSMIUM_EXE", "").strip()
+        if env_exe and Path(env_exe).is_file():
+            p = Path(env_exe)
+            if is_win:
+                return str(p.parent / (p.stem + p.suffix.lower()))
+            return str(p)
+
+        # 2. Already on PATH — use bare name on Windows so argv[0]="osmium"
+        if shutil.which("osmium"):
+            return "osmium" if is_win else shutil.which("osmium")
+
+        # 3. Conda prefix locations (common on Windows where Library\bin may not
+        #    be in PATH for subprocess calls)
+        conda_prefix = os.environ.get("CONDA_PREFIX", "").strip()
+        if conda_prefix and is_win:
+            for rel in (
+                "Library/bin/osmium.exe",
+                "Library/bin/osmium",
+                "Scripts/osmium.exe",
+                "bin/osmium",
+            ):
+                candidate = Path(conda_prefix) / rel
+                if candidate.is_file():
+                    # Normalise extension to lowercase so osmium parses argv[0] correctly
+                    return str(candidate.parent / (candidate.stem + candidate.suffix.lower()))
+
+        # 4. Generic fallback
+        for name in ("osmium", "osmium-tool"):
+            w = shutil.which(name)
+            if w:
+                return w
+
+        return None
+
+    osmium = _find_osmium()
     if osmium:
         cmd = [osmium, "extract", "-b", bbox_arg, str(src), "-o", str(out)]
         print(f"  [CLIP] {' '.join(cmd)}")

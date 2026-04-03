@@ -1,0 +1,38 @@
+# Recommended: isolated env with a single solver (conda-forge) — avoids NumPy 1.x/2.x wheel soup in Anaconda "base".
+#   conda env create -f environment.yml
+#   conda activate bayestransit
+# Java still required for r5py (notebook 03); install a JDK and set JAVA_HOME if needed.
+
+name: bayestransit
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=2
+  - pandas>=2.2
+  - scipy
+  - matplotlib
+  - pyarrow
+  - geopandas
+  - pyproj
+  - shapely
+  - libpysal
+  - pymc
+  - arviz
+  - netcdf4
+  - pyyaml
+  - requests
+  - tqdm
+  - pytest
+  - jupyter
+  - ipykernel
+  - nbconvert
+  - pip
+  - pip:
+      - r5py>=1.1.0,<2
+      - censusdatadownloader
+      - osmnx
+      - contextily
+      - seaborn
+      - loguru
+      - fastparquet

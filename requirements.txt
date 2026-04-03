@@ -1,3 +1,17 @@
+# --- NumPy / binary extension mismatches (very common in Anaconda "base") ---
+# Symptom: "compiled using NumPy 1.x cannot be run in NumPy 2.x" when importing pandas.
+# Cause: NumPy was upgraded but Bottleneck, matplotlib C extensions, etc. are still old wheels.
+#
+# Best fix: use a dedicated env (do not fight `base`):
+#   conda env create -f environment.yml
+#   conda activate bayestransit
+#
+# If you must stay on pip in `base` with NumPy 2.x: close Jupyter first, then reinstall *all*
+# compiled deps in one go, e.g.:
+#   pip install --upgrade --force-reinstall numpy pandas pyarrow scipy Bottleneck matplotlib
+#
+# If you pin NumPy 1.x (`numpy>=1.26,<2`), recent PyMC/PyTensor may refuse to import — prefer conda-forge env above.
+
 # Core geospatial
 geopandas
 pyproj
@@ -13,12 +27,15 @@ censusdatadownloader
 # Bayesian modeling
 pymc
 arviz                  # MCMC diagnostics + visualization
+libpysal               # Queen contiguity weights for BYM2 adjacency
 
 # Data
 pandas
-numpy
+# Prefer NumPy 2.x + matching wheels (see environment.yml). Pin <2 only if you use an older PyMC stack.
+numpy>=1.26
 pyarrow                # Parquet support
 fastparquet
+netcdf4                # InferenceData.to_netcdf() checkpoints (notebook 04)
 
 # Metrics
 scipy                  # wasserstein_distance + stats
