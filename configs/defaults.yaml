@@ -14,11 +14,23 @@ accessibility:
 
 model:
   sampler: mcmc
-  draws: 2000
-  tune: 1000
+  draws: 4000
+  tune: 2000
   chains: 4
-  target_accept: 0.9
+  target_accept: 0.95
   random_seed: 42
+  # Likelihood for standardised y: normal | student_t (heavy tails; nu must be > 2)
+  likelihood: student_t
+  student_t_nu: 4.0
+  # fixed = constant obs SD on standardised scale (no sigma_obs RV; better MCMC geometry
+  # for deterministic r5py summaries). estimated = HalfNormal sigma_obs (legacy).
+  obs_noise: fixed
+  fixed_obs_sigma: 0.05
+  estimated_obs_sigma_prior_scale: 0.2
+  # Prior sigma for beta coefficients on standardised y scale.
+  # 0.3 regularises the spatial-confounding ridge more strongly than 0.5,
+  # improving ESS for fixed effects without masking credible signals.
+  beta_sigma: 0.3
 
 export:
   geojson_precision: 5       # decimal places for coordinates

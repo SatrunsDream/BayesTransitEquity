@@ -1,181 +1,231 @@
+"""
+spatial.py — spatial weight matrix utilities for BayesTransitEquity
+
+Provides:
+  adjacency_from_queen()   — Queen-contiguity W matrix + diagnostics
+  scaling_factor_sp()      — Riebler (2016) BYM2 scaling factor
+  _connect_islands_to_nearest() — join isolated tracts to graph
+  spatial_graph_diagnostics()   — summary stats for adjacency graph
+"""
+
 from __future__ import annotations
 
-from typing import Any
+import warnings
+from typing import Tuple
 
 import geopandas as gpd
 import numpy as np
-from scipy import sparse
-from scipy.linalg import solve
-from scipy.sparse.linalg import spsolve
+import pandas as pd
+import scipy.sparse as sp
 
-
-def scaling_factor_sp(A: np.ndarray) -> float:
-    """BYM2 scaling factor (Riebler et al. 2016) from a symmetric 0/1 adjacency matrix.
-
-    Same construction as the PyMC NYC BYM example. The graph should be **connected**
-    (e.g. bridge island tracts before calling).
-    """
-    num_neighbors = A.sum(axis=1)
-    A_sp = sparse.csc_matrix(A)
-    D = sparse.diags(num_neighbors, format="csc")
-    Q = D - A_sp
-
-    Q_perturbed = Q + sparse.diags(np.ones(Q.shape[0])) * max(Q.diagonal()) * np.sqrt(
-        np.finfo(np.float64).eps
-    )
-
-    n = Q_perturbed.shape[0]
-    b = sparse.identity(n, format="csc")
-    Sigma = spsolve(Q_perturbed, b)
-    ones = np.ones(n)
-    W_col = Sigma @ ones
-    Q_inv = Sigma - np.outer(W_col * solve(ones @ W_col, np.ones(1)), W_col.T)
-
-    return float(np.exp(np.sum(np.log(np.diag(Q_inv))) / n))
-
-
-def _connect_islands_to_nearest(
-    gdf: gpd.GeoDataFrame, W: np.ndarray, island_idx: list[int]
-) -> np.ndarray:
-    """Add symmetric edges from each island row to its nearest tract by centroid."""
-    if not island_idx:
-        return W
-    W = W.copy()
-    centroids = gdf.geometry.centroid
-    cx = centroids.x.to_numpy()
-    cy = centroids.y.to_numpy()
-    for i in island_idx:
-        d2 = (cx - cx[i]) ** 2 + (cy - cy[i]) ** 2
-        d2[i] = np.inf
-        j = int(np.argmin(d2))
-        W[i, j] = 1
-        W[j, i] = 1
-    return W
-
-
-def _normalize_geoid(x: object) -> str:
-    s = str(x).strip()
-    if s.isdigit() and len(s) <= 11:
-        return s.zfill(11)
-    return s
-
+# ---------------------------------------------------------------------------
+# Internal helpers
+# ---------------------------------------------------------------------------
 
 def _id_order_to_geoids_and_geoms(
-    g: gpd.GeoDataFrame, id_col: str, raw_order: list[Any]
-) -> tuple[list[str], list[Any]]:
-    """Map libpysal ``Weights.id_order`` to GEOID strings and geometries (row-aligned to ``W``).
+    g: gpd.GeoDataFrame,
+    id_col: str,
+    raw_order: list,
+) -> Tuple[list, list]:
+    """
+    Map libpysal id_order (may be int row-positions OR string GEOIDs) to
+    real GEOID strings and geometries.
 
-    libpysal often reports ``id_order`` as **integer row indices** ``0 .. n-1`` (not FIPS).
-    Those must be mapped with ``g.iloc[pos]`` — **never** ``str(pos).zfill(11)``, which
-    produces bogus IDs like ``00000000000``.
-
-    If entries are real GEOIDs (e.g. after ``idVariable``), use them to look up rows.
+    libpysal Queen.from_dataframe() returns id_order as the *values* of the
+    index if the GeoDataFrame has a string index, OR as integer row-positions
+    0..n-1 when the index is default RangeIndex.  We need to handle both.
     """
     n = len(g)
-    geoids: list[str] = []
-    geoms: list[Any] = []
     col = g[id_col].astype(str).str.zfill(11)
+    geoids: list = []
+    geoms: list = []
 
-    for i, oid in enumerate(raw_order):
-        pos: int | None = None
+    for oid in raw_order:
+        pos = None
+        # Integer or short numeric string → treat as row position
         if isinstance(oid, (int, np.integer)) and 0 <= int(oid) < n:
             pos = int(oid)
-        elif isinstance(oid, str) and oid.isdigit() and len(oid) <= 6 and int(oid) < n:
+        elif (
+            isinstance(oid, str)
+            and oid.isdigit()
+            and len(oid) <= 6
+            and int(oid) < n
+        ):
             pos = int(oid)
 
         if pos is not None:
             geoids.append(str(col.iloc[pos]))
             geoms.append(g.geometry.iloc[pos])
-            continue
-
-        lab = _normalize_geoid(oid)
-        mask = (col == lab).to_numpy()
-        if mask.any():
-            j = int(np.argmax(mask))
-            geoids.append(str(col.iloc[j]))
-            geoms.append(g.geometry.iloc[j])
         else:
-            # Last resort: assume W row i matches dataframe row i (common when id_order is broken)
-            if i < n:
-                geoids.append(str(col.iloc[i]))
-                geoms.append(g.geometry.iloc[i])
+            # Assume it's already a real GEOID or index label
+            geoids.append(str(oid).zfill(11))
+            # Locate by id_col value
+            match = g[g[id_col].astype(str).str.zfill(11) == str(oid).zfill(11)]
+            if len(match) == 1:
+                geoms.append(match.geometry.iloc[0])
             else:
-                raise KeyError(f"id_order entry {oid!r} could not be mapped to a tract row.")
+                geoms.append(None)
 
     return geoids, geoms
+
+
+def _connect_islands_to_nearest(
+    g: gpd.GeoDataFrame,
+    id_col: str,
+    neighbors: dict,
+) -> dict:
+    """
+    For any tract with no neighbours (island), add a bilateral edge to the
+    nearest tract by centroid distance.  Returns updated neighbours dict.
+    """
+    geoids = g[id_col].astype(str).str.zfill(11).tolist()
+    centroids = g.geometry.centroid
+    idx_map = {gid: i for i, gid in enumerate(geoids)}
+
+    islands = [gid for gid in geoids if len(neighbors.get(gid, [])) == 0]
+    if not islands:
+        return neighbors
+
+    cx = centroids.x.values
+    cy = centroids.y.values
+
+    for gid in islands:
+        i = idx_map[gid]
+        dists = np.sqrt((cx - cx[i]) ** 2 + (cy - cy[i]) ** 2)
+        dists[i] = np.inf  # exclude self
+        j = int(np.argmin(dists))
+        nbr_gid = geoids[j]
+        neighbors.setdefault(gid, set()).add(nbr_gid)
+        neighbors.setdefault(nbr_gid, set()).add(gid)
+
+    return neighbors
+
+
+# ---------------------------------------------------------------------------
+# Public API
+# ---------------------------------------------------------------------------
+
+def spatial_graph_diagnostics(W: np.ndarray, geoids: list) -> dict:
+    """
+    Return a dict of summary statistics for the adjacency matrix W.
+    """
+    n = W.shape[0]
+    degrees = W.sum(axis=1)
+    n_edges = int(degrees.sum()) // 2
+    islands = int((degrees == 0).sum())
+    return {
+        "n_tracts": n,
+        "n_edges": n_edges,
+        "mean_degree": float(degrees.mean()),
+        "min_degree": int(degrees.min()),
+        "max_degree": int(degrees.max()),
+        "n_islands": islands,
+        "is_symmetric": bool(np.allclose(W, W.T)),
+    }
+
+
+def scaling_factor_sp(W: np.ndarray) -> float:
+    """
+    Compute the Riebler (2016) geometric mean variance scaling factor for BYM2.
+
+    This is the geometric mean of the marginal variances of the ICAR precision
+    matrix Q = D - W, where D = diag(row sums of W).
+
+    Parameters
+    ----------
+    W : (n, n) adjacency matrix (symmetric, binary or row-sums)
+
+    Returns
+    -------
+    float : scaling factor τ_s  (typically close to 1 for well-connected graphs)
+    """
+    n = W.shape[0]
+    D = np.diag(W.sum(axis=1))
+    Q = D - W
+
+    # Q is singular (rank n-1); add tiny ridge for numerical stability
+    Q_ridge = Q + 1e-6 * np.eye(n)
+
+    try:
+        Q_inv = np.linalg.inv(Q_ridge)
+    except np.linalg.LinAlgError:
+        warnings.warn("scaling_factor_sp: Q inversion failed; returning 1.0")
+        return 1.0
+
+    # Geometric mean of diagonal (marginal variances)
+    diag_vals = np.diag(Q_inv)
+    diag_vals = np.maximum(diag_vals, 1e-12)  # guard log(0)
+    scale = float(np.exp(np.mean(np.log(diag_vals))))
+    return scale
 
 
 def adjacency_from_queen(
     tracts: gpd.GeoDataFrame,
     id_col: str = "GEOID",
     connect_islands: bool = True,
-) -> tuple[np.ndarray, list[str], dict[str, Any], gpd.GeoDataFrame]:
-    """Queen contiguity → symmetric 0/1 adjacency ``W`` aligned to tract order.
+) -> Tuple[np.ndarray, list, dict, gpd.GeoDataFrame]:
+    """
+    Build a symmetric binary adjacency matrix W from Queen contiguity.
 
-    Returns ``W``, ``geoids`` (same row order as ``W``), diagnostics, and a two-column
-    GeoDataFrame ``GEOID`` + ``geometry`` in that order.
+    Parameters
+    ----------
+    tracts         : GeoDataFrame with census tract polygons
+    id_col         : column name holding the GEOID (11-digit string)
+    connect_islands: if True, isolated tracts are connected to nearest centroid
 
-    **Notebook usage** (``04_bayesian_model.ipynb``)::
-
-        tracts_gdf = gpd.GeoDataFrame(df[[\"GEOID\", \"geometry\"]], ...)
-        W, geoids_sp, diag_sp, tracts_ordered = adjacency_from_queen(tracts_gdf, id_col=\"GEOID\")
-        scaling_factor = scaling_factor_sp(W)
+    Returns
+    -------
+    W              : (n, n) numpy float64 adjacency matrix
+    geoids         : list[str] of GEOIDs in row/column order
+    diagnostics    : dict from spatial_graph_diagnostics()
+    tracts_ordered : GeoDataFrame reindexed to match W row order
     """
     try:
         from libpysal.weights import Queen
     except ImportError as e:
-        raise ImportError("Install libpysal: pip install libpysal") from e
+        raise ImportError("libpysal is required: pip install libpysal") from e
 
-    if id_col not in tracts.columns:
-        raise KeyError(f"Missing column {id_col!r} on tract GeoDataFrame")
+    # Build Queen weights
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        q = Queen.from_dataframe(tracts, silence_warnings=True)
 
-    g = tracts[[id_col, "geometry"]].copy()
-    g[id_col] = g[id_col].astype(str).str.zfill(11)
-    g = g.reset_index(drop=True)
+    # Resolve id_order → GEOIDs
+    raw_order = list(q.id_order)
+    geoids, _ = _id_order_to_geoids_and_geoms(tracts, id_col, raw_order)
 
-    # Prefer passing the GEOID column so id_order may contain real FIPS (libpysal-dependent).
-    try:
-        wq = Queen.from_dataframe(g, idVariable=id_col)
-    except TypeError:
-        wq = Queen.from_dataframe(g)
+    # Build neighbours dict keyed by GEOID
+    # q.neighbors maps id_order values → list of id_order values
+    id2geoid = {raw: gid for raw, gid in zip(raw_order, geoids)}
+    neighbors: dict = {}
+    for raw_i, raw_nbrs in q.neighbors.items():
+        gid_i = id2geoid[raw_i]
+        neighbors[gid_i] = set(id2geoid[r] for r in raw_nbrs)
 
-    full, _meta = wq.full()
-    W = (full > 0).astype(np.int64)
-    W = (W + W.T > 0).astype(np.int64)
-    np.fill_diagonal(W, 0)
+    # Connect islands if requested
+    if connect_islands:
+        neighbors = _connect_islands_to_nearest(tracts, id_col, neighbors)
 
-    if W.shape[0] != len(g):
-        raise ValueError(f"Weight matrix size {W.shape[0]} != number of tracts {len(g)}")
+    # Build W matrix in geoids order
+    n = len(geoids)
+    g2i = {g: i for i, g in enumerate(geoids)}
+    W = np.zeros((n, n), dtype=np.float64)
+    for gid_i, nbr_set in neighbors.items():
+        if gid_i not in g2i:
+            continue
+        i = g2i[gid_i]
+        for gid_j in nbr_set:
+            if gid_j not in g2i:
+                continue
+            j = g2i[gid_j]
+            W[i, j] = 1.0
+            W[j, i] = 1.0
 
-    geoids, geoms = _id_order_to_geoids_and_geoms(g, id_col, list(wq.id_order))
+    # Reorder tracts GeoDataFrame to match W
+    col = tracts[id_col].astype(str).str.zfill(11)
+    geoid_to_row = {g: idx for idx, g in zip(tracts.index, col)}
+    ordered_idx = [geoid_to_row[g] for g in geoids if g in geoid_to_row]
+    tracts_ordered = tracts.loc[ordered_idx].reset_index(drop=True)
 
-    t_ix_geom = gpd.GeoDataFrame(
-        {"GEOID": geoids, "geometry": geoms},
-        geometry="geometry",
-        crs=g.crs,
-    )
-
-    island_idx = [i for i in range(len(geoids)) if W[i].sum() == 0]
-    if island_idx and connect_islands:
-        W = _connect_islands_to_nearest(t_ix_geom, W, island_idx)
-
-    diag = spatial_graph_diagnostics(W)
-    diag["island_indices_before_fix"] = island_idx
-    diag["geoid_order"] = geoids
-    diag["id_order_sample"] = list(wq.id_order)[:5]
-    return W, geoids, diag, t_ix_geom
-
-
-def spatial_graph_diagnostics(W: np.ndarray) -> dict[str, Any]:
-    """Edge count and degree summary for a symmetric unweighted adjacency."""
-    n = W.shape[0]
-    deg = W.sum(axis=1)
-    n_edges = int(W.sum() // 2)
-    return {
-        "n_nodes": n,
-        "n_edges": n_edges,
-        "degree_min": int(deg.min()),
-        "degree_max": int(deg.max()),
-        "degree_mean": float(deg.mean()),
-        "n_zero_degree": int((deg == 0).sum()),
-    }
+    diag = spatial_graph_diagnostics(W, geoids)
+    return W, geoids, diag, tracts_ordered

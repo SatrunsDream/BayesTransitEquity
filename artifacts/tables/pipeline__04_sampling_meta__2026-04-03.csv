@@ -1,0 +1,2 @@
+run_id,idata_path,n_chains,n_draws_per_chain,divergences_total,exported_at_utc,bfmi_min,bfmi_mean,bfmi_max,min_ess_bulk_tracked,max_r_hat_tracked,pass_r_hat_1_01,pass_ess_400
+2026-04-03,data/processed/posteriors/2026-04-03_idata.nc,4,2000,0,2026-04-04T07:00:00.398199+00:00,0.7831233560502779,0.8037019143157497,0.825113944237383,36.2203,1.0874,False,False

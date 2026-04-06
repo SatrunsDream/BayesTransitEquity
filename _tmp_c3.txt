@@ -1,6 +1,0 @@
-clipped = clip_merged_to_bbox(merged)
-issues = validate_feed(clipped)
-display(Markdown("### Clipped to bbox — trip expansion"))
-display(pd.DataFrame([{k: len(v) if v is not None else 0 for k, v in clipped.items()}]).T.rename(columns={0: "rows"}))
-display(Markdown("### Validation"))
-display(pd.DataFrame([issues]).T.rename(columns={0: "value"}))
