@@ -1,6 +1,0 @@
-metric,value,source,p_value
-spearman_jobs_vs_disadvantage_z_deterministic_nb03,0.46720144426780713,pipeline__03_accessibility_summary__2026-04-03.csv,
-posterior_mean_jobs,0.4662540128985288,pipeline__04_equity_spearman__2026-04-03.csv,1.836705595715322e-40
-posterior_sd_log1p,-0.0214057265951243,pipeline__04_equity_spearman__2026-04-03.csv,0.5647258179150371
-posterior_exceedance_prob_45min,-0.3762650042361931,pipeline__04_equity_spearman__2026-04-03.csv,7.817375766711783e-26
-posterior_p_transit_desert,-0.3762650042361931,pipeline__04_equity_spearman__2026-04-03.csv,7.817375766711783e-26

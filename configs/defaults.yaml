@@ -14,16 +14,22 @@ accessibility:
 
 model:
   sampler: mcmc
-  draws: 4000
-  tune: 2000
+  # Longer sampling + warmup to raise bulk ESS and tighten R-hat for alpha/beta (BYM2 ridge).
+  # Expect ~2–3× wall time vs draws=4000 tune=2000 target_accept=0.95.
+  draws: 8000
+  tune: 4000
   chains: 4
-  target_accept: 0.95
+  # 0.99: smaller NUTS steps, better exploration of sloppy directions (alpha, beta vs phi).
+  target_accept: 0.99
+  # PyMC NUTS init: advi+adapt_diag helps correlated posteriors; use jitter+adapt_diag_grad if ADVI errors.
+  nuts_init: advi+adapt_diag
   random_seed: 42
   # Likelihood for standardised y: normal | student_t (heavy tails; nu must be > 2)
   likelihood: student_t
   student_t_nu: 4.0
   # fixed = constant obs SD on standardised scale (no sigma_obs RV; better MCMC geometry
   # for deterministic r5py summaries). estimated = HalfNormal sigma_obs (legacy).
+  # Sensitivity: try 0.06–0.08 if R-hat/ESS plateau (softer likelihood vs spatial field).
   obs_noise: fixed
   fixed_obs_sigma: 0.05
   estimated_obs_sigma_prior_scale: 0.2

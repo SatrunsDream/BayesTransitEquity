@@ -1,5 +1,0 @@
-layer,crs
-tiger_tracts_sd,EPSG:4269
-study_bbox,EPSG:4326
-gtfs_stops_points,EPSG:4326
-projected_analysis,EPSG:3310

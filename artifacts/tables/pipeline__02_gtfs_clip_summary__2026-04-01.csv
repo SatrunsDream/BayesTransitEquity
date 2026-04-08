@@ -1,2 +1,0 @@
-bbox,n_tables_written,out_dir,zip,n_stops,n_trips,n_stop_times,orphan_stop_time_trips,trips_without_stop_times
-"[-117.4, 32.53, -116.8, 33.35]",10,data/processed/gtfs/sd_merged_bbox,data/processed/gtfs/sd_merged_bbox.zip,6078,27294,828842,0,0

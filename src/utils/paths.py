@@ -18,6 +18,21 @@ def find_repo_root() -> Path:
     )
 
 
+def artifact_tables_root(repo_root: Path) -> Path:
+    """``artifacts/tables`` — parent of EDA vs pipeline subfolders."""
+    return repo_root / "artifacts" / "tables"
+
+
+def artifact_tables_eda(repo_root: Path) -> Path:
+    """EDA exports: ``artifacts/tables/eda`` (``eda__*.csv``)."""
+    return artifact_tables_root(repo_root) / "eda"
+
+
+def artifact_tables_pipeline(repo_root: Path) -> Path:
+    """Pipeline exports: ``artifacts/tables/pipeline`` (``pipeline__*``)."""
+    return artifact_tables_root(repo_root) / "pipeline"
+
+
 def find_osmium_executable() -> str | None:
     """
     Locate the osmium CLI executable and return a subprocess-safe invocation string.

@@ -1,2 +1,0 @@
-status,detail
-file_not_found,No `ca_wac_*_JT00_*.csv.gz` under C:\Users\sardo\OneDrive\Desktop\Classes\Projects\BayesTransitEquity\data\raw\external\lodes. Run: `python scripts/download_data.py --config configs/san_diego.yaml --sources lodes`
