@@ -1,0 +1,7 @@
+threshold_min,metric,spearman_rho,p_value
+30,deterministic_jobs_vs_disadvantage_z,0.4838059751523772,1.6268418286987257e-43
+45,deterministic_jobs_vs_disadvantage_z,0.4672014442678071,2.558810361072317e-40
+60,deterministic_jobs_vs_disadvantage_z,0.4143034250794808,3.11049049039188e-31
+30,posterior_exceedance_vs_disadvantage_z,-0.30142003951648566,1.374617072480089e-16
+45,posterior_exceedance_vs_disadvantage_z,-0.46694304018016236,2.860300399547355e-40
+60,posterior_exceedance_vs_disadvantage_z,-0.4808768900800797,6.138685833477778e-43

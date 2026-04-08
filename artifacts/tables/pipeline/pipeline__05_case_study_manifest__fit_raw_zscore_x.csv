@@ -1,0 +1,5 @@
+GEOID,label
+06073010300,largest Bayesian upgrade vs deterministic rank
+06073006200,largest Bayesian downgrade vs deterministic rank
+06073005801,"high disadvantage, high posterior mean"
+06073017010,"low disadvantage, low posterior mean"
