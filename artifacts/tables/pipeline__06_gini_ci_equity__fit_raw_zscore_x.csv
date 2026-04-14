@@ -1,0 +1,6 @@
+metric,point,posterior_mean,ci_lower,ci_upper,note
+Gini_posterior_mean_jobs,0.5168085567413072,0.1444701485230749,0.13920437082749162,0.15140083791528622,"Population-weighted; 0=perfect equality, 1=maximum inequality"
+Gini_deterministic_jobs,0.5187337750230581,,,,Deterministic baseline
+CI_posterior_mean_jobs,0.24616225733049923,0.03588915520597111,0.035484440283303206,0.036318338294234385,Concentration Index vs disadvantage_z; positive=pro-poor
+CI_deterministic_jobs,0.24472129841738852,,,,Deterministic CI baseline
+CI_exceedance_prob,-0.4578349902265922,,,,CI on desert exceedance vs disadvantage

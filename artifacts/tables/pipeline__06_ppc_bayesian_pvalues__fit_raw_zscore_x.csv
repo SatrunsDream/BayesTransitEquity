@@ -1,0 +1,7 @@
+statistic,bayesian_p_value,flag
+mean,1.0,CONCERN (extreme)
+sd,1.0,CONCERN (extreme)
+skewness,0.713,ok
+frac_below_q25,0.0,CONCERN (extreme)
+min,1.0,CONCERN (extreme)
+max,1.0,CONCERN (extreme)

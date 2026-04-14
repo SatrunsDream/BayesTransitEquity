@@ -1,0 +1,7 @@
+key,path,exists
+nb05_summary,C:\Users\sardo\OneDrive\Desktop\Classes\Projects\BayesTransitEquity\artifacts\tables\pipeline\pipeline__05_summary__fit_raw_zscore_x.csv,True
+nb05_multithreshold,C:\Users\sardo\OneDrive\Desktop\Classes\Projects\BayesTransitEquity\artifacts\tables\pipeline\pipeline__05_multithreshold_equity__fit_raw_zscore_x.csv,True
+nb05_rank_divergence,C:\Users\sardo\OneDrive\Desktop\Classes\Projects\BayesTransitEquity\artifacts\tables\pipeline\pipeline__05_rank_divergence__fit_raw_zscore_x.csv,True
+nb05_hook_candidates,C:\Users\sardo\OneDrive\Desktop\Classes\Projects\BayesTransitEquity\artifacts\tables\pipeline\pipeline__05_hook_near_q25_exceedance_ambiguous__fit_raw_zscore_x.csv,True
+nb05_wasserstein,C:\Users\sardo\OneDrive\Desktop\Classes\Projects\BayesTransitEquity\artifacts\tables\pipeline\pipeline__05_wasserstein_tract__fit_raw_zscore_x.csv,True
+acs,C:\Users\sardo\OneDrive\Desktop\Classes\Projects\BayesTransitEquity\artifacts\tables\eda\eda__acs_sd_tract_attributes__2026-03-29.csv,True

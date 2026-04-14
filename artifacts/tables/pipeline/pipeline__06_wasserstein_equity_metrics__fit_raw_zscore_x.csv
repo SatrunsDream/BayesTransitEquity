@@ -1,0 +1,4 @@
+metric,value,p_value,note
+spearman_wasserstein_vs_disadvantage_z,-0.360367426179361,1.6776032702244944e-23,Positive => higher disadvantage ↔ larger Wasserstein distance
+gini_wasserstein_population_weighted,0.32518602831307875,,Population-weighted inequality of Wasserstein distances across tracts
+concentration_index_wasserstein_vs_disadvantage_z,-0.05596329743619445,,Positive => Wasserstein burden concentrated among high-disadvantage tracts

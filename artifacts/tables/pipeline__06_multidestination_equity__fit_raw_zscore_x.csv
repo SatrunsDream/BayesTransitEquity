@@ -1,0 +1,13 @@
+destination,threshold_min,col,n_tracts,spearman_rho,p_value,direction
+Jobs (LODES),30,jobs_C000_30min,720,0.4838,1.627e-43,pro-poor
+Jobs (LODES),45,jobs_C000_45min,720,0.4672,2.559e-40,pro-poor
+Jobs (LODES),60,jobs_C000_60min,720,0.4143,3.11e-31,pro-poor
+Hospitals,30,hospitals_count_30min,720,0.3533,1.38e-22,pro-poor
+Hospitals,45,hospitals_count_45min,720,0.3606,1.577e-23,pro-poor
+Hospitals,60,hospitals_count_60min,720,0.3483,5.815e-22,pro-poor
+Groceries,30,groceries_count_30min,720,0.5632,1.675e-61,pro-poor
+Groceries,45,groceries_count_45min,720,0.5812,2.786e-66,pro-poor
+Groceries,60,groceries_count_60min,720,0.5452,5.442e-57,pro-poor
+Schools,30,schools_count_30min,720,0.4715,3.99e-41,pro-poor
+Schools,45,schools_count_45min,720,0.5246,3.629e-52,pro-poor
+Schools,60,schools_count_60min,720,0.5169,1.995e-50,pro-poor
