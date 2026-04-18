@@ -1,0 +1,111 @@
+{
+  "run_id": "fit_raw_zscore_x",
+  "generated": "2026-04-17",
+  "county": "San Diego County",
+  "n_tracts": 720,
+  "q25_threshold_jobs": 4470,
+  "q25_threshold_log1p": 8.405367,
+  "color_scale": {
+    "exceedance_prob": {
+      "domain": [
+        0,
+        0.5,
+        1.0
+      ],
+      "colors": [
+        "#3B82F6",
+        "#F59E0B",
+        "#EF4444"
+      ]
+    },
+    "posterior_mean": {
+      "domain_min": 4.0,
+      "domain_max": 12.0,
+      "colors": [
+        "#7e22ce",
+        "#f59e0b"
+      ]
+    },
+    "wasserstein_dist": {
+      "domain_min": 0,
+      "domain_max": 90000,
+      "colors": [
+        "#e0e7ff",
+        "#4c1d95"
+      ]
+    }
+  },
+  "county_summary": {
+    "spearman_equity": 0.4699,
+    "n_probable_deserts": 178,
+    "n_ambiguous": 35,
+    "hook_geoid": "06073013317",
+    "composite_deficit_n": 120,
+    "wasserstein_q1_mean": 31512,
+    "wasserstein_q4_mean": 24237,
+    "wasserstein_county_mean": 29800
+  },
+  "intervention": {
+    "scenario_a": {
+      "id": "bayesian_top20",
+      "label": "Bayesian Targeting",
+      "description": "20 highest-exceedance tracts identified by Bayesian model",
+      "n_targets": 20,
+      "n_crossings": 12,
+      "pct_pop_served": 1.99
+    },
+    "scenario_b": {
+      "id": "det_top20",
+      "label": "Deterministic Targeting",
+      "description": "20 lowest-deterministic-jobs tracts (conventional approach)",
+      "n_targets": 20,
+      "n_crossings": 8,
+      "pct_pop_served": 1.09
+    },
+    "efficiency_ratio": 1.5,
+    "bayesian_target_geoids": [
+      "06073008328",
+      "06073008372",
+      "06073009400",
+      "06073009505",
+      "06073009507",
+      "06073009805",
+      "06073009901",
+      "06073010019",
+      "06073010109",
+      "06073010201",
+      "06073010601",
+      "06073013307",
+      "06073013422",
+      "06073013423",
+      "06073015405",
+      "06073015406",
+      "06073015501",
+      "06073016609",
+      "06073016704",
+      "06073016807"
+    ],
+    "det_target_geoids": [
+      "06073020312",
+      "06073019107",
+      "06073013320",
+      "06073013423",
+      "06073015406",
+      "06073017010",
+      "06073017021",
+      "06073016813",
+      "06073015405",
+      "06073010601",
+      "06073017053",
+      "06073018805",
+      "06073017020",
+      "06073009901",
+      "06073020711",
+      "06073020111",
+      "06073021306",
+      "06073019209",
+      "06073009805",
+      "06073016618"
+    ]
+  }
+}

@@ -31,8 +31,8 @@ dist/
 build/
 .ipynb_checkpoints/
 
-# Node / Next.js
-app/node_modules/
+# Node / Next.js (never commit dependencies — install with npm ci / npm install)
+node_modules/
 app/.next/
 app/.env.local
 app/.env*.local

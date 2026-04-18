@@ -1,0 +1,5 @@
+metric,value,note
+spearman_headway_vs_det_jobs,-0.529344764783726,AM-peak minimum headway within 400m buffer vs det jobs (all tracts). Negative → lower headway associated with higher access.
+Q25_jobs,4470.0,25th percentile of jobs_C000_45min
+Q25_log1p,8.405367376233981,log1p(Q25_JOBS) — desert threshold on model scale
+n_targets_with_gtfs_coverage,20.0,target tracts (union) with >=1 MTS route within 400m buffer

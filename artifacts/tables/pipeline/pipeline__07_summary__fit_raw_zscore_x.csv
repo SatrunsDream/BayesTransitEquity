@@ -1,0 +1,20 @@
+analysis_type,metric,scenario,value,ci_lower,ci_upper,note
+targeting,n_overlap,both,6.0,,,Tracts in both Bayesian and deterministic target lists
+targeting,n_bayes_only,A,14.0,,,Bayesian-only targets (likely false negatives of deterministic)
+targeting,n_det_only,B,14.0,,,Deterministic-only targets (likely false positives)
+intervention,n_threshold_crossings,A,12.0,,,Tracts P:>0.5→<0.5 at ≥80% posterior certainty (Scenario A)
+intervention,n_threshold_crossings,B,8.0,,,Tracts P:>0.5→<0.5 at ≥80% posterior certainty (Scenario B)
+intervention,pct_pop_moved,A,1.987973926622137,,,Share of population moved below 0.5 exceedance (A)
+intervention,pct_pop_moved,B,1.0847126777819696,,,Share of population moved below 0.5 exceedance (B)
+equity,spearman,baseline,-0.4669430401801623,,,"Spearman(exceedance, disadvantage_z) pre-intervention"
+equity,spearman,A,-0.46349894086543125,,,Scenario A post-intervention
+equity,spearman,B,-0.4600098939859288,,,Scenario B post-intervention
+equity,delta_spearman,A,0.003444099314731053,,,
+equity,delta_spearman,B,0.006933146194233519,,,
+classification,count_TP,global,178.0,,,Det low + Bayes high exceedance
+classification,count_FP,global,2.0,,,"Det flags as desert, Bayes disagrees (wasted targeting)"
+classification,count_FN,global,0.0,,,"Bayes flags as desert, Det misses (hook-like tracts)"
+classification,count_TN,global,540.0,,,
+hook,exceedance_baseline,06073013317,0.49978125,,,
+hook,exceedance_scenario_A,06073013317,0.0273125,-0.4779398437500001,-0.46739140625000003,
+calibration,spearman_headway_jobs,all_tracts,-0.529344764783726,,,AM-peak min headway vs det_jobs

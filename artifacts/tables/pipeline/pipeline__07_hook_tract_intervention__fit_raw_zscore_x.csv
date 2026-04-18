@@ -1,0 +1,2 @@
+GEOID,baseline_exceedance,scenario_A_exceedance,scenario_A_delta,scenario_A_ci_lower,scenario_A_ci_upper,scenario_A_prob_improve,targeted_by_bayes,targeted_by_det
+06073013317,0.49978125,0.0273125,-0.47246875,-0.4779398437500001,-0.46739140625000003,1.0,False,False

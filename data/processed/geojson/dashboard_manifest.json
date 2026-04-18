@@ -1,0 +1,30 @@
+{
+  "run_id": "fit_raw_zscore_x",
+  "generated": "2026-04-17",
+  "baseline_geojson": "sd_tracts_equity_baseline.geojson",
+  "scenarios": [
+    {
+      "id": "freq_double_bayesian_top20",
+      "label": "Frequency Doubling \u2014 Bayesian Targets",
+      "description": "Simulated 50% accessibility-gap closure for the 20 highest-exceedance tracts",
+      "n_tracts_intervened": 20,
+      "n_threshold_crossings": 12,
+      "efficiency_ratio_vs_B": 1.5
+    },
+    {
+      "id": "freq_double_det_top20",
+      "label": "Frequency Doubling \u2014 Deterministic Targets",
+      "description": "Same intervention applied to the 20 lowest deterministic-jobs tracts",
+      "n_tracts_intervened": 20,
+      "n_threshold_crossings": 8
+    }
+  ],
+  "key_tracts": [
+    {
+      "geoid": "06073013317",
+      "label": "Hook tract (coin flip)",
+      "exceedance_baseline": 0.49978125,
+      "exceedance_scenario_A": 0.0273125
+    }
+  ]
+}
