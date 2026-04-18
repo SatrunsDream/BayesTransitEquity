@@ -17,6 +17,7 @@ dependencies:
   - pyproj
   - shapely
   - libpysal
+  - esda
   - pymc
   - arviz
   - netcdf4

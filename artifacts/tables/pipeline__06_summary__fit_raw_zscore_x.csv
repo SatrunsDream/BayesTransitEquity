@@ -1,0 +1,15 @@
+section,analysis,value,ci_lower,ci_upper,note
+gini_concentration,Gini_posterior_jobs,0.1445,0.1392,0.1514,"Population-weighted; 0=equality, 1=inequality"
+gini_concentration,ConcentrationIndex_posterior_jobs,0.0359,0.0355,0.0363,Positive=pro-poor; vs disadvantage_z rank
+multidestination,Spearman_Jobs (LODES)_45min,0.4672,,,vs disadvantage_z; pro-poor
+multidestination,Spearman_Hospitals_45min,0.3606,,,vs disadvantage_z; pro-poor
+multidestination,Spearman_Groceries_45min,0.5812,,,vs disadvantage_z; pro-poor
+multidestination,Spearman_Schools_45min,0.5246,,,vs disadvantage_z; pro-poor
+composite_deficit,n_multideficit_tracts_composite_gt50pct,120.0,,,Tracts with composite exceedance >0.5 across all 4 destination types
+ppc,PPC_bayesian_p_mean,1.0,,,CONCERN (extreme)
+ppc,PPC_bayesian_p_sd,1.0,,,CONCERN (extreme)
+ppc,PPC_bayesian_p_skewness,0.713,,,ok
+ppc,PPC_bayesian_p_frac_below_q25,0.0,,,CONCERN (extreme)
+ppc,PPC_bayesian_p_min,1.0,,,CONCERN (extreme)
+ppc,PPC_bayesian_p_max,1.0,,,CONCERN (extreme)
+moran_raw_x,MoranI_raw_X_residuals,0.6432,,,method=esda.Moran (999 permutations); Spatial+ reference=0.5724

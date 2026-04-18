@@ -1,0 +1,3 @@
+estimand,k_remove,k_remove_pct,moran_I,moran_p,diagnosis,source
+fit_spatial_plus_x,36,5.0,0.5724,,High — low u_free ESS + Spatial+ tension,F026 / April 6 run
+fit_raw_zscore_x,0,0.0,0.6432,0.001,High: investigate ICAR convergence,nb06 computed

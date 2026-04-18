@@ -1,0 +1,6 @@
+dropped,spearman_rho,beta_disadv,is_baseline,importance_ess
+(none — full model),0.4699,0.1037,True,
+disadvantage_z,0.4699,,False,239.0
+no_vehicle_hh_rate,0.4699,0.3022,False,16.0
+log_median_income,0.4699,0.1314,False,620.0
+log_pop_density,0.4699,0.2717,False,1.0
