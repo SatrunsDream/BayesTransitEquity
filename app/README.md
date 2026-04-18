@@ -48,5 +48,6 @@ Static output is written to `app/out/`. Serve with any static file server or dep
 ## Planned / not yet in this MVP
 
 - URL hash persistence for mode + layer
-- Full KDE neighbor overlays on the chart (pills + W₂ only for now)
 - Mobile bottom-sheet layout (desktop-first)
+
+**Neighbor comparison (implemented):** tract panel can rank neighbors by Gaussian JSD, toggle up to three overlays, and show JSD / Hellinger / W₂ vs the focal tract.
