@@ -22,3 +22,22 @@ body {
 .maplibregl-ctrl-attrib {
   font-size: 10px !important;
 }
+
+@media (max-width: 768px) {
+  .tract-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100% !important;
+    max-height: 60vh;
+    border-radius: 16px 16px 0 0;
+    border-left: none !important;
+    z-index: 30;
+    box-shadow: 0 -4px 24px rgba(15, 23, 42, 0.12);
+  }
+
+  .control-sidebar {
+    display: none;
+  }
+}

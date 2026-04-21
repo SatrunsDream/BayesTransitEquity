@@ -1,7 +1,9 @@
 "use client";
 
 import type { GeoMode, LayerMetric, Metadata } from "@/types";
+import type { CountyStats } from "@/hooks/useCountyStats";
 import { StatCard } from "@/components/shared/StatCard";
+import { ExceedanceHistogram } from "@/components/Charts/ExceedanceHistogram";
 
 type Props = {
   mode: GeoMode;
@@ -21,6 +23,8 @@ type Props = {
   metadata: Metadata | null;
   loadingA: boolean;
   loadingB: boolean;
+  countyStats: CountyStats | null;
+  selectedExceedance: number | null;
 };
 
 const LAYERS: { id: LayerMetric; label: string }[] = [
@@ -48,12 +52,14 @@ export function ControlSidebar({
   metadata,
   loadingA,
   loadingB,
+  countyStats,
+  selectedExceedance,
 }: Props) {
   const cs = metadata?.county_summary;
   const intv = metadata?.intervention;
 
   return (
-    <aside className="flex w-60 flex-shrink-0 flex-col overflow-y-auto border-r border-slate-200 bg-white">
+    <aside className="control-sidebar flex w-60 flex-shrink-0 flex-col overflow-y-auto border-r border-slate-200 bg-white">
       <div className="border-b border-slate-100 p-3">
         <div className="text-[10px] font-semibold uppercase tracking-wide text-slate-500">Mode</div>
         <div className="mt-2 flex flex-col gap-1">
@@ -154,19 +160,37 @@ export function ControlSidebar({
         <StatCard label="Composite deficit" value={cs?.composite_deficit_n ?? "—"} />
       </div>
 
+      {countyStats ? (
+        <div className="border-t border-slate-100 px-3 pb-3">
+          <div className="text-[10px] font-semibold uppercase tracking-wide text-slate-500">
+            County exceedance distribution
+          </div>
+          <ExceedanceHistogram
+            bins={countyStats.exceedanceBins}
+            selectedExceedance={selectedExceedance ?? undefined}
+          />
+        </div>
+      ) : null}
+
       {mode !== "baseline" && intv ? (
         <div className="border-t border-slate-100 p-3 text-[10px] text-slate-600">
           <div className="font-semibold text-slate-800">Intervention (nb07)</div>
-          <div className="mt-1">
-            A: <strong>{intv.scenario_a.n_crossings}</strong> crossings ·{" "}
-            <strong>{intv.scenario_a.pct_pop_served}%</strong> pop.
+          <div className="mt-2 flex items-center justify-center gap-3">
+            <div className="flex flex-col items-center">
+              <span className="text-base font-bold text-teal-300">{intv.scenario_a.n_crossings}</span>
+              <span className="text-slate-500">Bayesian</span>
+            </div>
+            <span className="text-slate-500">vs</span>
+            <div className="flex flex-col items-center">
+              <span className="text-base font-bold text-amber-300">{intv.scenario_b.n_crossings}</span>
+              <span className="text-slate-500">Deterministic</span>
+            </div>
           </div>
-          <div>
-            B: <strong>{intv.scenario_b.n_crossings}</strong> crossings ·{" "}
-            <strong>{intv.scenario_b.pct_pop_served}%</strong> pop.
+          <div className="mt-2 text-center text-teal-300">
+            <strong>{intv.efficiency_ratio}×</strong> more efficient (Bayesian)
           </div>
-          <div className="mt-1 text-teal-800">
-            Efficiency A/B: <strong>{intv.efficiency_ratio}×</strong>
+          <div className="mt-1 text-[9px] text-slate-500">
+            A: {intv.scenario_a.pct_pop_served}% pop. · B: {intv.scenario_b.pct_pop_served}% pop.
           </div>
         </div>
       ) : null}

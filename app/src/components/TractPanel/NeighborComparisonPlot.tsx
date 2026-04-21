@@ -125,7 +125,9 @@ export function NeighborComparisonPlot({ focal, neighbors, q25Log1p }: Props) {
             top={innerH}
             scale={xScale}
             numTicks={4}
-            tickFormat={(v) => (Math.abs(v - q25Log1p) < 0.06 ? "Q25" : Number(v).toFixed(1))}
+            tickFormat={(v) =>
+              Math.abs(Number(v) - q25Log1p) < 0.06 ? "Q25" : Number(v).toFixed(1)
+            }
             stroke="#94a3b8"
             tickStroke="#94a3b8"
             tickLabelProps={() => ({

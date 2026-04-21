@@ -19,6 +19,8 @@ type Props = {
   exceedance: number;
   /** Optional second curve (scenario) — implied μ from target exceedance, same σ */
   scenarioExceedance?: number | null;
+  /** County Q25 threshold in job counts (from metadata) */
+  q25ThresholdJobs?: number | null;
 };
 
 export function PosteriorPlot({
@@ -27,6 +29,7 @@ export function PosteriorPlot({
   q25Log1p,
   exceedance,
   scenarioExceedance,
+  q25ThresholdJobs,
 }: Props) {
   const innerW = W - M.left - M.right;
   const innerH = H - M.top - M.bottom;
@@ -38,7 +41,7 @@ export function PosteriorPlot({
     return computeKDE(mu2, sigma, 100, 4);
   }, [mu, sigma, q25Log1p, scenarioExceedance, exceedance]);
 
-  const { lo95, hi95 } = credibleIntervals(mu, sigma);
+  const { lo95, hi95 } = useMemo(() => credibleIntervals(mu, sigma), [mu, sigma]);
   const pts95 = useMemo(
     () => pts.filter((p) => p.x >= lo95 && p.x <= hi95),
     [pts, lo95, hi95],
@@ -106,7 +109,9 @@ export function PosteriorPlot({
             top={innerH}
             scale={xScale}
             tickValues={[xMin, q25Log1p, xMax].filter((v, i, a) => a.indexOf(v) === i)}
-            tickFormat={(v) => (Math.abs(v - q25Log1p) < 0.05 ? "Q25" : v.toFixed(1))}
+            tickFormat={(v) =>
+              Math.abs(Number(v) - q25Log1p) < 0.05 ? "Q25" : Number(v).toFixed(1)
+            }
             stroke="#94a3b8"
             tickStroke="#94a3b8"
             tickLabelProps={() => ({
@@ -117,12 +122,26 @@ export function PosteriorPlot({
           />
         </g>
       </svg>
-           <div className="flex flex-wrap gap-3 text-[10px] text-slate-600">
+      <div className="mt-1 flex flex-wrap justify-between gap-2 text-[9px] text-slate-500">
         <span>
-          Q25 threshold: <strong>{fmtJobs(Math.expm1(q25Log1p))}</strong> jobs (log1p {q25Log1p.toFixed(2)})
+          95% CI (jobs):{" "}
+          <strong>
+            {fmtJobs(Math.expm1(lo95))} – {fmtJobs(Math.expm1(hi95))}
+          </strong>
         </span>
+        {q25ThresholdJobs != null ? (
+          <span>
+            Q25 threshold: <strong>{fmtJobs(q25ThresholdJobs)}</strong> jobs
+          </span>
+        ) : (
+          <span>
+            Q25 (from log1p): <strong>{fmtJobs(Math.expm1(q25Log1p))}</strong> jobs
+          </span>
+        )}
+      </div>
+      <div className="mt-1 flex flex-wrap gap-3 text-[10px] text-slate-600">
         <span>
-          P(below): <strong>{(exceedance * 100).toFixed(1)}%</strong>
+          P(below Q25): <strong>{(exceedance * 100).toFixed(1)}%</strong>
         </span>
         {pts2 ? (
           <span className="text-teal-700">

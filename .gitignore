@@ -9,8 +9,9 @@ data/processed/posteriors/
 # Local project memory / AI context (not shipped to GitHub)
 context/
 
-# Claude / local worktrees (not part of the pipeline repo)
+# Claude Code / local worktrees (not part of the pipeline repo)
 .claude/
+claude/
 
 # Tool caches (e.g. OSMnx / download caches)
 cache/
