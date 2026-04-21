@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   title: "BayesTransitEquity · San Diego",
   description:
     "Uncertainty-aware transit accessibility — posterior exceedance, scenarios, and intervention simulation.",
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({

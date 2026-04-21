@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="BayesTransitEquity">
+  <defs>
+    <linearGradient id="fav-bg" x1="0" y1="0" x2="32" y2="32">
+      <stop stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#134e4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="8" fill="url(#fav-bg)"/>
+  <!-- Train / rail vehicle: body + roof + windows (stroke-based, reads at small sizes) -->
+  <path
+    fill="none"
+    stroke="#2dd4bf"
+    stroke-width="1.75"
+    stroke-linejoin="round"
+    d="M7 22V15c0-1.8 1.4-3 9-3s9 1.2 9 3v7H7z"
+  />
+  <path fill="none" stroke="#38bdf8" stroke-width="1.35" stroke-linecap="round" d="M11 16h4m6 0h4" />
+  <path fill="none" stroke="#64748b" stroke-width="1.35" stroke-linecap="round" d="M10 23h3M19 23h3" />
+  <circle cx="10" cy="25.5" r="1.5" fill="#475569"/>
+  <circle cx="22" cy="25.5" r="1.5" fill="#475569"/>
+</svg>
